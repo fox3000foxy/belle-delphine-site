@@ -1,4 +1,4 @@
-import { Facebook as FacebookIcon, Instagram as InstagramIcon, Twitter as TwitterIcon, YouTube as YouTubeIcon } from '@mui/icons-material';
+import { Facebook as FacebookIcon, Twitter as TwitterIcon, YouTube as YouTubeIcon } from '@mui/icons-material';
 import { Box, Container, Divider, IconButton, Link, Stack, Typography } from '@mui/material';
 
 const Footer = () => {
@@ -68,18 +68,6 @@ const Footer = () => {
                   transition: 'all 0.3s ease-in-out',
                 }}>
                 <TwitterIcon />
-              </IconButton>
-              <IconButton
-                sx={{
-                  backgroundColor: 'secondary.main',
-                  color: 'background.paper',
-                  '&:hover': {
-                    backgroundColor: 'primary.main',
-                    color: 'background.paper',
-                  },
-                  transition: 'all 0.3s ease-in-out',
-                }}>
-                <InstagramIcon />
               </IconButton>
               <IconButton
                 sx={{

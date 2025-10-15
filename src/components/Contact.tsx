@@ -1,4 +1,4 @@
-import { Email as EmailIcon, Facebook as FacebookIcon, Instagram as InstagramIcon, LinkedIn as LinkedInIcon, Send as SendIcon, Twitter as TwitterIcon } from '@mui/icons-material';
+import { Email as EmailIcon, Facebook as FacebookIcon, Send as SendIcon, Twitter as TwitterIcon } from '@mui/icons-material';
 import { Alert, Box, Button, Card, CardContent, Container, IconButton, List, ListItem, ListItemIcon, ListItemText, Stack, TextField, Typography } from '@mui/material';
 import { useState } from 'react';
 
@@ -107,37 +107,7 @@ const Contact = () => {
                   }
                   secondary={
                     <Typography variant='body1' sx={{ color: 'background.paper', fontWeight: 500 }}>
-                      collabs@belledelphine.com
-                    </Typography>
-                  }
-                />
-              </ListItem>
-
-              <ListItem sx={{ px: 0, py: 2 }}>
-                <ListItemIcon>
-                  <Box
-                    sx={{
-                      width: 48,
-                      height: 48,
-                      backgroundColor: 'secondary.main',
-                      borderRadius: '50%',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                    }}>
-                    <InstagramIcon sx={{ color: 'background.paper' }} />
-                  </Box>
-                </ListItemIcon>
-                <ListItemText
-                  sx={{ ml: 2 }}
-                  primary={
-                    <Typography variant='body2' sx={{ color: 'background.default', fontWeight: 500 }}>
-                      Instagram
-                    </Typography>
-                  }
-                  secondary={
-                    <Typography variant='body1' sx={{ color: 'background.paper', fontWeight: 500 }}>
-                      @belle.delphine
+                      collabs@belle-delphine.com
                     </Typography>
                   }
                 />
@@ -190,22 +160,6 @@ const Contact = () => {
                   '&:hover': { backgroundColor: 'secondary.dark' },
                 }}>
                 <TwitterIcon />
-              </IconButton>
-              <IconButton
-                sx={{
-                  backgroundColor: 'primary.main',
-                  color: 'background.paper',
-                  '&:hover': { backgroundColor: 'primary.dark' },
-                }}>
-                <LinkedInIcon />
-              </IconButton>
-              <IconButton
-                sx={{
-                  backgroundColor: 'secondary.main',
-                  color: 'background.paper',
-                  '&:hover': { backgroundColor: 'secondary.dark' },
-                }}>
-                <InstagramIcon />
               </IconButton>
             </Stack>
           </Box>
