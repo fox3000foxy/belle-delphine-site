@@ -18,6 +18,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "serve": "vite serve --port 7867",
     "start": "node start.mjs",
     "format": "npx prettier --write src --config prettier.json"
   },
