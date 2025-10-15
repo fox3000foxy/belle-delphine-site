@@ -88,7 +88,7 @@ const Hero = () => {
                 mb: 3,
                 lineHeight: 1.2,
               }}>
-              Official Website
+              Cosplayer • Gamer • Creator
             </Typography>
 
             <Typography
@@ -102,7 +102,7 @@ const Hero = () => {
                 fontSize: { xs: '1.1rem', md: '1.25rem' },
                 px: { xs: 1, sm: 0 },
               }}>
-              Welcome to the official Belle Delphine website. Discover exclusive content, latest updates, and connect with the community.
+              Welcome to my creative world! Explore my cosplay adventures, gaming content, memes, and artistic creations in this safe and fun space.
             </Typography>
 
             <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} justifyContent='center' alignItems='center' sx={{ mb: 6 }}>
@@ -126,7 +126,7 @@ const Hero = () => {
                   },
                   transition: 'all 0.3s ease-in-out',
                 }}>
-                Explore Content
+                Explore Cosplays
               </Button>
 
               <Button
@@ -150,7 +150,7 @@ const Hero = () => {
                   },
                   transition: 'all 0.3s ease-in-out',
                 }}>
-                Watch Videos
+                Gaming Videos
               </Button>
             </Stack>
           </Box>

@@ -42,7 +42,7 @@ const Footer = () => {
                 mb: 3,
                 maxWidth: '400px',
               }}>
-              The official website of Belle Delphine. Discover exclusive content, latest updates, and connect with the community.
+              Creative cosplayer, passionate gamer, and content creator. Join the fun with cosplay tutorials, gaming streams, and meme culture!
             </Typography>
             <Stack direction='row' spacing={2}>
               <IconButton
@@ -140,7 +140,7 @@ const Footer = () => {
               Content
             </Typography>
             <Stack spacing={1}>
-              {['Premium', 'Merchandise', 'OnlyFans', 'Patreon'].map(item => (
+              {['Cosplay Gallery', 'Gaming Videos', 'YouTube', 'Merchandise'].map(item => (
                 <Link
                   key={item}
                   href='#'
@@ -176,10 +176,10 @@ const Footer = () => {
               color: 'background.default',
               textAlign: { xs: 'center', md: 'left' },
             }}>
-            © 2024 Belle Delphine Official Website. All rights reserved.
+            © 2024 Belle Delphine - Cosplay & Gaming Content Creator. All rights reserved.
           </Typography>
           <Stack direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 1, sm: 3 }} alignItems='center'>
-            {['Privacy Policy', 'Terms of Service', 'DMCA'].map(item => (
+            {['Privacy Policy', 'Terms of Service', 'Community Guidelines'].map(item => (
               <Link
                 key={item}
                 href='#'

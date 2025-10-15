@@ -1,37 +1,37 @@
-import { Camera as CameraIcon, Favorite as HeartIcon, People as PeopleIcon, Shop as ShopIcon, Star as StarIcon, VideoLibrary as VideoIcon } from '@mui/icons-material';
+import { Camera as CameraIcon, SportsEsports as GamingIcon, EmojiEmotions as MemeIcon, People as PeopleIcon, Shop as ShopIcon, VideoLibrary as VideoIcon } from '@mui/icons-material';
 import { Box, Card, CardContent, Container, Typography, Zoom } from '@mui/material';
 
 const Features = () => {
   const features = [
     {
-      icon: VideoIcon,
-      title: 'Exclusive Videos',
-      description: 'Access to premium video content, behind-the-scenes footage, and exclusive releases.',
+      icon: CameraIcon,
+      title: 'Cosplay Gallery',
+      description: 'Stunning cosplay photoshoots featuring characters from anime, games, and pop culture with incredible attention to detail.',
     },
     {
-      icon: CameraIcon,
-      title: 'Photography Sets',
-      description: 'High-quality photoshoots, artistic content, and professional photography collections.',
+      icon: GamingIcon,
+      title: 'Gaming Content',
+      description: 'Live gaming streams, gameplay videos, and gaming reviews covering the latest and greatest games.',
+    },
+    {
+      icon: VideoIcon,
+      title: 'YouTube Videos',
+      description: 'Creative videos including tutorials, vlogs, challenges, and behind-the-scenes content from photoshoots.',
+    },
+    {
+      icon: MemeIcon,
+      title: 'Meme Culture',
+      description: 'Hilarious memes, viral content, and internet culture commentary that keeps the community entertained.',
     },
     {
       icon: ShopIcon,
-      title: 'Official Merchandise',
-      description: 'Unique merchandise, limited edition items, and exclusive products available in the official store.',
+      title: 'Merchandise',
+      description: 'Official merchandise including prints, clothing, and collectibles featuring original designs and cosplay themes.',
     },
     {
       icon: PeopleIcon,
-      title: 'Community Access',
-      description: 'Join an exclusive community of fans and get direct access to updates and interactions.',
-    },
-    {
-      icon: StarIcon,
-      title: 'Premium Content',
-      description: 'Subscribe for access to premium content, early releases, and member-only perks.',
-    },
-    {
-      icon: HeartIcon,
-      title: 'Personal Connection',
-      description: 'Direct interaction opportunities, personalized content, and exclusive fan experiences.',
+      title: 'Fan Community',
+      description: 'Active community of cosplay enthusiasts, gamers, and fans sharing their own creations and connecting.',
     },
   ];
 
@@ -53,9 +53,9 @@ const Features = () => {
               mb: 3,
               fontSize: { xs: '2.5rem', md: '3.5rem' },
             }}>
-            Exclusive{' '}
+            Creative{' '}
             <Typography component='span' variant='inherit' sx={{ color: 'primary.main' }}>
-              Features
+              Content
             </Typography>
           </Typography>
           <Typography
@@ -67,7 +67,7 @@ const Features = () => {
               lineHeight: 1.6,
               fontSize: { xs: '1.1rem', md: '1.25rem' },
             }}>
-            Discover all the exclusive features and content that make Belle Delphine's platform unique and engaging.
+            Discover my world of cosplay, gaming, and creative content. From detailed costume creations to entertaining gaming sessions!
           </Typography>
         </Box>
 
@@ -112,7 +112,7 @@ const Features = () => {
                           width: 80,
                           height: 80,
                           borderRadius: '50%',
-                          background: `linear-gradient(135deg, ${feature.icon === VideoIcon ? '#ef4444' : feature.icon === PeopleIcon ? '#f97316' : feature.icon === CameraIcon ? '#f59e0b' : feature.icon === ShopIcon ? '#f97316' : feature.icon === StarIcon ? '#dc2626' : '#ec4899'} 0%, ${feature.icon === VideoIcon ? '#dc2626' : feature.icon === PeopleIcon ? '#ea580c' : feature.icon === CameraIcon ? '#d97706' : feature.icon === ShopIcon ? '#ea580c' : feature.icon === StarIcon ? '#b91c1c' : '#db2777'} 100%)`,
+                          background: `linear-gradient(135deg, ${feature.icon === VideoIcon ? '#ef4444' : feature.icon === PeopleIcon ? '#f97316' : feature.icon === CameraIcon ? '#f59e0b' : feature.icon === ShopIcon ? '#f97316' : feature.icon === GamingIcon ? '#dc2626' : '#ec4899'} 0%, ${feature.icon === VideoIcon ? '#dc2626' : feature.icon === PeopleIcon ? '#ea580c' : feature.icon === CameraIcon ? '#d97706' : feature.icon === ShopIcon ? '#ea580c' : feature.icon === GamingIcon ? '#b91c1c' : '#db2777'} 100%)`,
                           mb: 3,
                           transition: 'transform 0.3s ease-in-out',
                           '&:hover': {

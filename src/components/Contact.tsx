@@ -59,7 +59,7 @@ const Contact = () => {
               lineHeight: 1.6,
               fontSize: { xs: '1.1rem', md: '1.25rem' },
             }}>
-            Follow Belle Delphine on social media for the latest updates, exclusive content, and community interactions.
+            Connect with Belle for cosplay collaborations, gaming content, and creative projects. Join the community of fellow creators and fans!
           </Typography>
         </Box>
 
@@ -102,12 +102,12 @@ const Contact = () => {
                   sx={{ ml: 2 }}
                   primary={
                     <Typography variant='body2' sx={{ color: 'background.default', fontWeight: 500 }}>
-                      Business Email
+                      Collaborations
                     </Typography>
                   }
                   secondary={
                     <Typography variant='body1' sx={{ color: 'background.paper', fontWeight: 500 }}>
-                      business@belledelphine.com
+                      collabs@belledelphine.com
                     </Typography>
                   }
                 />
@@ -162,12 +162,12 @@ const Contact = () => {
                   sx={{ ml: 2 }}
                   primary={
                     <Typography variant='body2' sx={{ color: 'background.default', fontWeight: 500 }}>
-                      Twitter/X
+                      YouTube
                     </Typography>
                   }
                   secondary={
                     <Typography variant='body1' sx={{ color: 'background.paper', fontWeight: 500 }}>
-                      @bunnydelphine
+                      Belle Delphine
                     </Typography>
                   }
                 />

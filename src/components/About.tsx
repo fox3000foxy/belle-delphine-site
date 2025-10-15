@@ -41,7 +41,7 @@ const About = () => {
                 lineHeight: 1.7,
                 fontSize: { xs: '1rem', md: '1.125rem' },
               }}>
-              Belle Delphine is a renowned content creator, model, and internet personality known for her unique aesthetic, creative content, and engaging online presence. With millions of followers across various platforms, she has become a prominent figure in digital entertainment.
+              Belle Delphine is a creative cosplayer, passionate gamer, and internet personality known for her incredible costume designs, gaming content, and viral memes. She brings anime and gaming characters to life with stunning attention to detail.
             </Typography>
 
             <Typography
@@ -52,7 +52,7 @@ const About = () => {
                 lineHeight: 1.7,
                 fontSize: { xs: '1rem', md: '1.125rem' },
               }}>
-              From cosplay and artistic photography to exclusive content and brand collaborations, Belle continues to push creative boundaries and connect with her community in innovative ways.
+              From elaborate cosplay photoshoots and gaming streams to hilarious meme content and creative collaborations, Belle creates entertaining and family-friendly content that celebrates geek culture and creativity.
             </Typography>
 
             <List sx={{ mb: 4 }}>
@@ -61,7 +61,7 @@ const About = () => {
                   <TrendingUpIcon sx={{ color: 'primary.main' }} />
                 </ListItemIcon>
                 <ListItemText
-                  primary='Creative Content'
+                  primary='Cosplay Artistry'
                   primaryTypographyProps={{
                     fontWeight: 600,
                     color: 'text.primary',
@@ -73,7 +73,7 @@ const About = () => {
                   <PeopleIcon sx={{ color: 'secondary.main' }} />
                 </ListItemIcon>
                 <ListItemText
-                  primary='Engaged Community'
+                  primary='Gaming Community'
                   primaryTypographyProps={{
                     fontWeight: 600,
                     color: 'text.primary',
@@ -85,7 +85,7 @@ const About = () => {
                   <PublicIcon sx={{ color: 'secondary.main' }} />
                 </ListItemIcon>
                 <ListItemText
-                  primary='Global Reach'
+                  primary='Meme Culture'
                   primaryTypographyProps={{
                     fontWeight: 600,
                     color: 'text.primary',
@@ -112,7 +112,7 @@ const About = () => {
                 },
                 transition: 'all 0.3s ease-in-out',
               }}>
-              Discover My World
+              Explore My Cosplays
             </Button>
           </Box>
 

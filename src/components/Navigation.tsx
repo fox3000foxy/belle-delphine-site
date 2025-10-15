@@ -40,7 +40,7 @@ const Navigation = () => {
               sx={{
                 height: 32,
                 width: 32,
-                mr: 1,
+                mr: 1,  
                 transition: 'filter 0.3s ease-in-out',
                 filter: trigger ? 'none' : 'brightness(0) invert(1)',
               }}
