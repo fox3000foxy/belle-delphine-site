@@ -1,65 +1,52 @@
 import { createTheme } from '@mui/material/styles';
 
-const primary = {
-  50: '#fef2f2',
-  100: '#fee2e2',
-  200: '#fecaca',
-  300: '#fca5a5',
-  400: '#f87171',
-  500: '#ef4444',
-  600: '#dc2626',
-  700: '#b91c1c',
-  800: '#991b1b',
-  900: '#7f1d1d',
+const pink = {
+  50: '#fdf2f8',
+  100: '#fce7f3',
+  200: '#fbcfe8',
+  300: '#f9a8d4',
+  400: '#f472b6',
+  500: '#ec4899',
+  600: '#db2777',
+  700: '#be185d',
+  800: '#9d174d',
+  900: '#831843',
 };
 
-const lljt = {
-  50: '#fef5f5',
-  100: '#fde8e8',
-  200: '#fbd5d5',
-  300: '#f8b4b4',
-  400: '#f38888',
-  500: '#C85853',
-  600: '#b44c47',
-  700: '#9d3f3b',
-  800: '#7f3531',
-  900: '#6b2e2a',
-};
-
-const orange = {
-  50: '#fff7ed',
-  100: '#ffedd5',
-  200: '#fed7aa',
-  300: '#fdba74',
-  400: '#fb923c',
-  500: '#f97316',
-  600: '#ea580c',
-  700: '#c2410c',
-  800: '#9a3412',
-  900: '#7c2d12',
+const purple = {
+  50: '#faf5ff',
+  100: '#f3e8ff',
+  200: '#e9d5ff',
+  300: '#d8b4fe',
+  400: '#c084fc',
+  500: '#a855f7',
+  600: '#9333ea',
+  700: '#7c3aed',
+  800: '#6b21a8',
+  900: '#581c87',
 };
 
 const muiTheme = createTheme({
   palette: {
     primary: {
-      main: primary[500],
-      light: primary[300],
-      dark: primary[700],
+      main: pink[500],
+      light: pink[300],
+      dark: pink[700],
       contrastText: '#ffffff',
     },
     secondary: {
-      main: lljt[500],
-      light: lljt[400],
-      dark: lljt[700],
+      main: purple[500],
+      light: purple[400],
+      dark: purple[700],
       contrastText: '#ffffff',
     },
     background: {
-      default: orange[50], 
+      default: pink[50], 
       paper: '#ffffff',
     },
     text: {
-      primary: lljt[900], 
-      secondary: lljt[700], 
+      primary: purple[900], 
+      secondary: purple[700], 
     },
   },
   typography: {
@@ -127,9 +114,9 @@ const muiTheme = createTheme({
           },
         },
         containedPrimary: {
-          background: `linear-gradient(135deg, ${primary[500]} 0%, ${primary[600]} 100%)`,
+          background: `linear-gradient(135deg, ${pink[500]} 0%, ${pink[600]} 100%)`,
           '&:hover': {
-            background: `linear-gradient(135deg, ${primary[600]} 0%, ${primary[700]} 100%)`,
+            background: `linear-gradient(135deg, ${pink[600]} 0%, ${pink[700]} 100%)`,
           },
         },
       },
@@ -148,12 +135,12 @@ const muiTheme = createTheme({
         root: {
           '& .MuiOutlinedInput-root': {
             borderRadius: '12px',
-            backgroundColor: orange[50],
+            backgroundColor: pink[50],
             '&:hover .MuiOutlinedInput-notchedOutline': {
-              borderColor: primary[400],
+              borderColor: pink[400],
             },
             '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
-              borderColor: primary[500],
+              borderColor: pink[500],
             },
           },
         },

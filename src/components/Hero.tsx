@@ -72,7 +72,7 @@ const Hero = () => {
                 lineHeight: 1.1,
                 letterSpacing: '-0.02em',
               }}>
-              LLJT
+              Belle Delphine
             </Typography>
 
             <Typography
@@ -81,14 +81,14 @@ const Hero = () => {
               sx={{
                 fontSize: { xs: '1.5rem', sm: '2rem', md: '2.5rem' },
                 fontWeight: 600,
-                background: 'linear-gradient(45deg, #f59e0b, #f97316)',
+                background: 'linear-gradient(45deg, #ec4899, #f472b6)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 backgroundClip: 'text',
                 mb: 3,
                 lineHeight: 1.2,
               }}>
-              Let's Learn Japanese Together
+              Official Website
             </Typography>
 
             <Typography
@@ -102,7 +102,7 @@ const Hero = () => {
                 fontSize: { xs: '1.1rem', md: '1.25rem' },
                 px: { xs: 1, sm: 0 },
               }}>
-              A modern and interactive Japanese learning platform. Discover the beauty of the Japanese language with our community.
+              Welcome to the official Belle Delphine website. Discover exclusive content, latest updates, and connect with the community.
             </Typography>
 
             <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} justifyContent='center' alignItems='center' sx={{ mb: 6 }}>
@@ -126,7 +126,7 @@ const Hero = () => {
                   },
                   transition: 'all 0.3s ease-in-out',
                 }}>
-                Discover
+                Explore Content
               </Button>
 
               <Button
@@ -150,7 +150,7 @@ const Hero = () => {
                   },
                   transition: 'all 0.3s ease-in-out',
                 }}>
-                Learn More
+                Watch Videos
               </Button>
             </Stack>
           </Box>

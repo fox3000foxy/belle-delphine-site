@@ -36,7 +36,7 @@ const Navigation = () => {
             <Box
               component="img"
               src={logo}
-              alt="LLJT Logo"
+              alt="Belle Delphine Logo"
               sx={{
                 height: 72,
                 width: 72,
@@ -54,7 +54,7 @@ const Navigation = () => {
                 transition: 'color 0.3s ease-in-out',
                 fontFamily: '"Inter", sans-serif',
               }}>
-              LLJT
+              Belle Delphine
             </Typography>
           </Box>
 
@@ -88,7 +88,7 @@ const Navigation = () => {
                   fontWeight: 600,
                   textTransform: 'none',
                 }}>
-                Get Started
+                Subscribe
               </Button>
             </Box>
           )}
@@ -126,7 +126,7 @@ const Navigation = () => {
               mb: 3,
             }}>
             <Typography variant='h6' component='div' sx={{ fontWeight: 700 }}>
-              LLJT
+              Belle Delphine
             </Typography>
             <IconButton onClick={() => setIsMenuOpen(false)}>
               <CloseIcon />
@@ -170,7 +170,7 @@ const Navigation = () => {
               fontWeight: 600,
               textTransform: 'none',
             }}>
-            Get Started
+            Subscribe
           </Button>
         </Box>
       </Drawer>

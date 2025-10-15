@@ -29,9 +29,9 @@ const Footer = () => {
                 fontSize: { xs: '1.75rem', md: '2rem' },
                 color: 'background.paper',
               }}>
-              LLJT{' '}
+              Belle Delphine{' '}
               <Typography component='span' variant='inherit' sx={{ color: 'primary.main' }}>
-                Learning Platform
+                Official
               </Typography>
             </Typography>
             <Typography
@@ -42,7 +42,7 @@ const Footer = () => {
                 mb: 3,
                 maxWidth: '400px',
               }}>
-              A Japanese learning platform that redefines traditional teaching methods. Built with passion for Japanese language and culture.
+              The official website of Belle Delphine. Discover exclusive content, latest updates, and connect with the community.
             </Typography>
             <Stack direction='row' spacing={2}>
               <IconButton
@@ -137,10 +137,10 @@ const Footer = () => {
                 mb: 2,
                 color: 'background.paper',
               }}>
-              Support
+              Content
             </Typography>
             <Stack spacing={1}>
-              {['Documentation', 'FAQ', 'Support', 'Community'].map(item => (
+              {['Premium', 'Merchandise', 'OnlyFans', 'Patreon'].map(item => (
                 <Link
                   key={item}
                   href='#'
@@ -176,10 +176,10 @@ const Footer = () => {
               color: 'background.default',
               textAlign: { xs: 'center', md: 'left' },
             }}>
-            © 2024 LLJT - Let's Learn Japanese Together. All rights reserved.
+            © 2024 Belle Delphine Official Website. All rights reserved.
           </Typography>
           <Stack direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 1, sm: 3 }} alignItems='center'>
-            {['Privacy Policy', 'Terms of Service', 'Cookies'].map(item => (
+            {['Privacy Policy', 'Terms of Service', 'DMCA'].map(item => (
               <Link
                 key={item}
                 href='#'

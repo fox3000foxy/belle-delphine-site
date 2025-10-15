@@ -29,7 +29,7 @@ const About = () => {
               }}>
               About{' '}
               <Typography component='span' variant='inherit' sx={{ color: 'primary.main' }}>
-                LLJT
+                Belle Delphine
               </Typography>
             </Typography>
 
@@ -41,7 +41,7 @@ const About = () => {
                 lineHeight: 1.7,
                 fontSize: { xs: '1rem', md: '1.125rem' },
               }}>
-              LLJT (Let's Learn Japanese Together) was born from a shared passion for the Japanese language and culture. Our mission is to create an interactive and supportive learning community.
+              Belle Delphine is a renowned content creator, model, and internet personality known for her unique aesthetic, creative content, and engaging online presence. With millions of followers across various platforms, she has become a prominent figure in digital entertainment.
             </Typography>
 
             <Typography
@@ -52,7 +52,7 @@ const About = () => {
                 lineHeight: 1.7,
                 fontSize: { xs: '1rem', md: '1.125rem' },
               }}>
-              We believe that learning Japanese should be accessible, fun, and enriching. Every feature has been designed to support your progress, from absolute beginner to advanced level.
+              From cosplay and artistic photography to exclusive content and brand collaborations, Belle continues to push creative boundaries and connect with her community in innovative ways.
             </Typography>
 
             <List sx={{ mb: 4 }}>
@@ -61,7 +61,7 @@ const About = () => {
                   <TrendingUpIcon sx={{ color: 'primary.main' }} />
                 </ListItemIcon>
                 <ListItemText
-                  primary='Progressive Learning'
+                  primary='Creative Content'
                   primaryTypographyProps={{
                     fontWeight: 600,
                     color: 'text.primary',
@@ -73,7 +73,7 @@ const About = () => {
                   <PeopleIcon sx={{ color: 'secondary.main' }} />
                 </ListItemIcon>
                 <ListItemText
-                  primary='Supportive Community'
+                  primary='Engaged Community'
                   primaryTypographyProps={{
                     fontWeight: 600,
                     color: 'text.primary',
@@ -85,7 +85,7 @@ const About = () => {
                   <PublicIcon sx={{ color: 'secondary.main' }} />
                 </ListItemIcon>
                 <ListItemText
-                  primary='Authentic Japanese Culture'
+                  primary='Global Reach'
                   primaryTypographyProps={{
                     fontWeight: 600,
                     color: 'text.primary',
@@ -112,7 +112,7 @@ const About = () => {
                 },
                 transition: 'all 0.3s ease-in-out',
               }}>
-              Discover Our Method
+              Discover My World
             </Button>
           </Box>
 
@@ -202,27 +202,27 @@ const About = () => {
                         <Box
                           sx={{
                             height: 80,
-                            background: 'linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%)',
+                            background: 'linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%)',
                             borderRadius: 2,
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
                           }}>
                           <Typography variant='h6' sx={{ color: 'primary.main', fontWeight: 600 }}>
-                            ひらがな
+                            ♡
                           </Typography>
                         </Box>
                         <Box
                           sx={{
                             height: 80,
-                            background: 'linear-gradient(135deg, #fed7aa 0%, #fdba74 100%)',
+                            background: 'linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%)',
                             borderRadius: 2,
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
                           }}>
                           <Typography variant='h6' sx={{ color: 'secondary.dark', fontWeight: 600 }}>
-                            カタカナ
+                            ★
                           </Typography>
                         </Box>
                       </Box>

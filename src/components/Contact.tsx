@@ -1,4 +1,4 @@
-import { Email as EmailIcon, Facebook as FacebookIcon, Instagram as InstagramIcon, LinkedIn as LinkedInIcon, LocationOn as LocationIcon, Phone as PhoneIcon, Send as SendIcon, Twitter as TwitterIcon } from '@mui/icons-material';
+import { Email as EmailIcon, Facebook as FacebookIcon, Instagram as InstagramIcon, LinkedIn as LinkedInIcon, Send as SendIcon, Twitter as TwitterIcon } from '@mui/icons-material';
 import { Alert, Box, Button, Card, CardContent, Container, IconButton, List, ListItem, ListItemIcon, ListItemText, Stack, TextField, Typography } from '@mui/material';
 import { useState } from 'react';
 
@@ -45,9 +45,9 @@ const Contact = () => {
               mb: 3,
               fontSize: { xs: '2.5rem', md: '3.5rem' },
             }}>
-            Stay in{' '}
+            Connect with{' '}
             <Typography component='span' variant='inherit' sx={{ color: 'primary.main' }}>
-              Touch
+              Belle
             </Typography>
           </Typography>
           <Typography
@@ -59,7 +59,7 @@ const Contact = () => {
               lineHeight: 1.6,
               fontSize: { xs: '1.1rem', md: '1.25rem' },
             }}>
-            Have a question about learning Japanese or want to join our community? Don't hesitate to contact us, we'd love to chat with you.
+            Follow Belle Delphine on social media for the latest updates, exclusive content, and community interactions.
           </Typography>
         </Box>
 
@@ -102,12 +102,12 @@ const Contact = () => {
                   sx={{ ml: 2 }}
                   primary={
                     <Typography variant='body2' sx={{ color: 'background.default', fontWeight: 500 }}>
-                      Email
+                      Business Email
                     </Typography>
                   }
                   secondary={
                     <Typography variant='body1' sx={{ color: 'background.paper', fontWeight: 500 }}>
-                      contact@lljt-app.com
+                      business@belledelphine.com
                     </Typography>
                   }
                 />
@@ -125,19 +125,19 @@ const Contact = () => {
                       alignItems: 'center',
                       justifyContent: 'center',
                     }}>
-                    <PhoneIcon sx={{ color: 'background.paper' }} />
+                    <InstagramIcon sx={{ color: 'background.paper' }} />
                   </Box>
                 </ListItemIcon>
                 <ListItemText
                   sx={{ ml: 2 }}
                   primary={
                     <Typography variant='body2' sx={{ color: 'background.default', fontWeight: 500 }}>
-                      Phone
+                      Instagram
                     </Typography>
                   }
                   secondary={
                     <Typography variant='body1' sx={{ color: 'background.paper', fontWeight: 500 }}>
-                      +33 1 23 45 67 89
+                      @belle.delphine
                     </Typography>
                   }
                 />
@@ -155,19 +155,19 @@ const Contact = () => {
                       alignItems: 'center',
                       justifyContent: 'center',
                     }}>
-                    <LocationIcon sx={{ color: 'background.paper' }} />
+                    <TwitterIcon sx={{ color: 'background.paper' }} />
                   </Box>
                 </ListItemIcon>
                 <ListItemText
                   sx={{ ml: 2 }}
                   primary={
                     <Typography variant='body2' sx={{ color: 'background.default', fontWeight: 500 }}>
-                      Address
+                      Twitter/X
                     </Typography>
                   }
                   secondary={
                     <Typography variant='body1' sx={{ color: 'background.paper', fontWeight: 500 }}>
-                      Paris, France
+                      @bunnydelphine
                     </Typography>
                   }
                 />
@@ -357,7 +357,7 @@ const Contact = () => {
                         },
                         transition: 'all 0.3s ease-in-out',
                       }}>
-                      Send Message
+                      Send Message to Belle
                     </Button>
                   </Box>
                 </Box>

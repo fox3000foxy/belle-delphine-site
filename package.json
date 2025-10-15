@@ -1,17 +1,17 @@
 {
-  "name": "beautiful-react-app",
+  "name": "belle-delphine-official-website",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Une magnifique application React construite avec TypeScript et Tailwind CSS",
-  "author": "Votre Nom",
+  "description": "Official website of Belle Delphine - Content creator and internet personality",
+  "author": "Belle Delphine",
   "keywords": [
+    "belle-delphine",
+    "content-creator",
+    "official-website",
     "react",
     "typescript",
-    "tailwindcss",
-    "vite",
-    "beautiful",
-    "modern"
+    "vite"
   ],
   "scripts": {
     "dev": "vite",

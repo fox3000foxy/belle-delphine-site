@@ -1,37 +1,37 @@
-import { MenuBook as BookIcon, Favorite as HeartIcon, PhoneIphone as MobileIcon, People as PeopleIcon, School as SchoolIcon, Star as StarIcon } from '@mui/icons-material';
+import { Camera as CameraIcon, Favorite as HeartIcon, People as PeopleIcon, Shop as ShopIcon, Star as StarIcon, VideoLibrary as VideoIcon } from '@mui/icons-material';
 import { Box, Card, CardContent, Container, Typography, Zoom } from '@mui/material';
 
 const Features = () => {
   const features = [
     {
-      icon: SchoolIcon,
-      title: 'Interactive Learning',
-      description: 'Modern learning methods with interactive exercises to master hiragana, katakana, and kanji.',
+      icon: VideoIcon,
+      title: 'Exclusive Videos',
+      description: 'Access to premium video content, behind-the-scenes footage, and exclusive releases.',
+    },
+    {
+      icon: CameraIcon,
+      title: 'Photography Sets',
+      description: 'High-quality photoshoots, artistic content, and professional photography collections.',
+    },
+    {
+      icon: ShopIcon,
+      title: 'Official Merchandise',
+      description: 'Unique merchandise, limited edition items, and exclusive products available in the official store.',
     },
     {
       icon: PeopleIcon,
-      title: 'Active Community',
-      description: 'Join a passionate community of Japanese learners to practice and progress together.',
-    },
-    {
-      icon: BookIcon,
-      title: 'Complete Resources',
-      description: 'Access to a complete library of lessons, exercises, and educational materials adapted to your level.',
-    },
-    {
-      icon: MobileIcon,
-      title: 'Accessible Everywhere',
-      description: 'Learn Japanese wherever you are with our responsive platform optimized for all devices.',
+      title: 'Community Access',
+      description: 'Join an exclusive community of fans and get direct access to updates and interactions.',
     },
     {
       icon: StarIcon,
-      title: 'Progress Tracking',
-      description: 'Personalized progress system to track your advancement and celebrate your achievements.',
+      title: 'Premium Content',
+      description: 'Subscribe for access to premium content, early releases, and member-only perks.',
     },
     {
       icon: HeartIcon,
-      title: 'Shared Passion',
-      description: 'A platform created by enthusiasts for enthusiasts of Japanese culture and language.',
+      title: 'Personal Connection',
+      description: 'Direct interaction opportunities, personalized content, and exclusive fan experiences.',
     },
   ];
 
@@ -53,7 +53,7 @@ const Features = () => {
               mb: 3,
               fontSize: { xs: '2.5rem', md: '3.5rem' },
             }}>
-            Extraordinary{' '}
+            Exclusive{' '}
             <Typography component='span' variant='inherit' sx={{ color: 'primary.main' }}>
               Features
             </Typography>
@@ -67,7 +67,7 @@ const Features = () => {
               lineHeight: 1.6,
               fontSize: { xs: '1.1rem', md: '1.25rem' },
             }}>
-            Discover all the features that make LLJT an exceptional learning platform for mastering Japanese.
+            Discover all the exclusive features and content that make Belle Delphine's platform unique and engaging.
           </Typography>
         </Box>
 
@@ -112,7 +112,7 @@ const Features = () => {
                           width: 80,
                           height: 80,
                           borderRadius: '50%',
-                          background: `linear-gradient(135deg, ${feature.icon === SchoolIcon ? '#ef4444' : feature.icon === PeopleIcon ? '#f97316' : feature.icon === BookIcon ? '#f59e0b' : feature.icon === MobileIcon ? '#f97316' : feature.icon === StarIcon ? '#dc2626' : '#ec4899'} 0%, ${feature.icon === SchoolIcon ? '#dc2626' : feature.icon === PeopleIcon ? '#ea580c' : feature.icon === BookIcon ? '#d97706' : feature.icon === MobileIcon ? '#ea580c' : feature.icon === StarIcon ? '#b91c1c' : '#db2777'} 100%)`,
+                          background: `linear-gradient(135deg, ${feature.icon === VideoIcon ? '#ef4444' : feature.icon === PeopleIcon ? '#f97316' : feature.icon === CameraIcon ? '#f59e0b' : feature.icon === ShopIcon ? '#f97316' : feature.icon === StarIcon ? '#dc2626' : '#ec4899'} 0%, ${feature.icon === VideoIcon ? '#dc2626' : feature.icon === PeopleIcon ? '#ea580c' : feature.icon === CameraIcon ? '#d97706' : feature.icon === ShopIcon ? '#ea580c' : feature.icon === StarIcon ? '#b91c1c' : '#db2777'} 100%)`,
                           mb: 3,
                           transition: 'transform 0.3s ease-in-out',
                           '&:hover': {
