@@ -38,8 +38,8 @@ const Navigation = () => {
               src={logo}
               alt="Belle Delphine Logo"
               sx={{
-                height: 72,
-                width: 72,
+                height: 32,
+                width: 32,
                 mr: 1,
                 transition: 'filter 0.3s ease-in-out',
                 filter: trigger ? 'none' : 'brightness(0) invert(1)',
