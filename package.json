@@ -19,7 +19,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "serve": "vite serve --port 7867",
-    "start": "node start.mjs",
+    "start": "node start.mjs --host",
     "format": "npx prettier --write src --config prettier.json"
   },
   "dependencies": {
