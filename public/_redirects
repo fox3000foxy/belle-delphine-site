@@ -1,5 +1,2 @@
-# SPA Routes - Serve index.html for React Router paths
-/cosplay /index.html 200
-/gaming /index.html 200
-/about /index.html 200
-/contact /index.html 200
+# SPA Routes - Serve index.html for all non-asset paths
+/* /index.html 200
