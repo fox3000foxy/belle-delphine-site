@@ -1,5 +1,6 @@
 import { Facebook as FacebookIcon, Instagram as InstagramIcon, Twitter as TwitterIcon, YouTube as YouTubeIcon } from '@mui/icons-material';
 import { Box, Container, Divider, IconButton, Link, Stack, Typography } from '@mui/material';
+import { Link as RouterLink } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -124,23 +125,51 @@ const Footer = () => {
               Quick Links
             </Typography>
             <Stack spacing={1}>
-              {['Home', 'Features', 'About', 'Contact'].map(item => (
-                <Link
-                  key={item}
-                  href={`#${item.toLowerCase()}`}
-                  underline='none'
-                  sx={{
-                    color: 'background.default',
-                    '&:hover': {
-                      color: 'primary.main',
-                    },
-                    transition: 'color 0.3s ease-in-out',
-                    display: 'block',
-                    py: 0.5,
-                  }}>
-                  {item}
-                </Link>
-              ))}
+              <Link
+                component={RouterLink}
+                to='/'
+                underline='none'
+                sx={{
+                  color: 'background.default',
+                  '&:hover': {
+                    color: 'primary.main',
+                  },
+                  transition: 'color 0.3s ease-in-out',
+                  display: 'block',
+                  py: 0.5,
+                }}>
+                Home
+              </Link>
+              <Link
+                component={RouterLink}
+                to='/about'
+                underline='none'
+                sx={{
+                  color: 'background.default',
+                  '&:hover': {
+                    color: 'primary.main',
+                  },
+                  transition: 'color 0.3s ease-in-out',
+                  display: 'block',
+                  py: 0.5,
+                }}>
+                About
+              </Link>
+              <Link
+                component={RouterLink}
+                to='/contact'
+                underline='none'
+                sx={{
+                  color: 'background.default',
+                  '&:hover': {
+                    color: 'primary.main',
+                  },
+                  transition: 'color 0.3s ease-in-out',
+                  display: 'block',
+                  py: 0.5,
+                }}>
+                Contact
+              </Link>
             </Stack>
           </Box>
 
@@ -156,23 +185,70 @@ const Footer = () => {
               Content
             </Typography>
             <Stack spacing={1}>
-              {['Cosplay Gallery', 'Gaming Videos', 'YouTube', 'Merchandise'].map(item => (
-                <Link
-                  key={item}
-                  href='#'
-                  underline='none'
-                  sx={{
-                    color: 'background.default',
-                    '&:hover': {
-                      color: 'primary.main',
-                    },
-                    transition: 'color 0.3s ease-in-out',
-                    display: 'block',
-                    py: 0.5,
-                  }}>
-                  {item}
-                </Link>
-              ))}
+              <Link
+                component={RouterLink}
+                to='/cosplay'
+                underline='none'
+                sx={{
+                  color: 'background.default',
+                  '&:hover': {
+                    color: 'primary.main',
+                  },
+                  transition: 'color 0.3s ease-in-out',
+                  display: 'block',
+                  py: 0.5,
+                }}>
+                Cosplay Gallery
+              </Link>
+              <Link
+                component={RouterLink}
+                to='/gaming'
+                underline='none'
+                sx={{
+                  color: 'background.default',
+                  '&:hover': {
+                    color: 'primary.main',
+                  },
+                  transition: 'color 0.3s ease-in-out',
+                  display: 'block',
+                  py: 0.5,
+                }}>
+                Gaming Videos
+              </Link>
+              <Link
+                component='a'
+                href='https://www.youtube.com/channel/UCXvKUavCtDOlA8bT1i2tI3w'
+                target='_blank'
+                rel='noopener noreferrer'
+                underline='none'
+                sx={{
+                  color: 'background.default',
+                  '&:hover': {
+                    color: 'primary.main',
+                  },
+                  transition: 'color 0.3s ease-in-out',
+                  display: 'block',
+                  py: 0.5,
+                }}>
+                YouTube
+              </Link>
+              <Link
+                component='a'
+                href='https://www.instagram.com/belle.delphine'
+                target='_blank'
+                rel='noopener noreferrer'
+                underline='none'
+                sx={{
+                  color: 'background.default',
+                  '&:hover': {
+                    color: 'primary.main',
+                  },
+                  transition: 'color 0.3s ease-in-out',
+                  display: 'block',
+                  py: 0.5,
+                }}>
+                Instagram
+              </Link>
             </Stack>
           </Box>
         </Box>

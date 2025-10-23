@@ -1,6 +1,7 @@
 import { Close as CloseIcon, Menu as MenuIcon } from '@mui/icons-material';
 import { AppBar, Box, Button, Drawer, IconButton, List, ListItem, ListItemButton, ListItemText, Toolbar, Typography, useMediaQuery, useScrollTrigger, useTheme } from '@mui/material';
 import { useState } from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 import logo from '../assets/logo.svg';
 
 const Navigation = () => {
@@ -14,10 +15,11 @@ const Navigation = () => {
   });
 
   const navItems = [
-    { name: 'Home', href: '#hero' },
-    { name: 'Features', href: '#features' },
-    { name: 'About', href: '#about' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', path: '/' },
+    { name: 'Cosplay', path: '/cosplay' },
+    { name: 'Gaming', path: '/gaming' },
+    { name: 'About', path: '/about' },
+    { name: 'Contact', path: '/contact' },
   ];
 
   return (
@@ -63,7 +65,8 @@ const Navigation = () => {
               {navItems.map(item => (
                 <Button
                   key={item.name}
-                  href={item.href}
+                  component={RouterLink}
+                  to={item.path}
                   sx={{
                     color: trigger ? 'text.primary' : 'white',
                     fontWeight: 500,
@@ -80,6 +83,10 @@ const Navigation = () => {
               <Button
                 variant='contained'
                 color='primary'
+                component='a'
+                href='https://www.youtube.com/channel/UCXvKUavCtDOlA8bT1i2tI3w'
+                target='_blank'
+                rel='noopener noreferrer'
                 sx={{
                   ml: 2,
                   px: 3,
@@ -137,8 +144,8 @@ const Navigation = () => {
             {navItems.map(item => (
               <ListItem key={item.name} disablePadding>
                 <ListItemButton
-                  component='a'
-                  href={item.href}
+                  component={RouterLink}
+                  to={item.path}
                   onClick={() => setIsMenuOpen(false)}
                   sx={{
                     borderRadius: 2,
@@ -163,6 +170,10 @@ const Navigation = () => {
             variant='contained'
             color='primary'
             fullWidth
+            component='a'
+            href='https://www.youtube.com/channel/UCXvKUavCtDOlA8bT1i2tI3w'
+            target='_blank'
+            rel='noopener noreferrer'
             sx={{
               mt: 2,
               py: 1.5,

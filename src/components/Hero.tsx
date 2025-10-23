@@ -1,6 +1,7 @@
 import { KeyboardArrowDown as ArrowDownIcon, ArrowForward as ArrowIcon, PlayArrow as PlayIcon } from '@mui/icons-material';
 import { Box, Button, Container, Fade, Stack, Typography, useTheme } from '@mui/material';
 import { useEffect, useState } from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -107,6 +108,8 @@ const Hero = () => {
 
             <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} justifyContent='center' alignItems='center' sx={{ mb: 6 }}>
               <Button
+                component={RouterLink}
+                to='/cosplay'
                 variant='contained'
                 size='large'
                 endIcon={<ArrowIcon />}
@@ -130,6 +133,8 @@ const Hero = () => {
               </Button>
 
               <Button
+                component={RouterLink}
+                to='/gaming'
                 variant='outlined'
                 size='large'
                 startIcon={<PlayIcon />}

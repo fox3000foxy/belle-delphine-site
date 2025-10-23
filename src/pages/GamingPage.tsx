@@ -1,0 +1,130 @@
+import { Box, Container, Typography, Card, CardContent, Button } from '@mui/material';
+import { SportsEsports as GamingIcon, VideoLibrary as VideoIcon, LiveTv as LiveIcon } from '@mui/icons-material';
+
+const GamingPage = () => {
+  const gamingContent = [
+    {
+      icon: VideoIcon,
+      title: 'Gaming Videos',
+      description: 'Watch my latest gaming videos featuring popular games, walkthroughs, and funny moments.',
+      color: '#ef4444',
+    },
+    {
+      icon: LiveIcon,
+      title: 'Live Streams',
+      description: 'Join me live on Twitch and YouTube for interactive gaming sessions and community fun.',
+      color: '#f97316',
+    },
+    {
+      icon: GamingIcon,
+      title: 'Game Reviews',
+      description: 'Check out my honest reviews and first impressions of the latest and greatest games.',
+      color: '#ec4899',
+    },
+  ];
+
+  return (
+    <Box sx={{ pt: 10 }}>
+      <Container maxWidth='lg' sx={{ py: 8 }}>
+        <Typography
+          variant='h2'
+          component='h1'
+          sx={{
+            fontWeight: 700,
+            textAlign: 'center',
+            mb: 2,
+            fontSize: { xs: '2.5rem', md: '3.5rem' },
+          }}>
+          Gaming{' '}
+          <Typography component='span' variant='inherit' sx={{ color: 'primary.main' }}>
+            Content
+          </Typography>
+        </Typography>
+        <Typography
+          variant='h6'
+          sx={{
+            textAlign: 'center',
+            color: 'text.secondary',
+            mb: 8,
+            maxWidth: '800px',
+            mx: 'auto',
+          }}>
+          Dive into my gaming world! From epic gameplay sessions to hilarious moments and game reviews.
+        </Typography>
+
+        <Box
+          sx={{
+            display: 'grid',
+            gridTemplateColumns: { xs: '1fr', md: 'repeat(3, 1fr)' },
+            gap: 4,
+            mb: 8,
+          }}>
+          {gamingContent.map((item, index) => {
+            const IconComponent = item.icon;
+            return (
+              <Card
+                key={index}
+                sx={{
+                  p: 3,
+                  textAlign: 'center',
+                  transition: 'all 0.3s ease-in-out',
+                  '&:hover': {
+                    transform: 'translateY(-8px)',
+                    boxShadow: `0 12px 24px ${item.color}40`,
+                  },
+                }}>
+                <CardContent>
+                  <Box
+                    sx={{
+                      display: 'inline-flex',
+                      p: 2,
+                      borderRadius: '50%',
+                      backgroundColor: `${item.color}20`,
+                      mb: 2,
+                    }}>
+                    <IconComponent sx={{ fontSize: '3rem', color: item.color }} />
+                  </Box>
+                  <Typography variant='h5' sx={{ fontWeight: 600, mb: 2 }}>
+                    {item.title}
+                  </Typography>
+                  <Typography variant='body1' sx={{ color: 'text.secondary' }}>
+                    {item.description}
+                  </Typography>
+                </CardContent>
+              </Card>
+            );
+          })}
+        </Box>
+
+        <Box sx={{ textAlign: 'center' }}>
+          <Button
+            variant='contained'
+            size='large'
+            component='a'
+            href='https://www.youtube.com/channel/UCXvKUavCtDOlA8bT1i2tI3w'
+            target='_blank'
+            rel='noopener noreferrer'
+            sx={{
+              px: 4,
+              py: 2,
+              borderRadius: '50px',
+              fontWeight: 600,
+              fontSize: '1.1rem',
+              textTransform: 'none',
+              background: 'linear-gradient(135deg, #ef4444 0%, #dc2626 100%)',
+              boxShadow: '0 8px 25px rgba(239, 68, 68, 0.3)',
+              '&:hover': {
+                transform: 'translateY(-2px)',
+                boxShadow: '0 12px 35px rgba(239, 68, 68, 0.4)',
+              },
+              transition: 'all 0.3s ease-in-out',
+            }}>
+            Watch on YouTube
+          </Button>
+        </Box>
+      </Container>
+    </Box>
+  );
+};
+
+export default GamingPage;
