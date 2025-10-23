@@ -1,0 +1,11 @@
+# Redirects for React Router (SPA)
+# All routes should serve index.html with 200 status (not 301/302)
+
+# Known routes
+/cosplay /index.html 200
+/gaming /index.html 200
+/about /index.html 200
+/contact /index.html 200
+
+# Fallback for any other route (React Router will handle 404)
+/* /index.html 200

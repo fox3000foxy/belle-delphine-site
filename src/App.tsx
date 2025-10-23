@@ -9,6 +9,7 @@ import ContactPage from './pages/ContactPage';
 import CosplayPage from './pages/CosplayPage';
 import GamingPage from './pages/GamingPage';
 import HomePage from './pages/HomePage';
+import NotFoundPage from './pages/NotFoundPage';
 import muiTheme from './theme/muiTheme';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
             <Route path='/gaming' element={<GamingPage />} />
             <Route path='/about' element={<AboutPage />} />
             <Route path='/contact' element={<ContactPage />} />
+            <Route path='*' element={<NotFoundPage />} />
           </Routes>
           <Footer />
         </div>
