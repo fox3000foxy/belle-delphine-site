@@ -1,4 +1,4 @@
-import { Facebook as FacebookIcon, Instagram as InstagramIcon, Twitter as TwitterIcon, YouTube as YouTubeIcon } from '@mui/icons-material';
+import { Facebook as FacebookIcon, Instagram as InstagramIcon, Twitter as TwitterIcon, YouTube as YouTubeIcon, Forum as DiscordIcon } from '@mui/icons-material';
 import { Box, Container, Divider, IconButton, Link, Stack, Typography } from '@mui/material';
 
 const Footer = () => {
@@ -108,6 +108,22 @@ const Footer = () => {
                   transition: 'all 0.3s ease-in-out',
                 }}>
                 <YouTubeIcon />
+              </IconButton>
+              <IconButton
+                component='a'
+                href='https://discord.gg/FxFG7VzX9S'
+                target='_blank'
+                rel='noopener noreferrer'
+                sx={{
+                  backgroundColor: '#5865F2',
+                  color: 'background.paper',
+                  '&:hover': {
+                    backgroundColor: '#4752C4',
+                    color: 'background.paper',
+                  },
+                  transition: 'all 0.3s ease-in-out',
+                }}>
+                <DiscordIcon />
               </IconButton>
             </Stack>
           </Box>

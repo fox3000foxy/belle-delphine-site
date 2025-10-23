@@ -1,4 +1,4 @@
-import { Email as EmailIcon, Facebook as FacebookIcon, Instagram as InstagramIcon, Send as SendIcon, Twitter as TwitterIcon, YouTube as YouTubeIcon } from '@mui/icons-material';
+import { Email as EmailIcon, Facebook as FacebookIcon, Instagram as InstagramIcon, Send as SendIcon, Twitter as TwitterIcon, YouTube as YouTubeIcon, Forum as DiscordIcon } from '@mui/icons-material';
 import { Alert, Box, Button, Card, CardContent, Container, IconButton, List, ListItem, ListItemIcon, ListItemText, Stack, TextField, Typography } from '@mui/material';
 import { useState } from 'react';
 
@@ -280,6 +280,23 @@ const Contact = () => {
                   },
                 }}>
                 <YouTubeIcon />
+              </IconButton>
+              <IconButton
+                component='a'
+                href='https://discord.gg/FxFG7VzX9S'
+                target='_blank'
+                rel='noopener noreferrer'
+                sx={{
+                  backgroundColor: '#5865F2',
+                  color: 'background.paper',
+                  transition: 'all 0.3s ease-in-out',
+                  '&:hover': { 
+                    backgroundColor: '#4752C4',
+                    transform: 'translateY(-5px) rotate(10deg) scale(1.1)',
+                    boxShadow: '0 10px 20px rgba(88, 101, 242, 0.4)',
+                  },
+                }}>
+                <DiscordIcon />
               </IconButton>
             </Stack>
           </Box>

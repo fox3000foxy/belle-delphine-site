@@ -59,6 +59,7 @@ export const SOCIAL_LINKS = [
   { name: 'Twitter', icon: ['fab', 'twitter'], href: 'https://twitter.com/bunnydelphine' },
   { name: 'YouTube', icon: ['fab', 'youtube'], href: 'https://youtube.com/@belledelphine' },
   { name: 'TikTok', icon: ['fab', 'tiktok'], href: 'https://tiktok.com/@belledelphine' },
+  { name: 'Discord', icon: ['fab', 'discord'], href: 'https://discord.gg/FxFG7VzX9S' },
   { name: 'Patreon', icon: ['fab', 'patreon'], href: '#' },
 ];
 
