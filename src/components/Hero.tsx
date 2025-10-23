@@ -198,7 +198,7 @@ const Hero = () => {
 
               <Button
                 component={RouterLink}
-                to='/gaming'
+                to='#gaming'
                 variant='outlined'
                 size='large'
                 startIcon={<PlayIcon />}

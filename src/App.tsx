@@ -26,10 +26,10 @@ function App() {
           <Navigation />
           <Routes>
             <Route path='/' element={<HomePage />} />
-            <Route path='/cosplay' element={<CosplayPage />} />
-            <Route path='/gaming' element={<GamingPage />} />
-            <Route path='/about' element={<AboutPage />} />
-            <Route path='/contact' element={<ContactPage />} />
+            <Route path='/#cosplay' element={<CosplayPage />} />
+            <Route path='/#gaming' element={<GamingPage />} />
+            <Route path='/#about' element={<AboutPage />} />
+            <Route path='/#contact' element={<ContactPage />} />
             <Route path='*' element={<NotFoundPage />} />
           </Routes>
           <Footer />

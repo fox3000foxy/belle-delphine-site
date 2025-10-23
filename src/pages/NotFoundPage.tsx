@@ -137,10 +137,10 @@ const NotFoundPage = () => {
                 mt: 2,
               }}>
               {[
-                { name: 'Cosplay', path: '/cosplay' },
-                { name: 'Gaming', path: '/gaming' },
-                { name: 'About', path: '/about' },
-                { name: 'Contact', path: '/contact' },
+                { name: 'Cosplay', path: '/#cosplay' },
+                { name: 'Gaming', path: '/#gaming' },
+                { name: 'About', path: '/#about' },
+                { name: 'Contact', path: '/#contact' },
               ].map((link) => (
                 <Button
                   key={link.name}
