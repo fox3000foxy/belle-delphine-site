@@ -41,12 +41,12 @@ const muiTheme = createTheme({
       contrastText: '#ffffff',
     },
     background: {
-      default: pink[50], 
+      default: pink[50],
       paper: '#ffffff',
     },
     text: {
-      primary: purple[900], 
-      secondary: purple[700], 
+      primary: purple[900],
+      secondary: purple[700],
     },
   },
   typography: {
@@ -105,7 +105,7 @@ const muiTheme = createTheme({
         root: {
           textTransform: 'none',
           fontWeight: 600,
-          borderRadius: '9999px', 
+          borderRadius: '9999px',
           padding: '12px 24px',
           fontSize: '1rem',
           transition: 'all 0.3s ease-in-out',
@@ -159,5 +159,3 @@ const muiTheme = createTheme({
 });
 
 export default muiTheme;
-
-

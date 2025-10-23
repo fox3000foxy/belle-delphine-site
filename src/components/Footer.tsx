@@ -1,4 +1,4 @@
-import { Facebook as FacebookIcon, Twitter as TwitterIcon, YouTube as YouTubeIcon } from '@mui/icons-material';
+import { Facebook as FacebookIcon, Instagram as InstagramIcon, Twitter as TwitterIcon, YouTube as YouTubeIcon } from '@mui/icons-material';
 import { Box, Container, Divider, IconButton, Link, Stack, Typography } from '@mui/material';
 
 const Footer = () => {
@@ -46,6 +46,10 @@ const Footer = () => {
             </Typography>
             <Stack direction='row' spacing={2}>
               <IconButton
+                component='a'
+                href='https://www.facebook.com/tinkersmell'
+                target='_blank'
+                rel='noopener noreferrer'
                 sx={{
                   backgroundColor: 'secondary.main',
                   color: 'background.paper',
@@ -58,6 +62,10 @@ const Footer = () => {
                 <FacebookIcon />
               </IconButton>
               <IconButton
+                component='a'
+                href='https://twitter.com/bunnydelphine'
+                target='_blank'
+                rel='noopener noreferrer'
                 sx={{
                   backgroundColor: 'secondary.main',
                   color: 'background.paper',
@@ -70,6 +78,26 @@ const Footer = () => {
                 <TwitterIcon />
               </IconButton>
               <IconButton
+                component='a'
+                href='https://www.instagram.com/belle.delphine'
+                target='_blank'
+                rel='noopener noreferrer'
+                sx={{
+                  backgroundColor: 'secondary.main',
+                  color: 'background.paper',
+                  '&:hover': {
+                    backgroundColor: 'primary.main',
+                    color: 'background.paper',
+                  },
+                  transition: 'all 0.3s ease-in-out',
+                }}>
+                <InstagramIcon />
+              </IconButton>
+              <IconButton
+                component='a'
+                href='https://www.youtube.com/channel/UCXvKUavCtDOlA8bT1i2tI3w'
+                target='_blank'
+                rel='noopener noreferrer'
                 sx={{
                   backgroundColor: 'secondary.main',
                   color: 'background.paper',
@@ -191,5 +219,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-

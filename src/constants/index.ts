@@ -1,82 +1,84 @@
-// Constantes de l'application
+// Application constants
 export const APP_CONFIG = {
-  name: 'Magnifique React App',
-  description: 'Une expérience web exceptionnelle construite avec React, TypeScript et Tailwind CSS.',
+  name: 'Belle Delphine Official',
+  description: 'Official website of Belle Delphine - Cosplayer, Gamer, and Creative Content Creator',
   version: '1.0.0',
-  author: 'Votre Nom',
-  email: 'contact@magnifique-app.com',
-  phone: '+33 1 23 45 67 89',
-  location: 'Paris, France',
+  author: 'Belle Delphine',
+  email: 'contact@belledelphine.com',
+  phone: '+44 20 1234 5678',
+  location: 'United Kingdom',
 };
 
-// Données des fonctionnalités
+// Features data
 export const FEATURES_DATA = [
   {
-    icon: 'bolt',
-    title: 'Performance Exceptionnelle',
-    description: 'Construit avec Vite pour un développement ultra-rapide et des performances optimales en production.',
+    icon: 'camera',
+    title: 'Cosplay Gallery',
+    description: 'Stunning cosplay photoshoots featuring characters from anime, games, and pop culture with incredible attention to detail.',
   },
   {
-    icon: 'palette',
-    title: 'Design Moderne',
-    description: 'Interface utilisateur élégante avec Tailwind CSS et des animations fluides pour une expérience visuelle exceptionnelle.',
+    icon: 'gamepad',
+    title: 'Gaming Content',
+    description: 'Live gaming streams, gameplay videos, and gaming reviews covering the latest and greatest games.',
   },
   {
-    icon: 'code',
-    title: 'TypeScript',
-    description: "Développement robuste avec TypeScript pour une meilleure maintenabilité et moins d'erreurs.",
+    icon: 'video',
+    title: 'YouTube Videos',
+    description: 'Creative videos including tutorials, vlogs, challenges, and behind-the-scenes content from photoshoots.',
   },
   {
-    icon: 'mobile',
-    title: 'Responsive Design',
-    description: 'Adapté à tous les écrans, de mobile au desktop, pour une expérience utilisateur optimale partout.',
+    icon: 'smile',
+    title: 'Meme Culture',
+    description: 'Hilarious memes, viral content, and internet culture commentary that keeps the community entertained.',
   },
   {
-    icon: 'rocket',
-    title: 'Optimisé SEO',
-    description: 'Structure optimisée pour les moteurs de recherche avec des performances de chargement exceptionnelles.',
+    icon: 'shopping',
+    title: 'Merchandise',
+    description: 'Official merchandise including prints, clothing, and collectibles featuring original designs and cosplay themes.',
   },
   {
-    icon: 'lock',
-    title: 'Sécurisé',
-    description: 'Meilleures pratiques de sécurité intégrées pour protéger vos données et celles de vos utilisateurs.',
+    icon: 'users',
+    title: 'Fan Community',
+    description: 'Active community of cosplay enthusiasts, gamers, and fans sharing their own creations and connecting.',
   },
 ];
 
 // Navigation
 export const NAV_ITEMS = [
-  { name: 'Accueil', href: '#hero' },
-  { name: 'Fonctionnalités', href: '#features' },
-  { name: 'À Propos', href: '#about' },
+  { name: 'Home', href: '#hero' },
+  { name: 'Content', href: '#features' },
+  { name: 'Portfolio', href: '#gallery' },
+  { name: 'About', href: '#about' },
+  { name: 'Career', href: '#biography' },
   { name: 'Contact', href: '#contact' },
 ];
 
-// Réseaux sociaux
+// Social media links
 export const SOCIAL_LINKS = [
-  { name: 'Facebook', icon: ['fab', 'facebook'], href: '#' },
-  { name: 'Twitter', icon: ['fab', 'twitter'], href: '#' },
-  { name: 'LinkedIn', icon: ['fab', 'linkedin'], href: '#' },
-  { name: 'Instagram', icon: ['fab', 'instagram'], href: '#' },
-  { name: 'YouTube', icon: ['fab', 'youtube'], href: '#' },
+  { name: 'Instagram', icon: ['fab', 'instagram'], href: 'https://instagram.com/belledelphine' },
+  { name: 'Twitter', icon: ['fab', 'twitter'], href: 'https://twitter.com/bunnydelphine' },
+  { name: 'YouTube', icon: ['fab', 'youtube'], href: 'https://youtube.com/@belledelphine' },
+  { name: 'TikTok', icon: ['fab', 'tiktok'], href: 'https://tiktok.com/@belledelphine' },
+  { name: 'Patreon', icon: ['fab', 'patreon'], href: '#' },
 ];
 
-// Liens du footer
+// Footer links
 export const FOOTER_LINKS = {
   quickLinks: [
-    { name: 'Accueil', href: '#' },
-    { name: 'Fonctionnalités', href: '#' },
-    { name: 'À Propos', href: '#' },
-    { name: 'Contact', href: '#' },
+    { name: 'Home', href: '#hero' },
+    { name: 'Content', href: '#features' },
+    { name: 'Portfolio', href: '#gallery' },
+    { name: 'About', href: '#about' },
   ],
   support: [
-    { name: 'Documentation', href: '#' },
+    { name: 'Merchandise', href: '#' },
     { name: 'FAQ', href: '#' },
     { name: 'Support', href: '#' },
-    { name: 'Communauté', href: '#' },
+    { name: 'Community', href: '#' },
   ],
   legal: [
-    { name: 'Politique de confidentialité', href: '#' },
-    { name: "Conditions d'utilisation", href: '#' },
+    { name: 'Privacy Policy', href: '#' },
+    { name: 'Terms of Service', href: '#' },
     { name: 'Cookies', href: '#' },
   ],
 };

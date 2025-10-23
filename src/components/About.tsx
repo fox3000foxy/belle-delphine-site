@@ -41,7 +41,18 @@ const About = () => {
                 lineHeight: 1.7,
                 fontSize: { xs: '1rem', md: '1.125rem' },
               }}>
-              Belle Delphine is a creative cosplayer, passionate gamer, and internet personality known for her incredible costume designs, gaming content, and viral memes. She brings anime and gaming characters to life with stunning attention to detail.
+              Belle Delphine is a South African-born British creative cosplayer, passionate gamer, and internet personality known for her incredible costume designs, gaming content, and viral memes. She brings anime and gaming characters to life with stunning attention to detail and artistic vision.
+            </Typography>
+
+            <Typography
+              variant='body1'
+              sx={{
+                color: 'text.secondary',
+                mb: 3,
+                lineHeight: 1.7,
+                fontSize: { xs: '1rem', md: '1.125rem' },
+              }}>
+              From elaborate cosplay photoshoots and gaming streams to hilarious meme content and creative collaborations, Belle creates entertaining content that celebrates geek culture and creativity. Her work spans multiple platforms including Instagram, YouTube, and TikTok, where she has amassed millions of followers.
             </Typography>
 
             <Typography
@@ -52,7 +63,7 @@ const About = () => {
                 lineHeight: 1.7,
                 fontSize: { xs: '1rem', md: '1.125rem' },
               }}>
-              From elaborate cosplay photoshoots and gaming streams to hilarious meme content and creative collaborations, Belle creates entertaining and family-friendly content that celebrates geek culture and creativity.
+              Known for her innovative approach to content creation, Belle combines professional photography, handcrafted costumes, and creative makeup artistry to produce unique and memorable content. Her dedication to her craft and willingness to push creative boundaries has made her one of the most recognizable figures in internet culture.
             </Typography>
 
             <List sx={{ mb: 4 }}>
@@ -61,10 +72,14 @@ const About = () => {
                   <TrendingUpIcon sx={{ color: 'primary.main' }} />
                 </ListItemIcon>
                 <ListItemText
-                  primary='Cosplay Artistry'
+                  primary='Professional Cosplay Artistry'
+                  secondary='Handcrafted costumes with meticulous attention to detail'
                   primaryTypographyProps={{
                     fontWeight: 600,
                     color: 'text.primary',
+                  }}
+                  secondaryTypographyProps={{
+                    fontSize: '0.9rem',
                   }}
                 />
               </ListItem>
@@ -73,10 +88,14 @@ const About = () => {
                   <PeopleIcon sx={{ color: 'secondary.main' }} />
                 </ListItemIcon>
                 <ListItemText
-                  primary='Gaming Community'
+                  primary='Active Gaming Community'
+                  secondary='Engaging with fans through streams and gaming content'
                   primaryTypographyProps={{
                     fontWeight: 600,
                     color: 'text.primary',
+                  }}
+                  secondaryTypographyProps={{
+                    fontSize: '0.9rem',
                   }}
                 />
               </ListItem>
@@ -85,10 +104,14 @@ const About = () => {
                   <PublicIcon sx={{ color: 'secondary.main' }} />
                 </ListItemIcon>
                 <ListItemText
-                  primary='Meme Culture'
+                  primary='Internet Culture Pioneer'
+                  secondary='Creating viral moments and innovative content formats'
                   primaryTypographyProps={{
                     fontWeight: 600,
                     color: 'text.primary',
+                  }}
+                  secondaryTypographyProps={{
+                    fontSize: '0.9rem',
                   }}
                 />
               </ListItem>
@@ -275,5 +298,3 @@ const About = () => {
 };
 
 export default About;
-
-

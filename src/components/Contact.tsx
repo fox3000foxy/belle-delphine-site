@@ -1,4 +1,4 @@
-import { Email as EmailIcon, Facebook as FacebookIcon, Send as SendIcon, Twitter as TwitterIcon } from '@mui/icons-material';
+import { Email as EmailIcon, Facebook as FacebookIcon, Instagram as InstagramIcon, Send as SendIcon, Twitter as TwitterIcon, YouTube as YouTubeIcon } from '@mui/icons-material';
 import { Alert, Box, Button, Card, CardContent, Container, IconButton, List, ListItem, ListItemIcon, ListItemText, Stack, TextField, Typography } from '@mui/material';
 import { useState } from 'react';
 
@@ -125,7 +125,7 @@ const Contact = () => {
                       alignItems: 'center',
                       justifyContent: 'center',
                     }}>
-                    <TwitterIcon sx={{ color: 'background.paper' }} />
+                    <YouTubeIcon sx={{ color: 'background.paper' }} />
                   </Box>
                 </ListItemIcon>
                 <ListItemText
@@ -146,6 +146,10 @@ const Contact = () => {
 
             <Stack direction='row' spacing={2}>
               <IconButton
+                component='a'
+                href='https://www.facebook.com/tinkersmell'
+                target='_blank'
+                rel='noopener noreferrer'
                 sx={{
                   backgroundColor: 'primary.main',
                   color: 'background.paper',
@@ -154,12 +158,40 @@ const Contact = () => {
                 <FacebookIcon />
               </IconButton>
               <IconButton
+                component='a'
+                href='https://twitter.com/bunnydelphine'
+                target='_blank'
+                rel='noopener noreferrer'
                 sx={{
                   backgroundColor: 'secondary.main',
                   color: 'background.paper',
                   '&:hover': { backgroundColor: 'secondary.dark' },
                 }}>
                 <TwitterIcon />
+              </IconButton>
+              <IconButton
+                component='a'
+                href='https://www.instagram.com/belle.delphine'
+                target='_blank'
+                rel='noopener noreferrer'
+                sx={{
+                  backgroundColor: 'secondary.main',
+                  color: 'background.paper',
+                  '&:hover': { backgroundColor: 'secondary.dark' },
+                }}>
+                <InstagramIcon />
+              </IconButton>
+              <IconButton
+                component='a'
+                href='https://www.youtube.com/channel/UCXvKUavCtDOlA8bT1i2tI3w'
+                target='_blank'
+                rel='noopener noreferrer'
+                sx={{
+                  backgroundColor: 'secondary.main',
+                  color: 'background.paper',
+                  '&:hover': { backgroundColor: 'secondary.dark' },
+                }}>
+                <YouTubeIcon />
               </IconButton>
             </Stack>
           </Box>
@@ -325,5 +357,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-

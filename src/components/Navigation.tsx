@@ -34,13 +34,13 @@ const Navigation = () => {
         <Toolbar sx={{ justifyContent: 'space-between', px: { xs: 2, md: 4 } }}>
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
             <Box
-              component="img"
+              component='img'
               src={logo}
-              alt="Belle Delphine Logo"
+              alt='Belle Delphine Logo'
               sx={{
                 height: 32,
                 width: 32,
-                mr: 1,  
+                mr: 1,
                 transition: 'filter 0.3s ease-in-out',
                 filter: trigger ? 'none' : 'brightness(0) invert(1)',
               }}
@@ -179,5 +179,3 @@ const Navigation = () => {
 };
 
 export default Navigation;
-
-
