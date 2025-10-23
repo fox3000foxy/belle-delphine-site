@@ -1,7 +1,9 @@
 import { CssBaseline, ThemeProvider } from '@mui/material';
+import { useEffect } from 'react';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Footer from './components/Footer';
 import Navigation from './components/Navigation';
+import { preloadAllImages } from './hooks/useImagePreloader';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import CosplayPage from './pages/CosplayPage';
@@ -10,6 +12,11 @@ import HomePage from './pages/HomePage';
 import muiTheme from './theme/muiTheme';
 
 function App() {
+  // Preload all images on app mount
+  useEffect(() => {
+    preloadAllImages();
+  }, []);
+
   return (
     <ThemeProvider theme={muiTheme}>
       <CssBaseline />
