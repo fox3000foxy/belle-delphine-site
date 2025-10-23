@@ -92,6 +92,34 @@ const Hero = () => {
               Cosplayer • Gamer • Creator
             </Typography>
 
+            <Box
+              sx={{
+                width: { xs: 180, md: 250 },
+                height: { xs: 180, md: 250 },
+                borderRadius: '50%',
+                overflow: 'hidden',
+                mx: 'auto',
+                mb: 3,
+                border: '6px solid rgba(255, 255, 255, 0.3)',
+                boxShadow: '0 20px 60px rgba(0, 0, 0, 0.3)',
+                animation: 'float 3s ease-in-out infinite',
+                '@keyframes float': {
+                  '0%, 100%': { transform: 'translateY(0)' },
+                  '50%': { transform: 'translateY(-10px)' },
+                },
+              }}>
+              <Box
+                component='img'
+                src='/hero.png'
+                alt='Belle Delphine Profile'
+                sx={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
+                }}
+              />
+            </Box>
+
             <Typography
               variant='h6'
               sx={{

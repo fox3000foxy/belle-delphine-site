@@ -1,5 +1,5 @@
+import { Public as GlobalIcon, Favorite as HeartIcon, People as PeopleIcon, TrendingUp as TrendingIcon, EmojiEvents as TrophyIcon, VideoLibrary as VideoIcon } from '@mui/icons-material';
 import { Box, Card, CardContent, Container, Typography } from '@mui/material';
-import { TrendingUp as TrendingIcon, People as PeopleIcon, VideoLibrary as VideoIcon, EmojiEvents as TrophyIcon, Favorite as HeartIcon, Public as GlobalIcon } from '@mui/icons-material';
 import { useEffect, useState } from 'react';
 
 const Achievements = () => {
@@ -189,25 +189,23 @@ const Achievements = () => {
             display: 'grid',
             gridTemplateColumns: { xs: '1fr', sm: 'repeat(2, 1fr)' },
             gap: 3,
+            mb: 6,
           }}>
           {achievements.map((achievement, index) => (
             <Box key={index}>
               <Card
                 sx={{
                   height: '100%',
-                  p: 2,
-                  background: 'linear-gradient(135deg, #ffffff 0%, #f8fafc 100%)',
-                  border: '2px solid',
-                  borderColor: 'primary.main',
+                  overflow: 'hidden',
                   borderRadius: 3,
                   transition: 'all 0.3s ease-in-out',
                   '&:hover': {
                     transform: 'translateY(-5px)',
                     boxShadow: '0 15px 30px rgba(239, 68, 68, 0.2)',
-                    borderColor: 'secondary.main',
                   },
                 }}>
-                <CardContent sx={{ p: 2 }}>
+
+                <CardContent sx={{ p: 3, background: 'linear-gradient(135deg, #ffffff 0%, #f8fafc 100%)' }}>
                   <Typography
                     variant='h5'
                     component='h3'
@@ -232,6 +230,14 @@ const Achievements = () => {
               </Card>
             </Box>
           ))}
+        </Box>
+
+        <Box
+          sx={{
+            display: 'grid',
+            gridTemplateColumns: { xs: '1fr', sm: 'repeat(3, 1fr)' },
+            gap: 2,
+          }}>
         </Box>
       </Container>
     </Box>

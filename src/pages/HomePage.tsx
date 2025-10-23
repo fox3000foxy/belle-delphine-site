@@ -1,7 +1,4 @@
-import Achievements from '../components/Achievements';
-import Biography from '../components/Biography';
 import Features from '../components/Features';
-import Gallery from '../components/Gallery';
 import Hero from '../components/Hero';
 
 const HomePage = () => {
@@ -13,21 +10,21 @@ const HomePage = () => {
       <section id='features'>
         <Features />
       </section>
-      <section id='gallery'>
+      {/* <section id='gallery'>
         <Gallery />
-      </section>
+      </section> */}
       {/* <section id='cosplay'>
         <Cosplay />
       </section> */}
-      <section id='achievements'>
+      {/* <section id='achievements'>
         <Achievements />
-      </section>
+      </section> */}
       {/* <section id='about'>
         <About />
       </section> */}
-      <section id='biography'>
+      {/* <section id='biography'>
         <Biography />
-      </section>
+      </section> */}
     </>
   );
 };

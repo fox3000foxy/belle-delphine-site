@@ -41,7 +41,7 @@ const About = () => {
                 lineHeight: 1.7,
                 fontSize: { xs: '1rem', md: '1.125rem' },
               }}>
-              Belle Delphine is a South African-born British creative cosplayer, passionate gamer, and internet personality known for her incredible costume designs, gaming content, and viral memes. She brings anime and gaming characters to life with stunning attention to detail and artistic vision.
+              I'm a South African-born British creative cosplayer, passionate gamer, and internet personality known for my incredible costume designs, gaming content, and viral memes. I bring anime and gaming characters to life with stunning attention to detail and artistic vision.
             </Typography>
 
             <Typography
@@ -52,7 +52,7 @@ const About = () => {
                 lineHeight: 1.7,
                 fontSize: { xs: '1rem', md: '1.125rem' },
               }}>
-              From elaborate cosplay photoshoots and gaming streams to hilarious meme content and creative collaborations, Belle creates entertaining content that celebrates geek culture and creativity. Her work spans multiple platforms including Instagram, YouTube, and TikTok, where she has amassed millions of followers.
+              From elaborate cosplay photoshoots and gaming streams to hilarious meme content and creative collaborations, I create entertaining content that celebrates geek culture and creativity. My work spans multiple platforms including Instagram, YouTube, and TikTok, where I have amassed millions of followers.
             </Typography>
 
             <Typography
@@ -63,7 +63,7 @@ const About = () => {
                 lineHeight: 1.7,
                 fontSize: { xs: '1rem', md: '1.125rem' },
               }}>
-              Known for her innovative approach to content creation, Belle combines professional photography, handcrafted costumes, and creative makeup artistry to produce unique and memorable content. Her dedication to her craft and willingness to push creative boundaries has made her one of the most recognizable figures in internet culture.
+              Known for my innovative approach to content creation, I combine professional photography, handcrafted costumes, and creative makeup artistry to produce unique and memorable content. My dedication to my craft and willingness to push creative boundaries has made me one of the most recognizable figures in internet culture.
             </Typography>
 
             <List sx={{ mb: 4 }}>
@@ -146,7 +146,7 @@ const About = () => {
                   sx={{
                     background: 'linear-gradient(135deg, #ef4444 0%, #f97316 100%)',
                     borderRadius: 4,
-                    p: 3,
+                    overflow: 'hidden',
                     boxShadow: '0 20px 40px rgba(0, 0, 0, 0.15)',
                     transform: 'perspective(1000px) rotateY(-5deg)',
                     transition: 'transform 0.3s ease-in-out',
@@ -154,102 +154,33 @@ const About = () => {
                       transform: 'perspective(1000px) rotateY(0deg)',
                     },
                   }}>
-                  <CardContent sx={{ p: 0 }}>
-                    <Card
+                  <Box
+                    component='img'
+                    src='/assets/about.jpg'
+                    alt='Belle Delphine Cosplay'
+                    sx={{
+                      width: '100%',
+                      height: 'auto',
+                      display: 'block',
+                    }}
+                  />
+                  <CardContent sx={{ p: 3, background: 'rgba(255, 255, 255, 0.95)' }}>
+                    <Typography
+                      variant='h5'
                       sx={{
-                        backgroundColor: 'white',
-                        borderRadius: 3,
-                        p: 3,
+                        fontWeight: 700,
+                        color: 'text.primary',
+                        mb: 1,
                       }}>
-                      <Box sx={{ display: 'flex', gap: 1, mb: 3 }}>
-                        <Box
-                          sx={{
-                            width: 12,
-                            height: 12,
-                            backgroundColor: '#ef4444',
-                            borderRadius: '50%',
-                          }}
-                        />
-                        <Box
-                          sx={{
-                            width: 12,
-                            height: 12,
-                            backgroundColor: '#eab308',
-                            borderRadius: '50%',
-                          }}
-                        />
-                        <Box
-                          sx={{
-                            width: 12,
-                            height: 12,
-                            backgroundColor: '#22c55e',
-                            borderRadius: '50%',
-                          }}
-                        />
-                      </Box>
-
-                      <Box sx={{ mb: 3 }}>
-                        <Box
-                          sx={{
-                            height: 16,
-                            backgroundColor: 'grey.200',
-                            borderRadius: 1,
-                            mb: 2,
-                          }}
-                        />
-                        <Box
-                          sx={{
-                            height: 16,
-                            backgroundColor: 'primary.100',
-                            borderRadius: 1,
-                            width: '75%',
-                            mb: 2,
-                          }}
-                        />
-                        <Box
-                          sx={{
-                            height: 16,
-                            backgroundColor: 'secondary.100',
-                            borderRadius: 1,
-                            width: '50%',
-                          }}
-                        />
-                      </Box>
-
-                      <Box
-                        sx={{
-                          display: 'grid',
-                          gridTemplateColumns: '1fr 1fr',
-                          gap: 2,
-                        }}>
-                        <Box
-                          sx={{
-                            height: 80,
-                            background: 'linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%)',
-                            borderRadius: 2,
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                          }}>
-                          <Typography variant='h6' sx={{ color: 'primary.main', fontWeight: 600 }}>
-                            ♡
-                          </Typography>
-                        </Box>
-                        <Box
-                          sx={{
-                            height: 80,
-                            background: 'linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%)',
-                            borderRadius: 2,
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                          }}>
-                          <Typography variant='h6' sx={{ color: 'secondary.dark', fontWeight: 600 }}>
-                            ★
-                          </Typography>
-                        </Box>
-                      </Box>
-                    </Card>
+                      Creative Cosplayer
+                    </Typography>
+                    <Typography
+                      variant='body2'
+                      sx={{
+                        color: 'text.secondary',
+                      }}>
+                      Bringing characters to life with passion and creativity
+                    </Typography>
                   </CardContent>
                 </Card>
 

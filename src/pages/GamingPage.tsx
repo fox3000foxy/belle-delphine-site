@@ -70,25 +70,49 @@ const GamingPage = () => {
               <Card
                 key={index}
                 sx={{
-                  p: 3,
-                  textAlign: 'center',
+                  overflow: 'hidden',
                   transition: 'all 0.3s ease-in-out',
                   '&:hover': {
                     transform: 'translateY(-8px)',
                     boxShadow: `0 12px 24px ${item.color}40`,
                   },
                 }}>
-                <CardContent>
+                <Box
+                  sx={{
+                    height: 200,
+                    position: 'relative',
+                    overflow: 'hidden',
+                  }}>
+                  <Box
+                    component='img'
+                    src={`/assets/wip.jpg`}
+                    alt={item.title}
+                    sx={{
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover',
+                      transition: 'transform 0.3s ease-in-out',
+                      '&:hover': {
+                        transform: 'scale(1.1)',
+                      },
+                    }}
+                  />
                   <Box
                     sx={{
-                      display: 'inline-flex',
-                      p: 2,
-                      borderRadius: '50%',
-                      backgroundColor: `${item.color}20`,
-                      mb: 2,
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      right: 0,
+                      bottom: 0,
+                      background: `linear-gradient(135deg, ${item.color}60 0%, ${item.color}40 100%)`,
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
                     }}>
-                    <IconComponent sx={{ fontSize: '3rem', color: item.color }} />
+                    <IconComponent sx={{ fontSize: '4rem', color: 'white', opacity: 0.9 }} />
                   </Box>
+                </Box>
+                <CardContent sx={{ p: 3, textAlign: 'center' }}>
                   <Typography variant='h5' sx={{ fontWeight: 600, mb: 2 }}>
                     {item.title}
                   </Typography>
@@ -99,6 +123,47 @@ const GamingPage = () => {
               </Card>
             );
           })}
+        </Box>
+
+        <Box
+          sx={{
+            display: 'grid',
+            gridTemplateColumns: { xs: '1fr', sm: 'repeat(2, 1fr)' },
+            gap: 3,
+            mb: 8,
+          }}>
+          {[1, 2, 3, 4].map((num) => (
+            <Card
+              key={num}
+              sx={{
+                overflow: 'hidden',
+                transition: 'all 0.3s ease-in-out',
+                cursor: 'pointer',
+                '&:hover': {
+                  transform: 'scale(1.02)',
+                  boxShadow: '0 12px 30px rgba(0, 0, 0, 0.15)',
+                },
+              }}>
+              <Box
+                component='img'
+                src={`/assets/wip.jpg`}
+                alt={`Gaming Screenshot ${num}`}
+                sx={{
+                  width: '100%',
+                  height: 'auto',
+                  display: 'block',
+                }}
+              />
+              <CardContent>
+                <Typography variant='h6' sx={{ fontWeight: 600, mb: 1 }}>
+                  Epic Gaming Moment #{num}
+                </Typography>
+                <Typography variant='body2' sx={{ color: 'text.secondary' }}>
+                  Check out this amazing gameplay highlight from my recent stream!
+                </Typography>
+              </CardContent>
+            </Card>
+          ))}
         </Box>
 
         <Box sx={{ textAlign: 'center' }}>

@@ -1,5 +1,5 @@
-import { Box, Button, Card, CardContent, Chip, Container, Typography } from '@mui/material';
 import { ArrowForward as ArrowIcon, Favorite as FavoriteIcon } from '@mui/icons-material';
+import { Box, Button, Card, CardContent, Chip, Container, Typography } from '@mui/material';
 
 const Gallery = () => {
   const portfolioItems = [
@@ -58,7 +58,7 @@ const Gallery = () => {
       sx={{
         py: { xs: 8, md: 12 },
         px: { xs: 2, md: 6 },
-        backgroundColor: 'background.default',
+        background: 'linear-gradient(135deg, #FED47C 0%, #FE9E73 100%)',
       }}>
       <Container maxWidth='lg'>
         <Box sx={{ textAlign: 'center', mb: { xs: 6, md: 10 } }}>
@@ -101,7 +101,6 @@ const Gallery = () => {
               <Card
                 sx={{
                   height: '100%',
-                  background: item.gradient,
                   borderRadius: 3,
                   transition: 'all 0.3s ease-in-out',
                   cursor: 'pointer',
@@ -111,17 +110,35 @@ const Gallery = () => {
                     transform: 'translateY(-10px) scale(1.02)',
                     boxShadow: `0 20px 40px ${item.color}60`,
                   },
-                  '&::before': {
-                    content: '""',
+                }}>
+                <Box
+                  component='img'
+                  src={`/assets/portfolio-${index}.jpg`}
+                  alt={item.title}
+                  sx={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                    transition: 'transform 0.3s ease-in-out',
+                    '.MuiCard-root:hover &': {
+                      transform: 'scale(1.1)',
+                    },
+                  }}
+                />
+                <Box
+                  sx={{
                     position: 'absolute',
                     top: 0,
                     left: 0,
                     right: 0,
                     bottom: 0,
-                    background: 'linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.3) 100%)',
+                    background: `linear-gradient(180deg, ${item.color}40 0%, ${item.color}90 100%)`,
                     zIndex: 1,
-                  },
-                }}>
+                  }}
+                />
                 <CardContent
                   sx={{
                     p: 3,
@@ -131,7 +148,7 @@ const Gallery = () => {
                     justifyContent: 'space-between',
                     position: 'relative',
                     zIndex: 2,
-                    minHeight: 280,
+                    minHeight: 350,
                   }}>
                   <Box>
                     <Chip

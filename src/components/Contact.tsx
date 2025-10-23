@@ -108,7 +108,7 @@ const Contact = () => {
               lineHeight: 1.6,
               fontSize: { xs: '1.1rem', md: '1.25rem' },
             }}>
-            Connect with Belle for cosplay collaborations, gaming content, and creative projects. Join the community of fellow creators and fans!
+            Connect with me for cosplay collaborations, gaming content, and creative projects. Join the community of fellow creators and fans!
           </Typography>
         </Box>
 
@@ -119,6 +119,25 @@ const Contact = () => {
             gap: { xs: 4, md: 8 },
           }}>
           <Box sx={{ mb: { xs: 4, lg: 0 } }}>
+            <Box
+              sx={{
+                mb: 4,
+                borderRadius: 3,
+                overflow: 'hidden',
+                boxShadow: '0 10px 30px rgba(0, 0, 0, 0.2)',
+              }}>
+              <Box
+                component='img'
+                src='/assets/contact.jpg'
+                alt='Belle Delphine Contact'
+                sx={{
+                  width: '100%',
+                  height: 'auto',
+                  display: 'block',
+                }}
+              />
+            </Box>
+
             <Typography
               variant='h4'
               component='h3'
@@ -392,7 +411,7 @@ const Contact = () => {
                         },
                         transition: 'all 0.3s ease-in-out',
                       }}>
-                      Send Message to Belle
+                      Send Message to Me
                     </Button>
                   </Box>
                 </Box>

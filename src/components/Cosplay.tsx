@@ -37,8 +37,8 @@ const Cosplay = () => {
       gradient: 'linear-gradient(135deg, #ef4444 0%, #dc2626 100%)',
     },
     {
-      title: 'Zero Two - Darling in the Franxx',
-      character: 'Zero Two',
+      title: 'Vanelope - Darling in the Franxx',
+      character: 'Vanelope',
       game: 'Anime',
       likes: '4.2M',
       views: '22M',
@@ -57,12 +57,12 @@ const Cosplay = () => {
       gradient: 'linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%)',
     },
     {
-      title: 'Rem - Re:Zero',
-      character: 'Rem',
-      game: 'Anime',
+      title: 'Shiro - Soul of War',
+      character: 'Shiro',
+      game: 'SAO',
       likes: '2.9M',
       views: '17M',
-      tags: ['Anime', 'Maid', 'Cute'],
+      tags: ['Anime', 'Mecha', 'Critical'],
       color: '#06b6d4',
       gradient: 'linear-gradient(135deg, #06b6d4 0%, #0891b2 100%)',
     },
@@ -123,38 +123,45 @@ const Cosplay = () => {
               }}>
               <Box
                 sx={{
-                  height: 200,
-                  background: `linear-gradient(135deg, ${cosplay.color}40 0%, ${cosplay.color}80 100%)`,
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
+                  height: 250,
                   position: 'relative',
                   overflow: 'hidden',
-                  '&::before': {
-                    content: '""',
-                    position: 'absolute',
-                    top: '-50%',
-                    left: '-50%',
-                    width: '200%',
-                    height: '200%',
-                    background: `radial-gradient(circle, ${cosplay.color}40 0%, transparent 70%)`,
-                    animation: hoveredCard === index ? 'rotate 4s linear infinite' : 'none',
-                  },
-                  '@keyframes rotate': {
-                    '0%': { transform: 'rotate(0deg)' },
-                    '100%': { transform: 'rotate(360deg)' },
-                  },
                 }}>
-                <StarIcon
+                <Box
+                  component='img'
+                  src={`/assets/cosplay-${index}.jpg`}
+                  alt={cosplay.character}
                   sx={{
-                    fontSize: '4rem',
-                    color: 'white',
-                    opacity: 0.9,
-                    filter: 'drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3))',
-                    transform: hoveredCard === index ? 'scale(1.2) rotate(15deg)' : 'scale(1) rotate(0deg)',
-                    transition: 'all 0.4s ease-in-out',
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                    transition: 'transform 0.4s ease-in-out',
+                    transform: hoveredCard === index ? 'scale(1.1)' : 'scale(1)',
                   }}
                 />
+                <Box
+                  sx={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    background: `linear-gradient(135deg, ${cosplay.color}60 0%, ${cosplay.color}40 100%)`,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}>
+                  <StarIcon
+                    sx={{
+                      fontSize: '4rem',
+                      color: 'white',
+                      opacity: 0.9,
+                      filter: 'drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3))',
+                      transform: hoveredCard === index ? 'scale(1.2) rotate(15deg)' : 'scale(1) rotate(0deg)',
+                      transition: 'all 0.4s ease-in-out',
+                    }}
+                  />
+                </Box>
               </Box>
 
               <CardContent sx={{ p: 3, backgroundColor: 'white' }}>
