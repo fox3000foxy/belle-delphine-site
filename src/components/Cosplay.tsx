@@ -116,10 +116,25 @@ const Cosplay = () => {
                 background: cosplay.gradient,
                 borderRadius: 3,
                 overflow: 'hidden',
-                transition: 'all 0.4s ease-in-out',
-                transform: hoveredCard === index ? 'translateY(-12px) scale(1.02)' : 'translateY(0) scale(1)',
-                boxShadow: hoveredCard === index ? `0 20px 40px ${cosplay.color}60` : '0 4px 12px rgba(0, 0, 0, 0.1)',
+                transition: 'all 0.5s cubic-bezier(0.4, 0, 0.2, 1)',
+                transform: hoveredCard === index ? 'translateY(-15px) scale(1.03) rotate(-2deg)' : 'translateY(0) scale(1)',
+                boxShadow: hoveredCard === index ? `0 25px 50px ${cosplay.color}70` : '0 4px 12px rgba(0, 0, 0, 0.1)',
                 cursor: 'pointer',
+                position: 'relative',
+                '&::before': {
+                  content: '""',
+                  position: 'absolute',
+                  top: 0,
+                  left: '-100%',
+                  width: '100%',
+                  height: '100%',
+                  background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent)',
+                  transition: 'left 0.5s ease-in-out',
+                  zIndex: 10,
+                },
+                '&:hover::before': {
+                  left: '100%',
+                },
               }}>
               <Box
                 sx={{
@@ -157,8 +172,8 @@ const Cosplay = () => {
                       color: 'white',
                       opacity: 0.9,
                       filter: 'drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3))',
-                      transform: hoveredCard === index ? 'scale(1.2) rotate(15deg)' : 'scale(1) rotate(0deg)',
-                      transition: 'all 0.4s ease-in-out',
+                      transform: hoveredCard === index ? 'scale(1.3) rotate(360deg)' : 'scale(1) rotate(0deg)',
+                      transition: 'all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55)',
                     }}
                   />
                 </Box>

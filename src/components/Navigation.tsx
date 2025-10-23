@@ -43,8 +43,12 @@ const Navigation = () => {
                 height: 32,
                 width: 32,
                 mr: 1,
-                transition: 'filter 0.3s ease-in-out',
+                transition: 'all 0.3s ease-in-out',
                 filter: trigger ? 'none' : 'brightness(0) invert(1)',
+                '&:hover': {
+                  transform: 'scale(1.2)',
+                  animation: 'none',
+                },
               }}
             />
             <Typography
@@ -71,10 +75,26 @@ const Navigation = () => {
                     color: trigger ? 'text.primary' : 'white',
                     fontWeight: 500,
                     textTransform: 'none',
+                    position: 'relative',
                     transition: 'all 0.3s ease-in-out',
+                    '&::after': {
+                      content: '""',
+                      position: 'absolute',
+                      bottom: 0,
+                      left: '50%',
+                      width: '0',
+                      height: '2px',
+                      backgroundColor: 'primary.main',
+                      transition: 'all 0.3s ease-in-out',
+                      transform: 'translateX(-50%)',
+                    },
                     '&:hover': {
                       color: 'primary.main',
                       backgroundColor: 'transparent',
+                      transform: 'translateY(-2px)',
+                    },
+                    '&:hover::after': {
+                      width: '80%',
                     },
                   }}>
                   {item.name}

@@ -1,7 +1,14 @@
 import { People as PeopleIcon, Public as PublicIcon, TrendingUp as TrendingUpIcon } from '@mui/icons-material';
-import { Box, Button, Card, CardContent, Container, Grow, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material';
+import { Box, Button, Card, CardContent, Container, Grow, List, ListItem, ListItemIcon, ListItemText, Slide, Typography } from '@mui/material';
+import { useEffect, useState } from 'react';
 
 const About = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
   return (
     <Box
       sx={{
@@ -18,53 +25,61 @@ const About = () => {
             alignItems: 'center',
           }}>
           <Box sx={{ mb: { xs: 4, lg: 0 } }}>
-            <Typography
-              variant='h2'
-              component='h2'
-              sx={{
-                fontWeight: 700,
-                color: 'text.primary',
-                mb: 3,
-                fontSize: { xs: '2.5rem', md: '3.5rem' },
-              }}>
-              About{' '}
-              <Typography component='span' variant='inherit' sx={{ color: 'primary.main' }}>
-                Belle Delphine
+            <Slide direction='right' in={isVisible} timeout={800}>
+              <Typography
+                variant='h2'
+                component='h2'
+                sx={{
+                  fontWeight: 700,
+                  color: 'text.primary',
+                  mb: 3,
+                  fontSize: { xs: '2.5rem', md: '3.5rem' },
+                }}>
+                About{' '}
+                <Typography component='span' variant='inherit' sx={{ color: 'primary.main' }}>
+                  Belle Delphine
+                </Typography>
               </Typography>
-            </Typography>
+            </Slide>
 
-            <Typography
-              variant='body1'
-              sx={{
-                color: 'text.secondary',
-                mb: 3,
-                lineHeight: 1.7,
-                fontSize: { xs: '1rem', md: '1.125rem' },
-              }}>
-              I'm a South African-born British creative cosplayer, passionate gamer, and internet personality known for my incredible costume designs, gaming content, and viral memes. I bring anime and gaming characters to life with stunning attention to detail and artistic vision.
-            </Typography>
+            <Slide direction='right' in={isVisible} timeout={1000}>
+              <Typography
+                variant='body1'
+                sx={{
+                  color: 'text.secondary',
+                  mb: 3,
+                  lineHeight: 1.7,
+                  fontSize: { xs: '1rem', md: '1.125rem' },
+                }}>
+                I'm a South African-born British creative cosplayer, passionate gamer, and internet personality known for my incredible costume designs, gaming content, and viral memes. I bring anime and gaming characters to life with stunning attention to detail and artistic vision.
+              </Typography>
+            </Slide>
 
-            <Typography
-              variant='body1'
-              sx={{
-                color: 'text.secondary',
-                mb: 3,
-                lineHeight: 1.7,
-                fontSize: { xs: '1rem', md: '1.125rem' },
-              }}>
-              From elaborate cosplay photoshoots and gaming streams to hilarious meme content and creative collaborations, I create entertaining content that celebrates geek culture and creativity. My work spans multiple platforms including Instagram, YouTube, and TikTok, where I have amassed millions of followers.
-            </Typography>
+            <Slide direction='right' in={isVisible} timeout={1200}>
+              <Typography
+                variant='body1'
+                sx={{
+                  color: 'text.secondary',
+                  mb: 3,
+                  lineHeight: 1.7,
+                  fontSize: { xs: '1rem', md: '1.125rem' },
+                }}>
+                From elaborate cosplay photoshoots and gaming streams to hilarious meme content and creative collaborations, I create entertaining content that celebrates geek culture and creativity. My work spans multiple platforms including Instagram, YouTube, and TikTok, where I have amassed millions of followers.
+              </Typography>
+            </Slide>
 
-            <Typography
-              variant='body1'
-              sx={{
-                color: 'text.secondary',
-                mb: 4,
-                lineHeight: 1.7,
-                fontSize: { xs: '1rem', md: '1.125rem' },
-              }}>
-              Known for my innovative approach to content creation, I combine professional photography, handcrafted costumes, and creative makeup artistry to produce unique and memorable content. My dedication to my craft and willingness to push creative boundaries has made me one of the most recognizable figures in internet culture.
-            </Typography>
+            <Slide direction='right' in={isVisible} timeout={1400}>
+              <Typography
+                variant='body1'
+                sx={{
+                  color: 'text.secondary',
+                  mb: 4,
+                  lineHeight: 1.7,
+                  fontSize: { xs: '1rem', md: '1.125rem' },
+                }}>
+                Known for my innovative approach to content creation, I combine professional photography, handcrafted costumes, and creative makeup artistry to produce unique and memorable content. My dedication to my craft and willingness to push creative boundaries has made me one of the most recognizable figures in internet culture.
+              </Typography>
+            </Slide>
 
             <List sx={{ mb: 4 }}>
               <ListItem sx={{ px: 0 }}>

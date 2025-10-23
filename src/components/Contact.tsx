@@ -221,7 +221,12 @@ const Contact = () => {
                 sx={{
                   backgroundColor: 'primary.main',
                   color: 'background.paper',
-                  '&:hover': { backgroundColor: 'primary.dark' },
+                  transition: 'all 0.3s ease-in-out',
+                  '&:hover': { 
+                    backgroundColor: 'primary.dark',
+                    transform: 'translateY(-5px) rotate(10deg) scale(1.1)',
+                    boxShadow: '0 10px 20px rgba(239, 68, 68, 0.4)',
+                  },
                 }}>
                 <FacebookIcon />
               </IconButton>
@@ -233,7 +238,12 @@ const Contact = () => {
                 sx={{
                   backgroundColor: 'secondary.main',
                   color: 'background.paper',
-                  '&:hover': { backgroundColor: 'secondary.dark' },
+                  transition: 'all 0.3s ease-in-out',
+                  '&:hover': { 
+                    backgroundColor: 'secondary.dark',
+                    transform: 'translateY(-5px) rotate(-10deg) scale(1.1)',
+                    boxShadow: '0 10px 20px rgba(249, 115, 22, 0.4)',
+                  },
                 }}>
                 <TwitterIcon />
               </IconButton>
@@ -245,7 +255,12 @@ const Contact = () => {
                 sx={{
                   backgroundColor: 'secondary.main',
                   color: 'background.paper',
-                  '&:hover': { backgroundColor: 'secondary.dark' },
+                  transition: 'all 0.3s ease-in-out',
+                  '&:hover': { 
+                    backgroundColor: 'secondary.dark',
+                    transform: 'translateY(-5px) rotate(10deg) scale(1.1)',
+                    boxShadow: '0 10px 20px rgba(249, 115, 22, 0.4)',
+                  },
                 }}>
                 <InstagramIcon />
               </IconButton>
@@ -257,7 +272,12 @@ const Contact = () => {
                 sx={{
                   backgroundColor: 'secondary.main',
                   color: 'background.paper',
-                  '&:hover': { backgroundColor: 'secondary.dark' },
+                  transition: 'all 0.3s ease-in-out',
+                  '&:hover': { 
+                    backgroundColor: 'secondary.dark',
+                    transform: 'translateY(-5px) rotate(-10deg) scale(1.1)',
+                    boxShadow: '0 10px 20px rgba(249, 115, 22, 0.4)',
+                  },
                 }}>
                 <YouTubeIcon />
               </IconButton>

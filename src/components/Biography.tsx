@@ -1,7 +1,14 @@
-import { Box, Card, CardContent, Container, Typography } from '@mui/material';
+import { Box, Card, CardContent, Container, Typography, Fade } from '@mui/material';
 import { Star as StarIcon, TrendingUp as TrendingIcon, VideoLibrary as VideoIcon, Celebration as CelebrationIcon } from '@mui/icons-material';
+import { useState, useEffect } from 'react';
 
 const Biography = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
   const milestones = [
     {
       year: '2015',
@@ -111,8 +118,8 @@ const Biography = () => {
           {milestones.map((milestone, index) => {
             const IconComponent = milestone.icon;
             return (
+              <Fade in={isVisible} timeout={1000 + index * 300} key={index}>
               <Box
-                key={index}
                 sx={{
                   display: 'flex',
                   flexDirection: { xs: 'row', md: index % 2 === 0 ? 'row' : 'row-reverse' },
@@ -150,8 +157,22 @@ const Biography = () => {
                     bgcolor: milestone.color,
                     boxShadow: `0 0 20px ${milestone.color}80`,
                     flexShrink: 0,
+                    animation: 'bounce 2s ease-in-out infinite',
+                    animationDelay: `${index * 0.2}s`,
+                    '@keyframes bounce': {
+                      '0%, 100%': { transform: 'translateY(0)' },
+                      '50%': { transform: 'translateY(-10px)' },
+                    },
                   }}>
-                  <IconComponent sx={{ fontSize: { xs: '1.5rem', md: '2rem' }, color: 'white' }} />
+                  <IconComponent sx={{ 
+                    fontSize: { xs: '1.5rem', md: '2rem' }, 
+                    color: 'white',
+                    animation: 'rotate 4s linear infinite',
+                    '@keyframes rotate': {
+                      '0%': { transform: 'rotate(0deg)' },
+                      '100%': { transform: 'rotate(360deg)' },
+                    },
+                  }} />
                 </Box>
 
                 <Box sx={{ flex: { xs: '1 1 0', md: '1 1 0' } }}>
@@ -162,10 +183,12 @@ const Biography = () => {
                       border: '2px solid',
                       borderColor: milestone.color,
                       borderRadius: 3,
-                      transition: 'all 0.3s ease-in-out',
+                      transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
                       '&:hover': {
-                        transform: 'translateY(-5px)',
-                        boxShadow: `0 15px 30px ${milestone.color}40`,
+                        transform: 'translateY(-8px) scale(1.02)',
+                        boxShadow: `0 20px 40px ${milestone.color}50`,
+                        borderColor: milestone.color,
+                        background: 'linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%)',
                       },
                     }}>
                     <CardContent>
@@ -204,6 +227,7 @@ const Biography = () => {
                   </Card>
                 </Box>
               </Box>
+              </Fade>
             );
           })}
         </Box>

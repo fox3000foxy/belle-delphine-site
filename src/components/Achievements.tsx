@@ -155,8 +155,21 @@ const Achievements = () => {
                         backgroundColor: 'rgba(255, 255, 255, 0.2)',
                         mb: 2,
                         backdropFilter: 'blur(10px)',
+                        animation: 'spin 3s linear infinite',
+                        '@keyframes spin': {
+                          '0%': { transform: 'rotate(0deg)' },
+                          '100%': { transform: 'rotate(360deg)' },
+                        },
                       }}>
-                      <IconComponent sx={{ fontSize: { xs: '1.5rem', md: '2rem' }, color: 'white' }} />
+                      <IconComponent sx={{ 
+                        fontSize: { xs: '1.5rem', md: '2rem' }, 
+                        color: 'white',
+                        animation: 'counterSpin 3s linear infinite',
+                        '@keyframes counterSpin': {
+                          '0%': { transform: 'rotate(0deg)' },
+                          '100%': { transform: 'rotate(-360deg)' },
+                        },
+                      }} />
                     </Box>
                     <Typography
                       variant='h3'
@@ -198,10 +211,13 @@ const Achievements = () => {
                   height: '100%',
                   overflow: 'hidden',
                   borderRadius: 3,
-                  transition: 'all 0.3s ease-in-out',
+                  transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
+                  transform: isVisible ? 'translateX(0) rotate(0deg)' : 'translateX(-50px) rotate(-5deg)',
+                  opacity: isVisible ? 1 : 0,
+                  transitionDelay: `${(index + 6) * 100}ms`,
                   '&:hover': {
-                    transform: 'translateY(-5px)',
-                    boxShadow: '0 15px 30px rgba(239, 68, 68, 0.2)',
+                    transform: 'translateY(-8px) scale(1.02) rotate(1deg)',
+                    boxShadow: '0 20px 40px rgba(239, 68, 68, 0.3)',
                   },
                 }}>
 

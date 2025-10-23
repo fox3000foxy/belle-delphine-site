@@ -102,10 +102,28 @@ const Hero = () => {
                 mb: 3,
                 border: '6px solid rgba(255, 255, 255, 0.3)',
                 boxShadow: '0 20px 60px rgba(0, 0, 0, 0.3)',
+                position: 'relative',
                 animation: 'float 3s ease-in-out infinite',
                 '@keyframes float': {
                   '0%, 100%': { transform: 'translateY(0)' },
                   '50%': { transform: 'translateY(-10px)' },
+                },
+                '&::before': {
+                  content: '""',
+                  position: 'absolute',
+                  top: '-10px',
+                  left: '-10px',
+                  right: '-10px',
+                  bottom: '-10px',
+                  borderRadius: '50%',
+                  background: 'linear-gradient(45deg, #ec4899, #f472b6, #ec4899)',
+                  animation: 'spin 3s linear infinite',
+                  zIndex: -1,
+                  opacity: 0.5,
+                },
+                '@keyframes spin': {
+                  '0%': { transform: 'rotate(0deg)' },
+                  '100%': { transform: 'rotate(360deg)' },
                 },
               }}>
               <Box
@@ -150,12 +168,30 @@ const Hero = () => {
                   background: 'white',
                   color: theme.palette.primary.main,
                   boxShadow: '0 8px 25px rgba(0, 0, 0, 0.15)',
+                  position: 'relative',
+                  overflow: 'hidden',
+                  '&::before': {
+                    content: '""',
+                    position: 'absolute',
+                    top: '50%',
+                    left: '50%',
+                    width: '0',
+                    height: '0',
+                    borderRadius: '50%',
+                    background: 'rgba(239, 68, 68, 0.2)',
+                    transform: 'translate(-50%, -50%)',
+                    transition: 'width 0.6s, height 0.6s',
+                  },
+                  '&:hover::before': {
+                    width: '300px',
+                    height: '300px',
+                  },
                   '&:hover': {
                     background: 'rgba(255, 255, 255, 0.95)',
-                    transform: 'translateY(-2px)',
-                    boxShadow: '0 12px 35px rgba(0, 0, 0, 0.2)',
+                    transform: 'translateY(-4px) scale(1.05)',
+                    boxShadow: '0 15px 40px rgba(0, 0, 0, 0.25)',
                   },
-                  transition: 'all 0.3s ease-in-out',
+                  transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
                 }}>
                 Explore Cosplays
               </Button>

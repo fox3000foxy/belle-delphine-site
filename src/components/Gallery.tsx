@@ -1,7 +1,14 @@
 import { ArrowForward as ArrowIcon, Favorite as FavoriteIcon } from '@mui/icons-material';
-import { Box, Button, Card, CardContent, Chip, Container, Typography } from '@mui/material';
+import { Box, Button, Card, CardContent, Chip, Container, Fade, Typography } from '@mui/material';
+import { useEffect, useState } from 'react';
 
 const Gallery = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
   const portfolioItems = [
     {
       title: 'Anime Cosplay Collection',
@@ -97,126 +104,148 @@ const Gallery = () => {
             gap: 3,
           }}>
           {portfolioItems.map((item, index) => (
-            <Box key={index}>
-              <Card
-                sx={{
-                  height: '100%',
-                  borderRadius: 3,
-                  transition: 'all 0.3s ease-in-out',
-                  cursor: 'pointer',
-                  position: 'relative',
-                  overflow: 'hidden',
-                  '&:hover': {
-                    transform: 'translateY(-10px) scale(1.02)',
-                    boxShadow: `0 20px 40px ${item.color}60`,
-                  },
-                }}>
-                <Box
-                  component='img'
-                  src={`/assets/portfolio-${index}.jpg`}
-                  alt={item.title}
+            <Fade in={isVisible} timeout={800 + index * 200} key={index}>
+              <Box>
+                <Card
                   sx={{
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    width: '100%',
                     height: '100%',
-                    objectFit: 'cover',
-                    transition: 'transform 0.3s ease-in-out',
-                    '.MuiCard-root:hover &': {
-                      transform: 'scale(1.1)',
-                    },
-                  }}
-                />
-                <Box
-                  sx={{
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    right: 0,
-                    bottom: 0,
-                    background: `linear-gradient(180deg, ${item.color}40 0%, ${item.color}90 100%)`,
-                    zIndex: 1,
-                  }}
-                />
-                <CardContent
-                  sx={{
-                    p: 3,
-                    height: '100%',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    justifyContent: 'space-between',
+                    borderRadius: '24px !important',
+                    border: `3px solid ${item.color}`,
+                    transition: 'all 0.5s cubic-bezier(0.4, 0, 0.2, 1)',
+                    cursor: 'pointer',
                     position: 'relative',
-                    zIndex: 2,
-                    minHeight: 350,
+                    overflow: 'hidden',
+                    boxShadow: `0 4px 12px ${item.color}40`,
+                    willChange: 'transform',
+                    backfaceVisibility: 'hidden',
+                    transform: 'translateZ(0)',
+                    WebkitMaskImage: '-webkit-radial-gradient(white, black)',
+                    '&, &::before, &::after': {
+                      borderRadius: '24px !important',
+                    },
+                    '&:hover': {
+                      transform: 'translateY(-15px) scale(1.03) rotate(2deg) translateZ(0)',
+                      boxShadow: `0 25px 50px ${item.color}70`,
+                      borderColor: item.color,
+                      borderWidth: '3px',
+                      borderRadius: '24px !important',
+                    },
+                    '&:hover .overlay': {
+                      background: `linear-gradient(180deg, ${item.color}20 0%, ${item.color}95 100%)`,
+                    },
                   }}>
-                  <Box>
-                    <Chip
-                      label={item.category}
-                      size='small'
-                      sx={{
-                        backgroundColor: 'rgba(255, 255, 255, 0.2)',
-                        color: 'white',
-                        fontWeight: 600,
-                        mb: 2,
-                        backdropFilter: 'blur(10px)',
-                      }}
-                    />
-                    <Typography
-                      variant='h5'
-                      component='h3'
-                      sx={{
-                        fontWeight: 700,
-                        color: 'white',
-                        mb: 2,
-                        fontSize: { xs: '1.25rem', md: '1.5rem' },
-                      }}>
-                      {item.title}
-                    </Typography>
-                    <Typography
-                      variant='body1'
-                      sx={{
-                        color: 'rgba(255, 255, 255, 0.95)',
-                        lineHeight: 1.6,
-                        fontSize: { xs: '0.95rem', md: '1rem' },
-                        mb: 2,
-                      }}>
-                      {item.description}
-                    </Typography>
-                  </Box>
                   <Box
+                    component='img'
+                    src={`/assets/portfolio-${index}.jpg`}
+                    alt={item.title}
                     sx={{
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover',
+                      borderRadius: '21px',
+                      transition: 'transform 0.3s ease-in-out',
+                      '.MuiCard-root:hover &': {
+                        transform: 'scale(1.1)',
+                        borderRadius: '21px',
+                      },
+                    }}
+                  />
+                  <Box
+                    className='overlay'
+                    sx={{
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      right: 0,
+                      bottom: 0,
+                      background: `linear-gradient(180deg, ${item.color}40 0%, ${item.color}90 100%)`,
+                      zIndex: 1,
+                      borderRadius: '21px',
+                      transition: 'all 0.5s ease-in-out',
+                    }}
+                  />
+                  <CardContent
+                    sx={{
+                      p: 3,
+                      height: '100%',
                       display: 'flex',
-                      alignItems: 'center',
+                      flexDirection: 'column',
                       justifyContent: 'space-between',
-                      mt: 'auto',
+                      position: 'relative',
+                      zIndex: 2,
+                      minHeight: 350,
                     }}>
-                    <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                      <FavoriteIcon sx={{ color: 'white', fontSize: '1.2rem' }} />
-                      <Typography
-                        variant='body2'
+                    <Box>
+                      <Chip
+                        label={item.category}
+                        size='small'
                         sx={{
+                          backgroundColor: 'rgba(255, 255, 255, 0.2)',
                           color: 'white',
                           fontWeight: 600,
-                          fontSize: '1rem',
+                          mb: 2,
+                          backdropFilter: 'blur(10px)',
+                        }}
+                      />
+                      <Typography
+                        variant='h5'
+                        component='h3'
+                        sx={{
+                          fontWeight: 700,
+                          color: 'white',
+                          mb: 2,
+                          fontSize: { xs: '1.25rem', md: '1.5rem' },
                         }}>
-                        {item.likes}
+                        {item.title}
+                      </Typography>
+                      <Typography
+                        variant='body1'
+                        sx={{
+                          color: 'rgba(255, 255, 255, 0.95)',
+                          lineHeight: 1.6,
+                          fontSize: { xs: '0.95rem', md: '1rem' },
+                          mb: 2,
+                        }}>
+                        {item.description}
                       </Typography>
                     </Box>
-                    <ArrowIcon
+                    <Box
                       sx={{
-                        color: 'white',
-                        fontSize: '1.5rem',
-                        transition: 'transform 0.3s ease-in-out',
-                        '.MuiCard-root:hover &': {
-                          transform: 'translateX(5px)',
-                        },
-                      }}
-                    />
-                  </Box>
-                </CardContent>
-              </Card>
-            </Box>
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'space-between',
+                        mt: 'auto',
+                      }}>
+                      <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                        <FavoriteIcon sx={{ color: 'white', fontSize: '1.2rem' }} />
+                        <Typography
+                          variant='body2'
+                          sx={{
+                            color: 'white',
+                            fontWeight: 600,
+                            fontSize: '1rem',
+                          }}>
+                          {item.likes}
+                        </Typography>
+                      </Box>
+                      <ArrowIcon
+                        sx={{
+                          color: 'white',
+                          fontSize: '1.5rem',
+                          transition: 'transform 0.3s ease-in-out',
+                          '.MuiCard-root:hover &': {
+                            transform: 'translateX(5px)',
+                          },
+                        }}
+                      />
+                    </Box>
+                  </CardContent>
+                </Card>
+              </Box>
+            </Fade>
           ))}
         </Box>
 

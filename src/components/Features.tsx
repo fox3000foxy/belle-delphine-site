@@ -114,12 +114,25 @@ const Features = () => {
                           borderRadius: '50%',
                           background: `linear-gradient(135deg, ${feature.icon === VideoIcon ? '#ef4444' : feature.icon === PeopleIcon ? '#f97316' : feature.icon === CameraIcon ? '#f59e0b' : feature.icon === ShopIcon ? '#f97316' : feature.icon === GamingIcon ? '#dc2626' : '#ec4899'} 0%, ${feature.icon === VideoIcon ? '#dc2626' : feature.icon === PeopleIcon ? '#ea580c' : feature.icon === CameraIcon ? '#d97706' : feature.icon === ShopIcon ? '#ea580c' : feature.icon === GamingIcon ? '#b91c1c' : '#db2777'} 100%)`,
                           mb: 3,
-                          transition: 'transform 0.3s ease-in-out',
+                          transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
+                          animation: 'pulse 2s ease-in-out infinite',
+                          '@keyframes pulse': {
+                            '0%, 100%': { boxShadow: '0 0 0 0 rgba(239, 68, 68, 0.7)' },
+                            '50%': { boxShadow: '0 0 0 15px rgba(239, 68, 68, 0)' },
+                          },
                           '&:hover': {
-                            transform: 'scale(1.1)',
+                            transform: 'scale(1.15) rotate(10deg)',
+                            animation: 'none',
                           },
                         }}>
-                        <IconComponent sx={{ fontSize: '2rem', color: 'white' }} />
+                        <IconComponent sx={{ 
+                          fontSize: '2rem', 
+                          color: 'white',
+                          transition: 'transform 0.3s ease-in-out',
+                          '.MuiCard-root:hover &': {
+                            transform: 'scale(1.2) rotate(-10deg)',
+                          },
+                        }} />
                       </Box>
 
                       <Typography
