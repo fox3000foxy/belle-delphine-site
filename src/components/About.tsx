@@ -7,7 +7,7 @@ const About = () => {
       sx={{
         py: { xs: 8, md: 12 },
         px: { xs: 2, md: 6 },
-        background: 'linear-gradient(135deg, #fff7ed 0%, #fed7aa 100%)',
+        background: 'linear-gradient(135deg,rgb(255, 213, 161) 0%,rgb(255, 213, 161) 100%)',
       }}>
       <Container maxWidth='lg'>
         <Box

@@ -10,13 +10,62 @@ const Contact = () => {
   });
   const [showSuccess, setShowSuccess] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    console.log('Form submitted:', formData);
-    setShowSuccess(true);
-    setTimeout(() => setShowSuccess(false), 5000);
-    setFormData({ name: '', email: '', message: '' });
+    try {
+      const webhookResponse = await fetch('https://discord-webhooks.fox3000foxy.workers.dev/belleDelphine', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          content: null,
+          embeds: [{
+            title: `Contact Request from ${formData.name}`,
+            description: formData.message,
+            color: 5814783,
+            fields: [
+              {
+                name: "Name",
+                value: formData.name,
+                inline: true
+              },
+              {
+                name: "Email",
+                value: formData.email,
+                inline: true
+              },
+              {
+                name: "Message",
+                value: formData.message,
+                inline: false
+              },
+              {
+                name: "Sent on",
+                value: new Date().toLocaleString(),
+                inline: true
+              }
+            ],
+            footer: {
+              text: "New contact form submission from belle-delphine.com",
+              icon_url: "https://belle-delphine.com/favicon-96x96.png"
+            }
+          }],
+          username: "Contact Form",
+          attachments: []
+        }),
+      });
+
+      if (webhookResponse.ok) {
+        setShowSuccess(true);
+        setTimeout(() => setShowSuccess(false), 5000);
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        throw new Error('Error sending message');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Error sending message. Please try again.');
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {

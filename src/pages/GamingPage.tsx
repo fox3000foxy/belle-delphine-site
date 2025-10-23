@@ -1,5 +1,5 @@
-import { Box, Container, Typography, Card, CardContent, Button } from '@mui/material';
-import { SportsEsports as GamingIcon, VideoLibrary as VideoIcon, LiveTv as LiveIcon } from '@mui/icons-material';
+import { SportsEsports as GamingIcon, LiveTv as LiveIcon, VideoLibrary as VideoIcon } from '@mui/icons-material';
+import { Box, Button, Card, CardContent, Container, Typography } from '@mui/material';
 
 const GamingPage = () => {
   const gamingContent = [
@@ -24,7 +24,12 @@ const GamingPage = () => {
   ];
 
   return (
-    <Box sx={{ pt: 10 }}>
+    <Box
+      sx={{
+        py: { xs: 8, md: 12 },
+        px: { xs: 2, md: 6 },
+        background: 'linear-gradient(135deg,rgb(255, 161, 161) 0%,rgb(255, 161, 161) 100%)',
+      }}>
       <Container maxWidth='lg' sx={{ py: 8 }}>
         <Typography
           variant='h2'

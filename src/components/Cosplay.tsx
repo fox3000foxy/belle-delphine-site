@@ -1,5 +1,5 @@
-import { Box, Card, CardContent, Container, Typography, Chip, Stack } from '@mui/material';
-import { Star as StarIcon, Favorite as FavoriteIcon, Visibility as VisibilityIcon } from '@mui/icons-material';
+import { Favorite as FavoriteIcon, Star as StarIcon, Visibility as VisibilityIcon } from '@mui/icons-material';
+import { Box, Card, CardContent, Chip, Container, Stack, Typography } from '@mui/material';
 import { useState } from 'react';
 
 const Cosplay = () => {
@@ -69,186 +69,180 @@ const Cosplay = () => {
   ];
 
   return (
-    <Box
-      sx={{
-        py: { xs: 8, md: 12 },
-        px: { xs: 2, md: 6 },
-        background: 'linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%)',
-      }}>
-      <Container maxWidth='lg'>
-        <Box sx={{ textAlign: 'center', mb: { xs: 6, md: 10 } }}>
-          <Typography
-            variant='h2'
-            component='h2'
-            sx={{
-              fontWeight: 700,
-              color: 'text.primary',
-              mb: 3,
-              fontSize: { xs: '2.5rem', md: '3.5rem' },
-            }}>
-            Cosplay{' '}
-            <Typography component='span' variant='inherit' sx={{ color: 'primary.main' }}>
-              Collection
-            </Typography>
-          </Typography>
-          <Typography
-            variant='h6'
-            sx={{
-              color: 'text.secondary',
-              maxWidth: '700px',
-              mx: 'auto',
-              lineHeight: 1.6,
-              fontSize: { xs: '1.1rem', md: '1.25rem' },
-            }}>
-            Explore my favorite cosplay creations featuring characters from anime, games, and pop culture. Each costume is handcrafted with love and attention to detail!
-          </Typography>
-        </Box>
 
-        <Box
+    <Container maxWidth='lg'>
+      <Box sx={{ textAlign: 'center', mb: { xs: 6, md: 10 } }}>
+        <Typography
+          variant='h2'
+          component='h2'
           sx={{
-            display: 'grid',
-            gridTemplateColumns: { xs: '1fr', sm: 'repeat(2, 1fr)', lg: 'repeat(3, 1fr)' },
-            gap: 4,
+            fontWeight: 700,
+            color: 'text.primary',
+            mb: 3,
+            fontSize: { xs: '2.5rem', md: '3.5rem' },
           }}>
-          {cosplays.map((cosplay, index) => (
-            <Box
-              key={index}
-              onMouseEnter={() => setHoveredCard(index)}
-              onMouseLeave={() => setHoveredCard(null)}>
-              <Card
+          Cosplay{' '}
+          <Typography component='span' variant='inherit' sx={{ color: 'primary.main' }}>
+            Collection
+          </Typography>
+        </Typography>
+        <Typography
+          variant='h6'
+          sx={{
+            color: 'text.secondary',
+            maxWidth: '700px',
+            mx: 'auto',
+            lineHeight: 1.6,
+            fontSize: { xs: '1.1rem', md: '1.25rem' },
+          }}>
+          Explore my favorite cosplay creations featuring characters from anime, games, and pop culture. Each costume is handcrafted with love and attention to detail!
+        </Typography>
+      </Box>
+
+      <Box
+        sx={{
+          display: 'grid',
+          gridTemplateColumns: { xs: '1fr', sm: 'repeat(2, 1fr)', lg: 'repeat(3, 1fr)' },
+          gap: 4,
+        }}>
+        {cosplays.map((cosplay, index) => (
+          <Box
+            key={index}
+            onMouseEnter={() => setHoveredCard(index)}
+            onMouseLeave={() => setHoveredCard(null)}>
+            <Card
+              sx={{
+                height: '100%',
+                background: cosplay.gradient,
+                borderRadius: 3,
+                overflow: 'hidden',
+                transition: 'all 0.4s ease-in-out',
+                transform: hoveredCard === index ? 'translateY(-12px) scale(1.02)' : 'translateY(0) scale(1)',
+                boxShadow: hoveredCard === index ? `0 20px 40px ${cosplay.color}60` : '0 4px 12px rgba(0, 0, 0, 0.1)',
+                cursor: 'pointer',
+              }}>
+              <Box
                 sx={{
-                  height: '100%',
-                  background: cosplay.gradient,
-                  borderRadius: 3,
+                  height: 200,
+                  background: `linear-gradient(135deg, ${cosplay.color}40 0%, ${cosplay.color}80 100%)`,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  position: 'relative',
                   overflow: 'hidden',
-                  transition: 'all 0.4s ease-in-out',
-                  transform: hoveredCard === index ? 'translateY(-12px) scale(1.02)' : 'translateY(0) scale(1)',
-                  boxShadow: hoveredCard === index ? `0 20px 40px ${cosplay.color}60` : '0 4px 12px rgba(0, 0, 0, 0.1)',
-                  cursor: 'pointer',
+                  '&::before': {
+                    content: '""',
+                    position: 'absolute',
+                    top: '-50%',
+                    left: '-50%',
+                    width: '200%',
+                    height: '200%',
+                    background: `radial-gradient(circle, ${cosplay.color}40 0%, transparent 70%)`,
+                    animation: hoveredCard === index ? 'rotate 4s linear infinite' : 'none',
+                  },
+                  '@keyframes rotate': {
+                    '0%': { transform: 'rotate(0deg)' },
+                    '100%': { transform: 'rotate(360deg)' },
+                  },
                 }}>
+                <StarIcon
+                  sx={{
+                    fontSize: '4rem',
+                    color: 'white',
+                    opacity: 0.9,
+                    filter: 'drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3))',
+                    transform: hoveredCard === index ? 'scale(1.2) rotate(15deg)' : 'scale(1) rotate(0deg)',
+                    transition: 'all 0.4s ease-in-out',
+                  }}
+                />
+              </Box>
+
+              <CardContent sx={{ p: 3, backgroundColor: 'white' }}>
+                <Typography
+                  variant='h5'
+                  component='h3'
+                  sx={{
+                    fontWeight: 700,
+                    color: 'text.primary',
+                    mb: 1,
+                    fontSize: { xs: '1.25rem', md: '1.5rem' },
+                  }}>
+                  {cosplay.character}
+                </Typography>
+                <Typography
+                  variant='body2'
+                  sx={{
+                    color: 'text.secondary',
+                    mb: 2,
+                    fontWeight: 500,
+                  }}>
+                  {cosplay.game}
+                </Typography>
+
+                <Stack direction='row' spacing={1} sx={{ mb: 2, flexWrap: 'wrap', gap: 1 }}>
+                  {cosplay.tags.map((tag, tagIndex) => (
+                    <Chip
+                      key={tagIndex}
+                      label={tag}
+                      size='small'
+                      sx={{
+                        backgroundColor: `${cosplay.color}20`,
+                        color: cosplay.color,
+                        fontWeight: 600,
+                        fontSize: '0.75rem',
+                      }}
+                    />
+                  ))}
+                </Stack>
+
                 <Box
                   sx={{
-                    height: 200,
-                    background: `linear-gradient(135deg, ${cosplay.color}40 0%, ${cosplay.color}80 100%)`,
                     display: 'flex',
+                    justifyContent: 'space-between',
                     alignItems: 'center',
-                    justifyContent: 'center',
-                    position: 'relative',
-                    overflow: 'hidden',
-                    '&::before': {
-                      content: '""',
-                      position: 'absolute',
-                      top: '-50%',
-                      left: '-50%',
-                      width: '200%',
-                      height: '200%',
-                      background: `radial-gradient(circle, ${cosplay.color}40 0%, transparent 70%)`,
-                      animation: hoveredCard === index ? 'rotate 4s linear infinite' : 'none',
-                    },
-                    '@keyframes rotate': {
-                      '0%': { transform: 'rotate(0deg)' },
-                      '100%': { transform: 'rotate(360deg)' },
-                    },
+                    pt: 2,
+                    borderTop: '1px solid',
+                    borderColor: 'divider',
                   }}>
-                  <StarIcon
-                    sx={{
-                      fontSize: '4rem',
-                      color: 'white',
-                      opacity: 0.9,
-                      filter: 'drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3))',
-                      transform: hoveredCard === index ? 'scale(1.2) rotate(15deg)' : 'scale(1) rotate(0deg)',
-                      transition: 'all 0.4s ease-in-out',
-                    }}
-                  />
-                </Box>
-
-                <CardContent sx={{ p: 3, backgroundColor: 'white' }}>
-                  <Typography
-                    variant='h5'
-                    component='h3'
-                    sx={{
-                      fontWeight: 700,
-                      color: 'text.primary',
-                      mb: 1,
-                      fontSize: { xs: '1.25rem', md: '1.5rem' },
-                    }}>
-                    {cosplay.character}
-                  </Typography>
-                  <Typography
-                    variant='body2'
-                    sx={{
-                      color: 'text.secondary',
-                      mb: 2,
-                      fontWeight: 500,
-                    }}>
-                    {cosplay.game}
-                  </Typography>
-
-                  <Stack direction='row' spacing={1} sx={{ mb: 2, flexWrap: 'wrap', gap: 1 }}>
-                    {cosplay.tags.map((tag, tagIndex) => (
-                      <Chip
-                        key={tagIndex}
-                        label={tag}
-                        size='small'
-                        sx={{
-                          backgroundColor: `${cosplay.color}20`,
-                          color: cosplay.color,
-                          fontWeight: 600,
-                          fontSize: '0.75rem',
-                        }}
-                      />
-                    ))}
-                  </Stack>
-
-                  <Box
-                    sx={{
-                      display: 'flex',
-                      justifyContent: 'space-between',
-                      alignItems: 'center',
-                      pt: 2,
-                      borderTop: '1px solid',
-                      borderColor: 'divider',
-                    }}>
-                    <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
-                      <FavoriteIcon sx={{ fontSize: '1rem', color: cosplay.color }} />
-                      <Typography variant='body2' sx={{ fontWeight: 600, color: 'text.secondary' }}>
-                        {cosplay.likes}
-                      </Typography>
-                    </Box>
-                    <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
-                      <VisibilityIcon sx={{ fontSize: '1rem', color: cosplay.color }} />
-                      <Typography variant='body2' sx={{ fontWeight: 600, color: 'text.secondary' }}>
-                        {cosplay.views}
-                      </Typography>
-                    </Box>
+                  <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
+                    <FavoriteIcon sx={{ fontSize: '1rem', color: cosplay.color }} />
+                    <Typography variant='body2' sx={{ fontWeight: 600, color: 'text.secondary' }}>
+                      {cosplay.likes}
+                    </Typography>
                   </Box>
-                </CardContent>
-              </Card>
-            </Box>
-          ))}
-        </Box>
+                  <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
+                    <VisibilityIcon sx={{ fontSize: '1rem', color: cosplay.color }} />
+                    <Typography variant='body2' sx={{ fontWeight: 600, color: 'text.secondary' }}>
+                      {cosplay.views}
+                    </Typography>
+                  </Box>
+                </Box>
+              </CardContent>
+            </Card>
+          </Box>
+        ))}
+      </Box>
 
-        <Box sx={{ textAlign: 'center', mt: 8 }}>
-          <Typography
-            variant='h6'
-            sx={{
-              color: 'text.secondary',
-              mb: 2,
-            }}>
-            Want to see more cosplays?
-          </Typography>
-          <Typography
-            variant='body1'
-            sx={{
-              color: 'text.secondary',
-              maxWidth: '600px',
-              mx: 'auto',
-            }}>
-            Follow me on Instagram and YouTube for behind-the-scenes content, tutorials, and new cosplay reveals!
-          </Typography>
-        </Box>
-      </Container>
-    </Box>
+      <Box sx={{ textAlign: 'center', mt: 8 }}>
+        <Typography
+          variant='h6'
+          sx={{
+            color: 'text.secondary',
+            mb: 2,
+          }}>
+          Want to see more cosplays?
+        </Typography>
+        <Typography
+          variant='body1'
+          sx={{
+            color: 'text.secondary',
+            maxWidth: '600px',
+            mx: 'auto',
+          }}>
+          Follow me on Instagram and YouTube for behind-the-scenes content, tutorials, and new cosplay reveals!
+        </Typography>
+      </Box>
+    </Container>
   );
 };
 

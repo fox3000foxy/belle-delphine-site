@@ -4,7 +4,12 @@ import Gallery from '../components/Gallery';
 
 const CosplayPage = () => {
   return (
-    <>
+    <Box
+      sx={{
+        py: { xs: 8, md: 12 },
+        px: { xs: 2, md: 6 },
+        background: 'linear-gradient(135deg,rgb(161, 255, 203) 0%,rgb(161, 255, 203) 100%)',
+      }}>
       <Cosplay />
       <Box sx={{ pt: 10 }}>
         <Container maxWidth='lg' sx={{ py: 8 }}>
@@ -36,7 +41,7 @@ const CosplayPage = () => {
         </Container>
         <Gallery />
       </Box>
-    </>
+    </Box>
   );
 };
 
