@@ -7,6 +7,7 @@ import FAQ from '../components/FAQ';
 import Features from '../components/Features';
 import Gallery from '../components/Gallery';
 import Hero from '../components/Hero';
+import News from '../components/News';
 import Stats from '../components/Stats';
 import Testimonials from '../components/Testimonials';
 
@@ -42,6 +43,9 @@ const HomePage = () => {
       </section>
       <section id='testimonials'>
         <Testimonials />
+      </section>
+      <section id='news'>
+        <News />
       </section>
       <section id='faq'>
         <FAQ />

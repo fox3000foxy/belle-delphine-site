@@ -108,9 +108,21 @@ Now includes all sections in the following order:
 - Performance-optimized animations
 - Accessibility considerations
 
+### 5. **News Component** (`src/components/News.tsx`) - NOUVEAU
+- **Purpose**: Afficher les articles de presse et actualités concernant Belle Delphine
+- **Features**:
+  - 6 articles avec images, dates, sources et catégories
+  - Badge "Tendance" pour les articles populaires
+  - Tri chronologique (plus récents en premier)
+  - Liens externes vers les articles complets
+  - Catégories colorées (YouTube, Business, Cosplay, etc.)
+  - Bouton CTA pour contact presse
+- **Design**: Dégradé vert avec cartes interactives et animations
+
 ## Next Steps (Optional)
-- Add real images for testimonials
+- Add real images for testimonials and news articles
 - Integrate actual social media feeds via APIs
+- Connect to real news API or RSS feeds
 - Add more interactive elements
 - Implement lazy loading for images
 - Add analytics tracking

@@ -240,6 +240,20 @@ const Footer = () => {
                 Cosplay
               </Link>
               <Link
+                href='#news'
+                underline='none'
+                sx={{
+                  color: 'background.default',
+                  '&:hover': {
+                    color: 'primary.main',
+                  },
+                  transition: 'color 0.3s ease-in-out',
+                  display: 'block',
+                  py: 0.5,
+                }}>
+                News
+              </Link>
+              <Link
                 href='#faq'
                 underline='none'
                 sx={{

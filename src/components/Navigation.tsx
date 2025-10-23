@@ -20,6 +20,7 @@ const Navigation = () => {
     { name: 'Gallery', path: '#gallery' },
     { name: 'Cosplay', path: '#cosplay' },
     { name: 'Career', path: '#biography' },
+    { name: 'News', path: '#news' },
     { name: 'FAQ', path: '#faq' },
     { name: 'Contact', path: '#contact' },
     { name: 'Merch', path: 'https://belledelphinemerch.com/fr' }
