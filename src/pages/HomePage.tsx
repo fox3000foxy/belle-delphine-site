@@ -1,5 +1,14 @@
+import About from '../components/About';
+import Achievements from '../components/Achievements';
+import Biography from '../components/Biography';
+import Contact from '../components/Contact';
+import Cosplay from '../components/Cosplay';
+import FAQ from '../components/FAQ';
 import Features from '../components/Features';
+import Gallery from '../components/Gallery';
 import Hero from '../components/Hero';
+import Stats from '../components/Stats';
+import Testimonials from '../components/Testimonials';
 
 const HomePage = () => {
   return (
@@ -7,24 +16,39 @@ const HomePage = () => {
       <section id='hero'>
         <Hero />
       </section>
+      <section id='stats'>
+        <Stats />
+      </section>
       <section id='features'>
         <Features />
       </section>
-      {/* <section id='gallery'>
-        <Gallery />
-      </section> */}
-      {/* <section id='cosplay'>
-        <Cosplay />
-      </section> */}
-      {/* <section id='achievements'>
-        <Achievements />
-      </section> */}
-      {/* <section id='about'>
+      <section id='about'>
         <About />
+      </section>
+      <section id='gallery'>
+        <Gallery />
+      </section>
+      <section id='cosplay'>
+        <Cosplay />
+      </section>
+      {/* <section id='social'>
+        <SocialHighlights />
       </section> */}
-      {/* <section id='biography'>
+      <section id='biography'>
         <Biography />
-      </section> */}
+      </section>
+      <section id='achievements'>
+        <Achievements />
+      </section>
+      <section id='testimonials'>
+        <Testimonials />
+      </section>
+      <section id='faq'>
+        <FAQ />
+      </section>
+      <section id='contact'>
+        <Contact />
+      </section>
     </>
   );
 };

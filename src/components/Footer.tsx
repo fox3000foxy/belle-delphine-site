@@ -1,6 +1,5 @@
 import { Facebook as FacebookIcon, Instagram as InstagramIcon, Twitter as TwitterIcon, YouTube as YouTubeIcon } from '@mui/icons-material';
 import { Box, Container, Divider, IconButton, Link, Stack, Typography } from '@mui/material';
-import { Link as RouterLink } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -126,8 +125,7 @@ const Footer = () => {
             </Typography>
             <Stack spacing={1}>
               <Link
-                component={RouterLink}
-                to='/'
+                href='/'
                 underline='none'
                 sx={{
                   color: 'background.default',
@@ -141,8 +139,7 @@ const Footer = () => {
                 Home
               </Link>
               <Link
-                component={RouterLink}
-                to='/about'
+                href='#about'
                 underline='none'
                 sx={{
                   color: 'background.default',
@@ -156,8 +153,35 @@ const Footer = () => {
                 About
               </Link>
               <Link
-                component={RouterLink}
-                to='/contact'
+                href='#gallery'
+                underline='none'
+                sx={{
+                  color: 'background.default',
+                  '&:hover': {
+                    color: 'primary.main',
+                  },
+                  transition: 'color 0.3s ease-in-out',
+                  display: 'block',
+                  py: 0.5,
+                }}>
+                Gallery
+              </Link>
+              <Link
+                href='#biography'
+                underline='none'
+                sx={{
+                  color: 'background.default',
+                  '&:hover': {
+                    color: 'primary.main',
+                  },
+                  transition: 'color 0.3s ease-in-out',
+                  display: 'block',
+                  py: 0.5,
+                }}>
+                Career
+              </Link>
+              <Link
+                href='#contact'
                 underline='none'
                 sx={{
                   color: 'background.default',
@@ -186,8 +210,7 @@ const Footer = () => {
             </Typography>
             <Stack spacing={1}>
               <Link
-                component={RouterLink}
-                to='/cosplay'
+                href='#cosplay'
                 underline='none'
                 sx={{
                   color: 'background.default',
@@ -198,11 +221,10 @@ const Footer = () => {
                   display: 'block',
                   py: 0.5,
                 }}>
-                Cosplay Gallery
+                Cosplay
               </Link>
               <Link
-                component={RouterLink}
-                to='/gaming'
+                href='#faq'
                 underline='none'
                 sx={{
                   color: 'background.default',
@@ -213,7 +235,7 @@ const Footer = () => {
                   display: 'block',
                   py: 0.5,
                 }}>
-                Gaming Videos
+                FAQ
               </Link>
               <Link
                 component='a'
@@ -234,7 +256,7 @@ const Footer = () => {
               </Link>
               <Link
                 component='a'
-                href='https://www.instagram.com/belle.delphine'
+                href='https://belledelphinemerch.com/fr'
                 target='_blank'
                 rel='noopener noreferrer'
                 underline='none'
@@ -247,7 +269,7 @@ const Footer = () => {
                   display: 'block',
                   py: 0.5,
                 }}>
-                Instagram
+                Merch
               </Link>
             </Stack>
           </Box>

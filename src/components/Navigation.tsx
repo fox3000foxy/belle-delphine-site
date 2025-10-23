@@ -16,11 +16,40 @@ const Navigation = () => {
 
   const navItems = [
     { name: 'Home', path: '/' },
-    { name: 'Cosplay', path: '/cosplay' },
-    { name: 'Gaming', path: '/gaming' },
-    { name: 'About', path: '/about' },
-    { name: 'Contact', path: '/contact' },
+    { name: 'About', path: '#about' },
+    { name: 'Gallery', path: '#gallery' },
+    { name: 'Cosplay', path: '#cosplay' },
+    { name: 'Career', path: '#biography' },
+    { name: 'FAQ', path: '#faq' },
+    { name: 'Contact', path: '#contact' },
+    { name: 'Merch', path: 'https://belledelphinemerch.com/fr' }
   ];
+
+  const isExternalLink = (path: string) => {
+    return path.startsWith('http://') || path.startsWith('https://');
+  };
+
+  const isAnchorLink = (path: string) => {
+    return path.startsWith('#');
+  };
+
+  const isIndexLink = (path: string) => {
+    return path === '/';
+  };
+
+  const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, path: string) => {
+    if (isAnchorLink(path)) {
+      e.preventDefault();
+      const element = document.querySelector(path);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+    if (isIndexLink(path)) {
+      // To hero
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
 
   return (
     <>
@@ -66,40 +95,50 @@ const Navigation = () => {
 
           {!isMobile && (
             <Box sx={{ display: 'flex', alignItems: 'center', gap: 3 }}>
-              {navItems.map(item => (
-                <Button
-                  key={item.name}
-                  component={RouterLink}
-                  to={item.path}
-                  sx={{
-                    color: trigger ? 'text.primary' : 'white',
-                    fontWeight: 500,
-                    textTransform: 'none',
-                    position: 'relative',
-                    transition: 'all 0.3s ease-in-out',
-                    '&::after': {
-                      content: '""',
-                      position: 'absolute',
-                      bottom: 0,
-                      left: '50%',
-                      width: '0',
-                      height: '2px',
-                      backgroundColor: 'primary.main',
+              {navItems.map(item => {
+                const isExternal = isExternalLink(item.path);
+                const isAnchor = isAnchorLink(item.path);
+                
+                return (
+                  <Button
+                    key={item.name}
+                    component={isExternal || isAnchor ? 'a' : RouterLink}
+                    {...(isExternal 
+                      ? { href: item.path, target: '_blank', rel: 'noopener noreferrer' } 
+                      : isAnchor || isIndexLink(item.path)
+                        ? { href: item.path, onClick: (e: React.MouseEvent<HTMLAnchorElement>) => handleAnchorClick(e, item.path) }
+                        : { to: item.path }
+                    )}
+                    sx={{
+                      color: trigger ? 'text.primary' : 'white',
+                      fontWeight: 500,
+                      textTransform: 'none',
+                      position: 'relative',
                       transition: 'all 0.3s ease-in-out',
-                      transform: 'translateX(-50%)',
-                    },
-                    '&:hover': {
-                      color: 'primary.main',
-                      backgroundColor: 'transparent',
-                      transform: 'translateY(-2px)',
-                    },
-                    '&:hover::after': {
-                      width: '80%',
-                    },
-                  }}>
-                  {item.name}
-                </Button>
-              ))}
+                      '&::after': {
+                        content: '""',
+                        position: 'absolute',
+                        bottom: 0,
+                        left: '50%',
+                        width: '0',
+                        height: '2px',
+                        backgroundColor: 'primary.main',
+                        transition: 'all 0.3s ease-in-out',
+                        transform: 'translateX(-50%)',
+                      },
+                      '&:hover': {
+                        color: 'primary.main',
+                        backgroundColor: 'transparent',
+                        transform: 'translateY(-2px)',
+                      },
+                      '&:hover::after': {
+                        width: '80%',
+                      },
+                      }}>
+                    {item.name}
+                  </Button>
+                );
+              })}
               <Button
                 variant='contained'
                 color='primary'
@@ -161,29 +200,39 @@ const Navigation = () => {
           </Box>
 
           <List>
-            {navItems.map(item => (
-              <ListItem key={item.name} disablePadding>
-                <ListItemButton
-                  component={RouterLink}
-                  to={item.path}
-                  onClick={() => setIsMenuOpen(false)}
-                  sx={{
-                    borderRadius: 2,
-                    mb: 1,
-                    '&:hover': {
-                      backgroundColor: 'primary.50',
-                    },
-                  }}>
-                  <ListItemText
-                    primary={item.name}
-                    primaryTypographyProps={{
-                      fontWeight: 500,
-                      fontSize: '1.1rem',
-                    }}
-                  />
-                </ListItemButton>
-              </ListItem>
-            ))}
+            {navItems.map(item => {
+              const isExternal = isExternalLink(item.path);
+              const isAnchor = isAnchorLink(item.path);
+              
+              return (
+                <ListItem key={item.name} disablePadding>
+                  <ListItemButton
+                    component={isExternal || isAnchor ? 'a' : RouterLink}
+                    {...(isExternal 
+                      ? { href: item.path, target: '_blank', rel: 'noopener noreferrer' } 
+                      : isAnchor 
+                        ? { href: item.path, onClick: (e: React.MouseEvent<HTMLAnchorElement>) => { handleAnchorClick(e, item.path); setIsMenuOpen(false); } }
+                        : { to: item.path }
+                    )}
+                    onClick={() => !isAnchor && setIsMenuOpen(false)}
+                    sx={{
+                      borderRadius: 2,
+                      mb: 1,
+                      '&:hover': {
+                        backgroundColor: 'primary.50',
+                      },
+                    }}>
+                    <ListItemText
+                      primary={item.name}
+                      primaryTypographyProps={{
+                        fontWeight: 500,
+                        fontSize: '1.1rem',
+                      }}
+                    />
+                  </ListItemButton>
+                </ListItem>
+              );
+            })}
           </List>
 
           <Button
