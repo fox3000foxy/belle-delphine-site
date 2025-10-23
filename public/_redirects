@@ -1,2 +1,2 @@
 # SPA Routes - Serve index.html for all non-asset paths
-/* /index.html 200
+/*  /index.html  200!
