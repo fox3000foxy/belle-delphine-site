@@ -1,8 +1,10 @@
 import { ArrowForward as ArrowIcon, Favorite as FavoriteIcon } from '@mui/icons-material';
 import { Box, Button, Card, CardContent, Chip, Container, Fade, Typography } from '@mui/material';
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Gallery = () => {
+  const { t } = useTranslation();
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -11,52 +13,52 @@ const Gallery = () => {
 
   const portfolioItems = [
     {
-      title: 'Anime Cosplay Collection',
-      category: 'Cosplay',
-      description: 'Detailed recreations of beloved anime characters with handcrafted costumes and props.',
+      title: t('gallery.items.animeCosplay.title'),
+      category: t('gallery.items.animeCosplay.category'),
+      description: t('gallery.items.animeCosplay.description'),
       color: '#ef4444',
       gradient: 'linear-gradient(135deg, #ef4444 0%, #dc2626 100%)',
-      likes: '2.5M',
+      likes: t('gallery.items.animeCosplay.likes'),
     },
     {
-      title: 'Gaming Character Series',
-      category: 'Gaming',
-      description: 'Bringing iconic video game characters to life with stunning accuracy and creativity.',
+      title: t('gallery.items.gamingSeries.title'),
+      category: t('gallery.items.gamingSeries.category'),
+      description: t('gallery.items.gamingSeries.description'),
       color: '#f59e0b',
       gradient: 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)',
-      likes: '1.8M',
+      likes: t('gallery.items.gamingSeries.likes'),
     },
     {
-      title: 'Fantasy & Mythology',
-      category: 'Fantasy',
-      description: 'Original interpretations of mythological creatures and fantasy characters.',
+      title: t('gallery.items.fantasyMyth.title'),
+      category: t('gallery.items.fantasyMyth.category'),
+      description: t('gallery.items.fantasyMyth.description'),
       color: '#ec4899',
       gradient: 'linear-gradient(135deg, #ec4899 0%, #db2777 100%)',
-      likes: '2.1M',
+      likes: t('gallery.items.fantasyMyth.likes'),
     },
     {
-      title: 'Creative Photoshoots',
-      category: 'Photography',
-      description: 'Artistic photo series featuring unique concepts, lighting, and post-production.',
+      title: t('gallery.items.creativeShoots.title'),
+      category: t('gallery.items.creativeShoots.category'),
+      description: t('gallery.items.creativeShoots.description'),
       color: '#8b5cf6',
       gradient: 'linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%)',
-      likes: '3.2M',
+      likes: t('gallery.items.creativeShoots.likes'),
     },
     {
-      title: 'Behind the Scenes',
-      category: 'BTS',
-      description: 'Exclusive look at the creative process, makeup tutorials, and costume crafting.',
+      title: t('gallery.items.behindScenes.title'),
+      category: t('gallery.items.behindScenes.category'),
+      description: t('gallery.items.behindScenes.description'),
       color: '#06b6d4',
       gradient: 'linear-gradient(135deg, #06b6d4 0%, #0891b2 100%)',
-      likes: '1.5M',
+      likes: t('gallery.items.behindScenes.likes'),
     },
     {
-      title: 'Collaboration Projects',
-      category: 'Collabs',
-      description: 'Special projects with other creators, photographers, and brands.',
+      title: t('gallery.items.collaborationProjects.title'),
+      category: t('gallery.items.collaborationProjects.category'),
+      description: t('gallery.items.collaborationProjects.description'),
       color: '#f97316',
       gradient: 'linear-gradient(135deg, #f97316 0%, #ea580c 100%)',
-      likes: '1.9M',
+      likes: t('gallery.items.collaborationProjects.likes'),
     },
   ];
 
@@ -78,10 +80,7 @@ const Gallery = () => {
               mb: 3,
               fontSize: { xs: '2.5rem', md: '3.5rem' },
             }}>
-            Portfolio{' '}
-            <Typography component='span' variant='inherit' sx={{ color: 'primary.main' }}>
-              Highlights
-            </Typography>
+            {t('gallery.title')}
           </Typography>
           <Typography
             variant='h6'
@@ -93,7 +92,7 @@ const Gallery = () => {
               fontSize: { xs: '1.1rem', md: '1.25rem' },
               mb: 4,
             }}>
-            Explore a curated selection of my best work spanning cosplay, photography, and creative projects.
+            {t('gallery.subtitle')}
           </Typography>
         </Box>
 
@@ -268,7 +267,7 @@ const Gallery = () => {
               },
               transition: 'all 0.3s ease-in-out',
             }}>
-            View Full Portfolio
+            {t('gallery.cta')}
           </Button>
         </Box>
       </Container>

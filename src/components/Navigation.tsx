@@ -1,11 +1,14 @@
 import { Close as CloseIcon, Menu as MenuIcon } from '@mui/icons-material';
 import { AppBar, Box, Button, Drawer, IconButton, List, ListItem, ListItemButton, ListItemText, Toolbar, Typography, useMediaQuery, useScrollTrigger, useTheme } from '@mui/material';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link as RouterLink } from 'react-router-dom';
 import logo from '../assets/logo.svg';
+import LanguageSelector from './LanguageSelector';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t } = useTranslation();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
@@ -15,15 +18,15 @@ const Navigation = () => {
   });
 
   const navItems = [
-    { name: 'Home', path: '/' },
-    { name: 'About', path: '#about' },
-    { name: 'Gallery', path: '#gallery' },
-    { name: 'Cosplay', path: '#cosplay' },
-    { name: 'Career', path: '#biography' },
-    { name: 'News', path: '#news' },
-    { name: 'FAQ', path: '#faq' },
-    { name: 'Contact', path: '#contact' },
-    { name: 'Merch', path: 'https://belledelphinemerch.com/fr' },
+    { name: t('nav.home'), path: '/' },
+    { name: t('nav.about'), path: '#about' },
+    { name: t('nav.gallery'), path: '#gallery' },
+    { name: t('nav.cosplay'), path: '#cosplay' },
+    { name: t('nav.career'), path: '#biography' },
+    { name: t('nav.news'), path: '#news' },
+    { name: t('nav.faq'), path: '#faq' },
+    { name: t('nav.contact'), path: '#contact' },
+    { name: t('nav.merch'), path: 'https://belledelphinemerch.com/fr' },
   ];
 
   const isExternalLink = (path: string) => {
@@ -95,7 +98,8 @@ const Navigation = () => {
           </Box>
 
           {!isMobile && (
-            <Box sx={{ display: 'flex', alignItems: 'center', gap: 3 }}>
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
+              <LanguageSelector color={trigger ? 'text.primary' : 'white'} />
               {navItems.map(item => {
                 const isExternal = isExternalLink(item.path);
                 const isAnchor = isAnchorLink(item.path);
@@ -150,20 +154,24 @@ const Navigation = () => {
                   fontWeight: 600,
                   textTransform: 'none',
                 }}>
-                Subscribe
+                {t('nav.subscribe')}
               </Button>
             </Box>
           )}
 
           {isMobile && (
-            <IconButton
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+              <LanguageSelector color={trigger ? 'text.primary' : 'white'} />
+              <IconButton
               onClick={() => setIsMenuOpen(true)}
+              aria-label="Open navigation menu"
               sx={{
                 color: trigger ? 'text.primary' : 'white',
                 transition: 'color 0.3s ease-in-out',
               }}>
               <MenuIcon />
             </IconButton>
+            </Box>
           )}
         </Toolbar>
       </AppBar>
@@ -190,7 +198,7 @@ const Navigation = () => {
             <Typography variant='h6' component='div' sx={{ fontWeight: 700 }}>
               Belle Delphine
             </Typography>
-            <IconButton onClick={() => setIsMenuOpen(false)}>
+            <IconButton onClick={() => setIsMenuOpen(false)} aria-label="Close navigation menu">
               <CloseIcon />
             </IconButton>
           </Box>
@@ -251,7 +259,7 @@ const Navigation = () => {
               fontWeight: 600,
               textTransform: 'none',
             }}>
-            Subscribe
+            {t('nav.subscribe')}
           </Button>
         </Box>
       </Drawer>

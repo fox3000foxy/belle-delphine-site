@@ -1,11 +1,18 @@
-import { StrictMode } from 'react';
+import { StrictMode, Suspense } from 'react';
 import { createRoot } from 'react-dom/client';
+import { HelmetProvider } from 'react-helmet-async';
+import App from './App.tsx';
+import Loading from './components/Loading';
+import './i18n/config';
 import './index.css';
 import './lib/fontawesome';
-import App from './App.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <HelmetProvider>
+      <Suspense fallback={<Loading />}>
+        <App />
+      </Suspense>
+    </HelmetProvider>
   </StrictMode>
 );

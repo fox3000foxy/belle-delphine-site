@@ -1,8 +1,10 @@
 import { People as PeopleIcon, Public as PublicIcon, TrendingUp as TrendingUpIcon } from '@mui/icons-material';
 import { Box, Button, Card, CardContent, Container, Grow, List, ListItem, ListItemIcon, ListItemText, Slide, Typography } from '@mui/material';
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const About = () => {
+  const { t } = useTranslation();
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -35,9 +37,9 @@ const About = () => {
                   mb: 3,
                   fontSize: { xs: '2.5rem', md: '3.5rem' },
                 }}>
-                About{' '}
+                {t('about.title')}{' '}
                 <Typography component='span' variant='inherit' sx={{ color: 'primary.main' }}>
-                  Belle Delphine
+                  {t('about.name')}
                 </Typography>
               </Typography>
             </Slide>
@@ -51,7 +53,7 @@ const About = () => {
                   lineHeight: 1.7,
                   fontSize: { xs: '1rem', md: '1.125rem' },
                 }}>
-                I'm a South African-born British creative cosplayer, passionate gamer, and internet personality known for my incredible costume designs, gaming content, and viral memes. I bring anime and gaming characters to life with stunning attention to detail and artistic vision.
+                {t('about.intro1')}
               </Typography>
             </Slide>
 
@@ -64,7 +66,7 @@ const About = () => {
                   lineHeight: 1.7,
                   fontSize: { xs: '1rem', md: '1.125rem' },
                 }}>
-                From elaborate cosplay photoshoots and gaming streams to hilarious meme content and creative collaborations, I create entertaining content that celebrates geek culture and creativity. My work spans multiple platforms including Instagram, YouTube, and TikTok, where I have amassed millions of followers.
+                {t('about.intro2')}
               </Typography>
             </Slide>
 
@@ -77,7 +79,7 @@ const About = () => {
                   lineHeight: 1.7,
                   fontSize: { xs: '1rem', md: '1.125rem' },
                 }}>
-                Known for my innovative approach to content creation, I combine professional photography, handcrafted costumes, and creative makeup artistry to produce unique and memorable content. My dedication to my craft and willingness to push creative boundaries has made me one of the most recognizable figures in internet culture.
+                {t('about.intro3')}
               </Typography>
             </Slide>
 
@@ -87,8 +89,8 @@ const About = () => {
                   <TrendingUpIcon sx={{ color: 'primary.main' }} />
                 </ListItemIcon>
                 <ListItemText
-                  primary='Professional Cosplay Artistry'
-                  secondary='Handcrafted costumes with meticulous attention to detail'
+                  primary={t('about.feature1Title')}
+                  secondary={t('about.feature1Desc')}
                   primaryTypographyProps={{
                     fontWeight: 600,
                     color: 'text.primary',
@@ -103,8 +105,8 @@ const About = () => {
                   <PeopleIcon sx={{ color: 'secondary.main' }} />
                 </ListItemIcon>
                 <ListItemText
-                  primary='Active Gaming Community'
-                  secondary='Engaging with fans through streams and gaming content'
+                  primary={t('about.feature2Title')}
+                  secondary={t('about.feature2Desc')}
                   primaryTypographyProps={{
                     fontWeight: 600,
                     color: 'text.primary',
@@ -119,8 +121,8 @@ const About = () => {
                   <PublicIcon sx={{ color: 'secondary.main' }} />
                 </ListItemIcon>
                 <ListItemText
-                  primary='Internet Culture Pioneer'
-                  secondary='Creating viral moments and innovative content formats'
+                  primary={t('about.feature3Title')}
+                  secondary={t('about.feature3Desc')}
                   primaryTypographyProps={{
                     fontWeight: 600,
                     color: 'text.primary',

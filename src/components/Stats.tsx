@@ -1,7 +1,9 @@
 import { Box, Container, Typography, Fade } from '@mui/material';
 import { useEffect, useState, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Stats = () => {
+  const { t } = useTranslation();
   const [isVisible, setIsVisible] = useState(false);
   const [counts, setCounts] = useState({
     followers: 0,
@@ -65,25 +67,25 @@ const Stats = () => {
   const stats = [
     {
       value: formatNumber(counts.followers),
-      label: 'Social Media Followers',
+      label: t('stats.followers'),
       color: '#ef4444',
       gradient: 'linear-gradient(135deg, #ef4444 0%, #dc2626 100%)',
     },
     {
       value: formatNumber(counts.cosplays),
-      label: 'Cosplay Creations',
+      label: t('stats.cosplays'),
       color: '#f59e0b',
       gradient: 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)',
     },
     {
       value: formatNumber(counts.videos),
-      label: 'Videos Created',
+      label: t('stats.videos'),
       color: '#ec4899',
       gradient: 'linear-gradient(135deg, #ec4899 0%, #db2777 100%)',
     },
     {
       value: formatNumber(counts.countries),
-      label: 'Countries Reached',
+      label: t('stats.countries'),
       color: '#8b5cf6',
       gradient: 'linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%)',
     },

@@ -1,8 +1,10 @@
 import { Public as GlobalIcon, Favorite as HeartIcon, People as PeopleIcon, TrendingUp as TrendingIcon, EmojiEvents as TrophyIcon, VideoLibrary as VideoIcon } from '@mui/icons-material';
 import { Box, Card, CardContent, Container, Typography } from '@mui/material';
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Achievements = () => {
+  const { t } = useTranslation();
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -13,42 +15,42 @@ const Achievements = () => {
     {
       icon: PeopleIcon,
       value: '10M+',
-      label: 'Social Media Followers',
+      label: t('achievements.socialGrowth'),
       color: '#ef4444',
       gradient: 'linear-gradient(135deg, #ef4444 0%, #dc2626 100%)',
     },
     {
       icon: VideoIcon,
       value: '500M+',
-      label: 'Video Views',
+      label: t('achievements.contentMilestones'),
       color: '#f59e0b',
       gradient: 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)',
     },
     {
       icon: HeartIcon,
       value: '100M+',
-      label: 'Total Likes',
+      label: t('achievements.communityImpact'),
       color: '#ec4899',
       gradient: 'linear-gradient(135deg, #ec4899 0%, #db2777 100%)',
     },
     {
       icon: TrendingIcon,
       value: '50+',
-      label: 'Viral Moments',
+      label: t('achievements.viralMoments'),
       color: '#8b5cf6',
       gradient: 'linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%)',
     },
     {
       icon: TrophyIcon,
       value: '200+',
-      label: 'Cosplay Creations',
+      label: t('achievements.cosplayRecognition'),
       color: '#06b6d4',
       gradient: 'linear-gradient(135deg, #06b6d4 0%, #0891b2 100%)',
     },
     {
       icon: GlobalIcon,
       value: '150+',
-      label: 'Countries Reached',
+      label: t('achievements.globalReach'),
       color: '#f97316',
       gradient: 'linear-gradient(135deg, #f97316 0%, #ea580c 100%)',
     },
@@ -56,20 +58,20 @@ const Achievements = () => {
 
   const achievements = [
     {
-      title: 'Internet Icon',
-      description: 'Recognized as one of the most influential internet personalities and cosplayers globally.',
+      title: t('achievements.cards.internetIcon.title'),
+      description: t('achievements.cards.internetIcon.description'),
     },
     {
-      title: 'Viral Sensation',
-      description: 'Created multiple viral moments that dominated social media and internet culture.',
+      title: t('achievements.cards.viralSensation.title'),
+      description: t('achievements.cards.viralSensation.description'),
     },
     {
-      title: 'Creative Pioneer',
-      description: 'Pioneered unique content formats blending cosplay, gaming, and internet culture.',
+      title: t('achievements.cards.creativePioneer.title'),
+      description: t('achievements.cards.creativePioneer.description'),
     },
     {
-      title: 'Community Builder',
-      description: 'Built one of the most engaged and passionate fan communities in the cosplay world.',
+      title: t('achievements.cards.communityBuilder.title'),
+      description: t('achievements.cards.communityBuilder.description'),
     },
   ];
 
@@ -91,10 +93,7 @@ const Achievements = () => {
               mb: 3,
               fontSize: { xs: '2.5rem', md: '3.5rem' },
             }}>
-            Achievements &{' '}
-            <Typography component='span' variant='inherit' sx={{ color: 'primary.main' }}>
-              Impact
-            </Typography>
+            {t('achievements.title')}
           </Typography>
           <Typography
             variant='h6'
@@ -105,7 +104,7 @@ const Achievements = () => {
               lineHeight: 1.6,
               fontSize: { xs: '1.1rem', md: '1.25rem' },
             }}>
-            Numbers and milestones that showcase the reach and influence of creative content.
+            {t('achievements.subtitle')}
           </Typography>
         </Box>
 

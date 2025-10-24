@@ -1,8 +1,10 @@
 import { FormatQuote as QuoteIcon } from '@mui/icons-material';
 import { Avatar, Box, Card, CardContent, Container, Fade, Rating, Typography } from '@mui/material';
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Testimonials = () => {
+  const { t } = useTranslation();
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -11,51 +13,51 @@ const Testimonials = () => {
 
   const testimonials = [
     {
-      name: 'Sarah Chen',
-      role: 'Cosplay Enthusiast',
+      name: t('testimonials.entries.sarahChen.name'),
+      role: t('testimonials.entries.sarahChen.role'),
       avatar: '/assets/testimonial-1.jpg',
       rating: 5,
-      quote: "Belle's attention to detail in her cosplays is absolutely incredible! Her work has inspired me to take my own cosplay creations to the next level. The creativity and passion she brings to every character is unmatched.",
+      quote: t('testimonials.entries.sarahChen.quote'),
       color: '#ef4444',
     },
     {
-      name: 'Marcus Johnson',
-      role: 'Gaming Content Creator',
+      name: t('testimonials.entries.marcusJohnson.name'),
+      role: t('testimonials.entries.marcusJohnson.role'),
       avatar: '/assets/testimonial-2.jpg',
       rating: 5,
-      quote: "As a fellow content creator, I'm constantly amazed by Belle's innovative approach to gaming content. She knows how to engage her audience and create memorable moments that resonate with the gaming community.",
+      quote: t('testimonials.entries.marcusJohnson.quote'),
       color: '#f59e0b',
     },
     {
-      name: 'Emily Rodriguez',
-      role: 'Photographer',
+      name: t('testimonials.entries.emilyRodriguez.name'),
+      role: t('testimonials.entries.emilyRodriguez.role'),
       avatar: '/assets/testimonial-3.jpg',
       rating: 5,
-      quote: 'Working with Belle has been an absolute dream! Her professionalism, creativity, and dedication to her craft make every photoshoot a masterpiece. She truly understands the art of visual storytelling.',
+      quote: t('testimonials.entries.emilyRodriguez.quote'),
       color: '#ec4899',
     },
     {
-      name: 'Alex Kim',
-      role: 'Fan & Community Member',
+      name: t('testimonials.entries.alexKim.name'),
+      role: t('testimonials.entries.alexKim.role'),
       avatar: '/assets/testimonial-4.jpg',
       rating: 5,
-      quote: "Belle has built one of the most welcoming and creative communities I've ever been part of. Her content brings joy to millions and inspires people to embrace their creativity and passion for geek culture.",
+      quote: t('testimonials.entries.alexKim.quote'),
       color: '#8b5cf6',
     },
     {
-      name: 'Jessica Taylor',
-      role: 'Makeup Artist',
+      name: t('testimonials.entries.jessicaTaylor.name'),
+      role: t('testimonials.entries.jessicaTaylor.role'),
       avatar: '/assets/testimonial-5.jpg',
       rating: 5,
-      quote: 'The makeup artistry and character transformations Belle achieves are phenomenal! Her tutorials have helped countless aspiring cosplayers, including myself, learn new techniques and push creative boundaries.',
+      quote: t('testimonials.entries.jessicaTaylor.quote'),
       color: '#06b6d4',
     },
     {
-      name: 'David Park',
-      role: 'Internet Culture Analyst',
+      name: t('testimonials.entries.davidPark.name'),
+      role: t('testimonials.entries.davidPark.role'),
       avatar: '/assets/testimonial-6.jpg',
       rating: 5,
-      quote: 'Belle is a true pioneer in internet culture and content creation. Her ability to create viral moments while maintaining authenticity is a testament to her understanding of digital media and her creative genius.',
+      quote: t('testimonials.entries.davidPark.quote'),
       color: '#f97316',
     },
   ];
@@ -78,9 +80,9 @@ const Testimonials = () => {
               mb: 3,
               fontSize: { xs: '2.5rem', md: '3.5rem' },
             }}>
-            What People{' '}
+            {t('testimonials.title')}{' '}
             <Typography component='span' variant='inherit' sx={{ color: 'primary.main' }}>
-              Are Saying
+              {t('testimonials.titleHighlight')}
             </Typography>
           </Typography>
           <Typography
@@ -92,7 +94,7 @@ const Testimonials = () => {
               lineHeight: 1.6,
               fontSize: { xs: '1.1rem', md: '1.25rem' },
             }}>
-            Hear from fans, collaborators, and fellow creators about their experiences and the impact of creative content.
+            {t('testimonials.subtitle')}
           </Typography>
         </Box>
 

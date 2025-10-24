@@ -1,37 +1,40 @@
 import { Camera as CameraIcon, SportsEsports as GamingIcon, EmojiEmotions as MemeIcon, People as PeopleIcon, Shop as ShopIcon, VideoLibrary as VideoIcon } from '@mui/icons-material';
 import { Box, Card, CardContent, Container, Typography, Zoom } from '@mui/material';
+import { useTranslation } from 'react-i18next';
 
 const Features = () => {
+  const { t } = useTranslation();
+  
   const features = [
     {
       icon: CameraIcon,
-      title: 'Cosplay Gallery',
-      description: 'Stunning cosplay photoshoots featuring characters from anime, games, and pop culture with incredible attention to detail.',
+      title: t('features.cosplayGalleryTitle'),
+      description: t('features.cosplayGalleryDesc'),
     },
     {
       icon: GamingIcon,
-      title: 'Gaming Content',
-      description: 'Live gaming streams, gameplay videos, and gaming reviews covering the latest and greatest games.',
+      title: t('features.gamingContentTitle'),
+      description: t('features.gamingContentDesc'),
     },
     {
       icon: VideoIcon,
-      title: 'YouTube Videos',
-      description: 'Creative videos including tutorials, vlogs, challenges, and behind-the-scenes content from photoshoots.',
+      title: t('features.youtubeTitle'),
+      description: t('features.youtubeDesc'),
     },
     {
       icon: MemeIcon,
-      title: 'Meme Culture',
-      description: 'Hilarious memes, viral content, and internet culture commentary that keeps the community entertained.',
+      title: t('features.memeCultureTitle'),
+      description: t('features.memeCultureDesc'),
     },
     {
       icon: ShopIcon,
-      title: 'Merchandise',
-      description: 'Official merchandise including prints, clothing, and collectibles featuring original designs and cosplay themes.',
+      title: t('features.merchandiseTitle'),
+      description: t('features.merchandiseDesc'),
     },
     {
       icon: PeopleIcon,
-      title: 'Fan Community',
-      description: 'Active community of cosplay enthusiasts, gamers, and fans sharing their own creations and connecting.',
+      title: t('features.fanCommunityTitle'),
+      description: t('features.fanCommunityDesc'),
     },
   ];
 
@@ -53,9 +56,9 @@ const Features = () => {
               mb: 3,
               fontSize: { xs: '2.5rem', md: '3.5rem' },
             }}>
-            Creative{' '}
+            {t('features.title')}{' '}
             <Typography component='span' variant='inherit' sx={{ color: 'primary.main' }}>
-              Content
+              {t('features.titleHighlight')}
             </Typography>
           </Typography>
           <Typography
@@ -67,7 +70,7 @@ const Features = () => {
               lineHeight: 1.6,
               fontSize: { xs: '1.1rem', md: '1.25rem' },
             }}>
-            Discover my world of cosplay, gaming, and creative content. From detailed costume creations to entertaining gaming sessions!
+            {t('features.subtitle')}
           </Typography>
         </Box>
 

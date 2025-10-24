@@ -1,68 +1,58 @@
 import { Favorite as FavoriteIcon, Star as StarIcon, Visibility as VisibilityIcon } from '@mui/icons-material';
 import { Box, Card, CardContent, Chip, Container, Stack, Typography } from '@mui/material';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Cosplay = () => {
+  const { t } = useTranslation();
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
 
   const cosplays = [
     {
-      title: 'Ahri - League of Legends',
+      key: 'ahri',
       character: 'Ahri',
-      game: 'League of Legends',
-      likes: '2.5M',
-      views: '15M',
-      tags: ['Gaming', 'Fantasy', 'Popular'],
+      likes: 2.5,
+      views: 15,
       color: '#ec4899',
       gradient: 'linear-gradient(135deg, #ec4899 0%, #db2777 100%)',
     },
     {
-      title: 'D.Va - Overwatch',
+      key: 'dva',
       character: 'D.Va',
-      game: 'Overwatch',
-      likes: '3.1M',
-      views: '18M',
-      tags: ['Gaming', 'Mecha', 'Iconic'],
+      likes: 3.1,
+      views: 18,
       color: '#f59e0b',
       gradient: 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)',
     },
     {
-      title: 'Harley Quinn - DC Comics',
+      key: 'harley',
       character: 'Harley Quinn',
-      game: 'DC Comics',
-      likes: '2.8M',
-      views: '16M',
-      tags: ['Comics', 'Villain', 'Classic'],
+      likes: 2.8,
+      views: 16,
       color: '#ef4444',
       gradient: 'linear-gradient(135deg, #ef4444 0%, #dc2626 100%)',
     },
     {
-      title: 'Vanelope - Darling in the Franxx',
+      key: 'vanelope',
       character: 'Vanelope',
-      game: 'Anime',
-      likes: '4.2M',
-      views: '22M',
-      tags: ['Anime', 'Waifu', 'Trending'],
+      likes: 4.2,
+      views: 22,
       color: '#f97316',
       gradient: 'linear-gradient(135deg, #f97316 0%, #ea580c 100%)',
     },
     {
-      title: 'Jinx - League of Legends',
+      key: 'jinx',
       character: 'Jinx',
-      game: 'League of Legends',
-      likes: '3.5M',
-      views: '20M',
-      tags: ['Gaming', 'Chaos', 'Fan Favorite'],
+      likes: 3.5,
+      views: 20,
       color: '#8b5cf6',
       gradient: 'linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%)',
     },
     {
-      title: 'Shiro - Soul of War',
+      key: 'shiro',
       character: 'Shiro',
-      game: 'SAO',
-      likes: '2.9M',
-      views: '17M',
-      tags: ['Anime', 'Mecha', 'Critical'],
+      likes: 2.9,
+      views: 17,
       color: '#06b6d4',
       gradient: 'linear-gradient(135deg, #06b6d4 0%, #0891b2 100%)',
     },
@@ -80,9 +70,9 @@ const Cosplay = () => {
             mb: 3,
             fontSize: { xs: '2.5rem', md: '3.5rem' },
           }}>
-          Cosplay{' '}
+          {t('cosplay.title')}{' '}
           <Typography component='span' variant='inherit' sx={{ color: 'primary.main' }}>
-            Collection
+            {t('cosplay.collection')}
           </Typography>
         </Typography>
         <Typography
@@ -94,7 +84,7 @@ const Cosplay = () => {
             lineHeight: 1.6,
             fontSize: { xs: '1.1rem', md: '1.25rem' },
           }}>
-          Explore my favorite cosplay creations featuring characters from anime, games, and pop culture. Each costume is handcrafted with love and attention to detail!
+          {t('cosplay.subtitle')}
         </Typography>
       </Box>
 
@@ -194,11 +184,11 @@ const Cosplay = () => {
                     mb: 2,
                     fontWeight: 500,
                   }}>
-                  {cosplay.game}
+                  {t(`cosplay.characters.${cosplay.key}.game`)}
                 </Typography>
 
                 <Stack direction='row' spacing={1} sx={{ mb: 2, flexWrap: 'wrap', gap: 1 }}>
-                  {cosplay.tags.map((tag, tagIndex) => (
+                  {(t(`cosplay.characters.${cosplay.key}.tags`, { returnObjects: true }) as string[]).map((tag: string, tagIndex: number) => (
                     <Chip
                       key={tagIndex}
                       label={tag}
@@ -225,13 +215,13 @@ const Cosplay = () => {
                   <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
                     <FavoriteIcon sx={{ fontSize: '1rem', color: cosplay.color }} />
                     <Typography variant='body2' sx={{ fontWeight: 600, color: 'text.secondary' }}>
-                      {cosplay.likes}
+                      {t('cosplay.items.likes', { count: cosplay.likes })}
                     </Typography>
                   </Box>
                   <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
                     <VisibilityIcon sx={{ fontSize: '1rem', color: cosplay.color }} />
                     <Typography variant='body2' sx={{ fontWeight: 600, color: 'text.secondary' }}>
-                      {cosplay.views}
+                      {t('cosplay.items.views', { count: cosplay.views })}
                     </Typography>
                   </Box>
                 </Box>
@@ -248,7 +238,7 @@ const Cosplay = () => {
             color: 'text.secondary',
             mb: 2,
           }}>
-          Want to see more cosplays?
+          {t('cosplay.cta.title')}
         </Typography>
         <Typography
           variant='body1'
@@ -257,7 +247,7 @@ const Cosplay = () => {
             maxWidth: '600px',
             mx: 'auto',
           }}>
-          Follow me on Instagram and YouTube for behind-the-scenes content, tutorials, and new cosplay reveals!
+          {t('cosplay.cta.description')}
         </Typography>
       </Box>
     </Container>

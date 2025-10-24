@@ -1,8 +1,10 @@
 import { Email as EmailIcon, Facebook as FacebookIcon, Instagram as InstagramIcon, Send as SendIcon, Twitter as TwitterIcon, YouTube as YouTubeIcon, Forum as DiscordIcon } from '@mui/icons-material';
 import { Alert, Box, Button, Card, CardContent, Container, IconButton, List, ListItem, ListItemIcon, ListItemText, Stack, TextField, Typography } from '@mui/material';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -96,9 +98,9 @@ const Contact = () => {
               mb: 3,
               fontSize: { xs: '2.5rem', md: '3.5rem' },
             }}>
-            Connect with{' '}
+            {t('contact.title')}{' '}
             <Typography component='span' variant='inherit' sx={{ color: 'primary.main' }}>
-              Belle
+              {t('contact.me')}
             </Typography>
           </Typography>
           <Typography
@@ -110,7 +112,7 @@ const Contact = () => {
               lineHeight: 1.6,
               fontSize: { xs: '1.1rem', md: '1.25rem' },
             }}>
-            Connect with me for cosplay collaborations, gaming content, and creative projects. Join the community of fellow creators and fans!
+            {t('contact.subtitle')}
           </Typography>
         </Box>
 
@@ -145,11 +147,11 @@ const Contact = () => {
               component='h3'
               sx={{
                 fontWeight: 600,
-                color: 'background.paper',
+                color: 'text.primary',
                 mb: 4,
                 fontSize: { xs: '1.75rem', md: '2rem' },
               }}>
-              Contact Information
+              {t('contact.getInTouch')}
             </Typography>
 
             <List sx={{ mb: 4 }}>
@@ -172,12 +174,12 @@ const Contact = () => {
                   sx={{ ml: 2 }}
                   primary={
                     <Typography variant='body2' sx={{ color: 'background.default', fontWeight: 500 }}>
-                      Collaborations
+                      {t('contact.collaborations')}
                     </Typography>
                   }
                   secondary={
                     <Typography variant='body1' sx={{ color: 'background.paper', fontWeight: 500 }}>
-                      collabs@belle-delphine.com
+                      {t('contact.collaborationsEmail')}
                     </Typography>
                   }
                 />
@@ -202,12 +204,12 @@ const Contact = () => {
                   sx={{ ml: 2 }}
                   primary={
                     <Typography variant='body2' sx={{ color: 'background.default', fontWeight: 500 }}>
-                      YouTube
+                      {t('contact.youtube')}
                     </Typography>
                   }
                   secondary={
                     <Typography variant='body1' sx={{ color: 'background.paper', fontWeight: 500 }}>
-                      Belle Delphine
+                      {t('contact.youtubeChannel')}
                     </Typography>
                   }
                 />
@@ -319,12 +321,12 @@ const Contact = () => {
                     mb: 3,
                     fontSize: { xs: '1.75rem', md: '2rem' },
                   }}>
-                  Send us a message
+                  {t('contact.formTitle')}
                 </Typography>
 
                 {showSuccess && (
                   <Alert severity='success' sx={{ mb: 3 }}>
-                    Thank you for your message! We'll get back to you soon.
+                    {t('contact.successMessage')}
                   </Alert>
                 )}
 
@@ -337,7 +339,7 @@ const Contact = () => {
                     }}>
                     <TextField
                       fullWidth
-                      label='Full Name'
+                      label={t('contact.name')}
                       name='name'
                       value={formData.name}
                       onChange={handleChange}
@@ -368,7 +370,7 @@ const Contact = () => {
 
                     <TextField
                       fullWidth
-                      label='Email'
+                      label={t('contact.email')}
                       name='email'
                       type='email'
                       value={formData.email}
@@ -400,7 +402,7 @@ const Contact = () => {
 
                     <TextField
                       fullWidth
-                      label='Message'
+                      label={t('contact.message')}
                       name='message'
                       value={formData.message}
                       onChange={handleChange}
@@ -450,7 +452,7 @@ const Contact = () => {
                         },
                         transition: 'all 0.3s ease-in-out',
                       }}>
-                      Send Message to Me
+                      {t('contact.send')}
                     </Button>
                   </Box>
                 </Box>

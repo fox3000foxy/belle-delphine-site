@@ -1,8 +1,10 @@
 import { Box, Card, CardContent, Container, Typography, Fade } from '@mui/material';
 import { Star as StarIcon, TrendingUp as TrendingIcon, VideoLibrary as VideoIcon, Celebration as CelebrationIcon } from '@mui/icons-material';
 import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Biography = () => {
+  const { t } = useTranslation();
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -11,51 +13,51 @@ const Biography = () => {
 
   const milestones = [
     {
-      year: '2015',
-      title: 'The Beginning',
-      description: 'Started my journey as a makeup artist and cosplayer, sharing creative photos on Instagram. My unique aesthetic and attention to detail quickly caught the attention of anime and gaming communities worldwide.',
+      year: t('biography.milestones.2015.year'),
+      title: t('biography.milestones.2015.title'),
+      description: t('biography.milestones.2015.description'),
       icon: StarIcon,
       color: '#f59e0b',
     },
     {
-      year: '2016-2017',
-      title: 'Building the Brand',
-      description: 'Expanded my presence across multiple platforms including Facebook and Twitter. Developed my signature pink aesthetic and began creating more elaborate cosplay content featuring characters from popular anime and video games.',
+      year: t('biography.milestones.2016_2017.year'),
+      title: t('biography.milestones.2016_2017.title'),
+      description: t('biography.milestones.2016_2017.description'),
       icon: TrendingIcon,
       color: '#f97316',
     },
     {
-      year: '2018',
-      title: 'Viral Sensation',
-      description: 'Achieved viral fame with creative and provocative cosplay content. My unique blend of gaming culture, anime aesthetics, and internet humor resonated with millions. Became one of the most searched personalities online.',
+      year: t('biography.milestones.2018.year'),
+      title: t('biography.milestones.2018.title'),
+      description: t('biography.milestones.2018.description'),
       icon: TrendingIcon,
       color: '#ef4444',
     },
     {
-      year: '2019',
-      title: 'YouTube & Gaming',
-      description: 'Launched my YouTube channel featuring gaming content, vlogs, and creative videos. Reached millions of subscribers with content ranging from Minecraft to Among Us. Collaborated with other popular content creators and streamers.',
+      year: t('biography.milestones.2019.year'),
+      title: t('biography.milestones.2019.title'),
+      description: t('biography.milestones.2019.description'),
       icon: VideoIcon,
       color: '#ec4899',
     },
     {
-      year: '2020',
-      title: 'Entrepreneurial Ventures',
-      description: 'Launched multiple successful business ventures including my own merchandise line and exclusive content platform. Demonstrated business acumen by creating innovative marketing campaigns that broke the internet multiple times.',
+      year: t('biography.milestones.2020.year'),
+      title: t('biography.milestones.2020.title'),
+      description: t('biography.milestones.2020.description'),
       icon: CelebrationIcon,
       color: '#a855f7',
     },
     {
-      year: '2021-2022',
-      title: 'Music & Creative Projects',
-      description: 'Released original music videos and songs that garnered millions of views. Continued to push creative boundaries with elaborate photoshoots, music production, and artistic collaborations. Expanded into new creative territories beyond traditional content creation.',
+      year: t('biography.milestones.2021_2022.year'),
+      title: t('biography.milestones.2021_2022.title'),
+      description: t('biography.milestones.2021_2022.description'),
       icon: VideoIcon,
       color: '#ec4899',
     },
     {
-      year: '2023-Present',
-      title: 'Legacy & Innovation',
-      description: 'Continues to innovate in the digital content space with high-quality cosplay productions, gaming streams, and creative projects. Remains one of the most influential internet personalities, inspiring a new generation of content creators with her unique approach to online entertainment.',
+      year: t('biography.milestones.2023_present.year'),
+      title: t('biography.milestones.2023_present.title'),
+      description: t('biography.milestones.2023_present.description'),
       icon: CelebrationIcon,
       color: '#f97316',
     },
@@ -79,9 +81,9 @@ const Biography = () => {
               mb: 3,
               fontSize: { xs: '2.5rem', md: '3.5rem' },
             }}>
-            Career{' '}
+            {t('biography.title')}{' '}
             <Typography component='span' variant='inherit' sx={{ color: 'primary.main' }}>
-              Journey
+              {t('biography.titleHighlight')}
             </Typography>
           </Typography>
           <Typography
@@ -93,7 +95,7 @@ const Biography = () => {
               lineHeight: 1.6,
               fontSize: { xs: '1.1rem', md: '1.25rem' },
             }}>
-            From humble beginnings to becoming one of the most recognized internet personalities and cosplayers in the world.
+            {t('biography.subtitle')}
           </Typography>
         </Box>
 

@@ -1,7 +1,10 @@
 import { Facebook as FacebookIcon, Instagram as InstagramIcon, Twitter as TwitterIcon, YouTube as YouTubeIcon, Forum as DiscordIcon } from '@mui/icons-material';
 import { Box, Container, Divider, IconButton, Link, Stack, Typography } from '@mui/material';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const { t } = useTranslation();
+  
   return (
     <Box
       component='footer'
@@ -31,7 +34,7 @@ const Footer = () => {
               }}>
               Belle Delphine{' '}
               <Typography component='span' variant='inherit' sx={{ color: 'primary.main' }}>
-                Official
+                {t('footer.official')}
               </Typography>
             </Typography>
             <Typography
@@ -42,7 +45,7 @@ const Footer = () => {
                 mb: 3,
                 maxWidth: '400px',
               }}>
-              Creative cosplayer, passionate gamer, and content creator. Join the fun with cosplay tutorials, gaming streams, and meme culture!
+              {t('footer.tagline')}
             </Typography>
             <Stack direction='row' spacing={2}>
               <IconButton
@@ -50,6 +53,7 @@ const Footer = () => {
                 href='https://www.facebook.com/tinkersmell'
                 target='_blank'
                 rel='noopener noreferrer'
+                aria-label='Visit Belle Delphine on Facebook'
                 sx={{
                   backgroundColor: 'secondary.main',
                   color: 'background.paper',
@@ -66,6 +70,7 @@ const Footer = () => {
                 href='https://twitter.com/bunnydelphine'
                 target='_blank'
                 rel='noopener noreferrer'
+                aria-label='Visit Belle Delphine on Twitter'
                 sx={{
                   backgroundColor: 'secondary.main',
                   color: 'background.paper',
@@ -82,6 +87,7 @@ const Footer = () => {
                 href='https://www.instagram.com/belle.delphine'
                 target='_blank'
                 rel='noopener noreferrer'
+                aria-label='Visit Belle Delphine on Instagram'
                 sx={{
                   backgroundColor: 'secondary.main',
                   color: 'background.paper',
@@ -98,6 +104,7 @@ const Footer = () => {
                 href='https://www.youtube.com/channel/UCXvKUavCtDOlA8bT1i2tI3w'
                 target='_blank'
                 rel='noopener noreferrer'
+                aria-label='Visit Belle Delphine on YouTube'
                 sx={{
                   backgroundColor: 'secondary.main',
                   color: 'background.paper',
@@ -114,6 +121,7 @@ const Footer = () => {
                 href='https://discord.gg/FxFG7VzX9S'
                 target='_blank'
                 rel='noopener noreferrer'
+                aria-label='Join Belle Delphine Discord server'
                 sx={{
                   backgroundColor: '#5865F2',
                   color: 'background.paper',
@@ -133,11 +141,11 @@ const Footer = () => {
               variant='h6'
               component='h4'
               sx={{
-                fontWeight: 600,
+                fontWeight: 700,
                 mb: 2,
                 color: 'background.paper',
               }}>
-              Quick Links
+              {t('footer.quickLinks')}
             </Typography>
             <Stack spacing={1}>
               <Link
@@ -152,7 +160,7 @@ const Footer = () => {
                   display: 'block',
                   py: 0.5,
                 }}>
-                Home
+                {t('footer.home')}
               </Link>
               <Link
                 href='#about'
@@ -166,7 +174,7 @@ const Footer = () => {
                   display: 'block',
                   py: 0.5,
                 }}>
-                About
+                {t('footer.about')}
               </Link>
               <Link
                 href='#gallery'
@@ -180,7 +188,7 @@ const Footer = () => {
                   display: 'block',
                   py: 0.5,
                 }}>
-                Gallery
+                {t('footer.gallery')}
               </Link>
               <Link
                 href='#biography'
@@ -194,7 +202,7 @@ const Footer = () => {
                   display: 'block',
                   py: 0.5,
                 }}>
-                Career
+                {t('footer.career')}
               </Link>
               <Link
                 href='#contact'
@@ -208,7 +216,7 @@ const Footer = () => {
                   display: 'block',
                   py: 0.5,
                 }}>
-                Contact
+                {t('footer.contact')}
               </Link>
             </Stack>
           </Box>
@@ -218,11 +226,11 @@ const Footer = () => {
               variant='h6'
               component='h4'
               sx={{
-                fontWeight: 600,
+                fontWeight: 700,
                 mb: 2,
                 color: 'background.paper',
               }}>
-              Content
+              {t('footer.followMe')}
             </Typography>
             <Stack spacing={1}>
               <Link

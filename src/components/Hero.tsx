@@ -1,10 +1,12 @@
 import { KeyboardArrowDown as ArrowDownIcon, ArrowForward as ArrowIcon, PlayArrow as PlayIcon } from '@mui/icons-material';
 import { Box, Button, Container, Fade, Stack, Typography, useTheme } from '@mui/material';
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link as RouterLink } from 'react-router-dom';
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const { t } = useTranslation();
   const theme = useTheme();
 
   useEffect(() => {
@@ -73,7 +75,7 @@ const Hero = () => {
                 lineHeight: 1.1,
                 letterSpacing: '-0.02em',
               }}>
-              Belle Delphine
+              {t('hero.title')}
             </Typography>
 
             <Typography
@@ -89,7 +91,7 @@ const Hero = () => {
                 mb: 3,
                 lineHeight: 1.2,
               }}>
-              Cosplayer • Gamer • Creator
+              {t('hero.subtitle')}
             </Typography>
 
             <Box
@@ -149,7 +151,7 @@ const Hero = () => {
                 fontSize: { xs: '1.1rem', md: '1.25rem' },
                 px: { xs: 1, sm: 0 },
               }}>
-              Welcome to my creative world! Explore my cosplay adventures, gaming content, memes, and artistic creations in this safe and fun space.
+              {t('hero.description')}
             </Typography>
 
             <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} justifyContent='center' alignItems='center' sx={{ mb: 6 }}>
@@ -193,7 +195,7 @@ const Hero = () => {
                   },
                   transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
                 }}>
-                Explore Cosplays
+                {t('hero.exploreCosplays')}
               </Button>
 
               <Button
@@ -219,7 +221,7 @@ const Hero = () => {
                   },
                   transition: 'all 0.3s ease-in-out',
                 }}>
-                Gaming Videos
+                {t('hero.gamingVideos')}
               </Button>
             </Stack>
           </Box>
