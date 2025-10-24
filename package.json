@@ -20,8 +20,7 @@
     "preview": "vite preview",
     "serve": "vite serve --port 7867",
     "start": "node start.mjs --host",
-    "format": "npx prettier --write src --config prettier.json",
-    "deploy": "npm run build && wrangler pages deploy dist --project-name=belle-delphine"
+    "format": "npx prettier --write src --config prettier.json"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
