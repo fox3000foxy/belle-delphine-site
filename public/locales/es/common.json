@@ -1,7 +1,7 @@
 {
   "nav": {
     "home": "Inicio",
-    "about": "Acerca de",
+    "about": "Sobre mí",
     "gallery": "Galería",
     "cosplay": "Cosplay",
     "career": "Carrera",
@@ -9,231 +9,478 @@
     "faq": "FAQ",
     "contact": "Contacto",
     "merch": "Tienda",
-    "subscribe": "Suscribirse"
+    "subscribe": "Suscribirme",
+    "followMe": "Sígueme",
+    "youtube": "YouTube"
   },
   "hero": {
     "title": "Belle Delphine",
     "subtitle": "Cosplayer • Gamer • Creadora",
-    "description": "¡Bienvenido a mi mundo creativo! Descubre mis aventuras de cosplay, contenido de gaming, memes y creaciones artísticas en este espacio divertido y seguro.",
-    "exploreCosplays": "Descubre mis Cosplays",
-    "gamingVideos": "Mis Videos de Gaming"
+    "description": "¡Bienvenido a mi universo creativo! Descubre mis aventuras de cosplay, mi contenido gamer, mis memes y mis creaciones artísticas en este espacio chill y seguro.",
+    "exploreCosplays": "Descubre mis cosplays",
+    "gamingVideos": "Mis videos gamer"
   },
   "footer": {
     "official": "Oficial",
-    "tagline": "Cosplayer creativa, gamer apasionada y creadora de contenido. ¡Únete a la aventura con mis tutoriales de cosplay, mis directos de gaming y toda la cultura meme!",
-    "quickLinks": "Enlaces Rápidos",
+    "tagline": "Cosplayer creativa, gamer apasionada y creadora de contenidos. ¡Únete a la aventura con mis tutoriales de cosplay, mis transmisiones de juegos y toda la cultura de los memes!",
+    "quickLinks": "Enlaces rápidos",
     "followMe": "Sígueme",
     "legal": "Legal",
     "privacy": "Privacidad",
-    "terms": "Términos de Uso",
-    "copyright": "2024 Belle Delphine. Todos los derechos reservados.",
+    "terms": "Condiciones de uso",
+    "copyright": "© 2024 Bella Delphine. Reservados todos los derechos.",
     "madeWith": "Hecho con",
     "by": "por"
   },
   "contact": {
     "title": "Conéctate con",
-    "me": "Mí",
-    "subtitle": "¡Hablemos de colaboraciones de cosplay, contenido de gaming y proyectos creativos! Únete a la comunidad de creadores y fans.",
+    "me": "A mí",
+    "subtitle": "Ven a chatear conmigo para colaboraciones de cosplay, contenido de juegos y proyectos creativos. ¡Únete a la comunidad de creadores y fans!",
     "connectWith": "Encuéntrame en",
-    "contactInfo": "Mis Datos de Contacto",
+    "contactInfo": "Mi información de contacto",
     "collaborations": "Colaboraciones",
     "collaborationsEmail": "collabs@belle-delphine.com",
     "youtube": "YouTube",
-    "youtubeChannel": "Belle Delphine",
+    "youtubeChannel": "Bella Delfina",
     "getInTouch": "Escríbeme",
-    "name": "Tu nombre",
-    "namePlaceholder": "¿Cómo te llamas?",
-    "email": "Email",
-    "emailPlaceholder": "tu.email@ejemplo.com",
-    "message": "Tu mensaje",
-    "messagePlaceholder": "Cuéntame sobre tu proyecto o consulta...",
-    "send": "Enviar mensaje",
+    "name": "Su nombre",
+    "namePlaceholder": "Cómo te llamas ?",
+    "email": "Correo electrónico",
+    "emailPlaceholder": "tu.correo electrónico@ejemplo.com",
+    "message": "tu mensaje",
+    "messagePlaceholder": "Cuéntame tu proyecto o tu petición...",
+    "send": "enviar mensaje",
     "formTitle": "Envíame un mensaje",
-    "successMessage": "¡Genial! Tu mensaje se ha enviado correctamente. ¡Te responderé lo antes posible!",
-    "errorMessage": "¡Vaya! Algo salió mal. Por favor, inténtalo de nuevo."
+    "successMessage": "Excelente ! Tu mensaje ha sido enviado. ¡Te responderé lo antes posible!",
+    "errorMessage": "Ups ! Ha ocurrido un error. ¡Por favor inténtalo de nuevo!",
+    "socialMedia": "Redes Sociales",
+    "instagram": "Instagram",
+    "instagramDesc": "Noticias diarias y detrás de escena.",
+    "twitter": "Gorjeo/X",
+    "twitterDesc": "Pensamientos, Memes y Anuncios",
+    "youtubeDesc": "Vídeos y vlogs de juegos",
+    "discord": "Discordia",
+    "discordDesc": "Únete a nuestra comunidad",
+    "businessEmail": "Correo electrónico profesional",
+    "businessEmailDesc": "Para solicitudes profesionales"
   },
   "gallery": {
     "title": "Galería",
-    "subtitle": "Explora mi viaje creativo de cosplay y expresiones artísticas",
+    "subtitle": "Explora mi viaje creativo de cosplay y mis expresiones artísticas.",
     "filterAll": "Todo",
     "filterCosplay": "Cosplay",
-    "filterGaming": "Gaming",
+    "filterGaming": "Juego de azar",
     "filterArt": "Arte",
-    "filterMemes": "Memes",
-    "viewMore": "Ver Más",
-    "loadMore": "Cargar Más",
-    "cta": "Ver Portafolio Completo",
-    "items": {}
+    "filterMemes": "memes",
+    "viewMore": "Ver más",
+    "loadMore": "Cargar más",
+    "cta": "Ver el portafolio completo",
+    "items": {
+      "animeCosplay": {
+        "title": "Colección de cosplay de anime",
+        "category": "Cosplay",
+        "description": "Recreaciones detalladas de queridos personajes de anime con disfraces y accesorios hechos a mano.",
+        "likes": "2,5 millones"
+      },
+      "gamingSeries": {
+        "title": "Serie de personajes de juegos",
+        "category": "Juego de azar",
+        "description": "Da vida a personajes icónicos de videojuegos con una precisión y creatividad impresionantes.",
+        "likes": "1,8 millones"
+      },
+      "fantasyMyth": {
+        "title": "Fantasía y mitología",
+        "category": "Fantasía",
+        "description": "Interpretaciones originales de criaturas mitológicas y personajes fantásticos.",
+        "likes": "2,1 millones"
+      },
+      "creativeShoots": {
+        "title": "Sesiones de fotos creativas",
+        "category": "Fotografía",
+        "description": "Serie de fotografías artísticas con conceptos, iluminación y postproducción únicos.",
+        "likes": "3,2 millones"
+      },
+      "behindScenes": {
+        "title": "Entre bastidores",
+        "category": "BTS",
+        "description": "Una mirada exclusiva al proceso creativo, tutoriales de maquillaje y confección de vestuario.",
+        "likes": "1,5 millones"
+      },
+      "collaborationProjects": {
+        "title": "Proyectos colaborativos",
+        "category": "Colaboraciones",
+        "description": "Proyectos especiales con otros creadores, fotógrafos y marcas.",
+        "likes": "1,9 millones"
+      }
+    }
   },
   "biography": {
     "title": "Mi",
     "titleHighlight": "Biografía",
-    "subtitle": "Mi viaje como cosplayer creativa y creadora de contenido",
-    "earlyLife": "Mis Inicios",
-    "earlyLifeDesc": "Nacida en Sudáfrica, crecí en el Reino Unido donde descubrí mi pasión por el cosplay y la creación de contenido. Desde pequeña, me encantaba disfrazarme y crear personajes.",
-    "careerStart": "Inicios de Carrera",
-    "careerStartDesc": "Empecé a compartir mis creaciones en redes sociales en 2016. Mi estilo único y enfoque creativo rápidamente atrajeron a una gran comunidad de fans apasionados.",
-    "breakthrough": "Momento Clave",
-    "breakthroughDesc": "En 2018, mi contenido comenzó a volverse viral, permitiéndome transformar mi pasión en una carrera a tiempo completo. He podido colaborar con grandes marcas y participar en eventos internacionales.",
-    "currentWork": "Trabajo Actual",
-    "currentWorkDesc": "Hoy en día, creo contenido creativo que combina cosplay, gaming y humor. También desarrollo mi propia línea de productos y colaboro con otros creadores en proyectos emocionantes.",
-    "funFacts": "¿Sabías que...?",
-    "fact1": "Soy una gran fan de los videojuegos desde pequeña",
-    "fact2": "Empecé en el cosplay recreando trajes de mis personajes favoritos",
-    "fact3": "Paso horas creando y perfeccionando cada detalle de mis disfraces",
-    "fact4": "Me encanta compartir consejos y trucos con mi comunidad"
+    "subtitle": "Mi viaje como cosplayer creativo y creador de contenidos",
+    "earlyLife": "mis comienzos",
+    "earlyLifeDesc": "Nací en Sudáfrica y crecí en el Reino Unido, donde descubrí mi pasión por el cosplay y la creación de contenidos. Desde pequeña me encantaba disfrazarme y crear personajes.",
+    "careerStart": "Inicio de carrera",
+    "careerStartDesc": "Comencé a compartir mis diseños en las redes sociales en 2016. Mi estilo único y mi enfoque creativo atrajeron rápidamente a una gran comunidad de fanáticos apasionados.",
+    "breakthrough": "Descubrimiento",
+    "breakthroughDesc": "En 2018, mi contenido comenzó a volverse viral, lo que me permitió convertir mi pasión en una carrera de tiempo completo. Pude colaborar con grandes marcas y participar en eventos internacionales.",
+    "currentWork": "Trabajo actual",
+    "currentWorkDesc": "Hoy creo contenido creativo que mezcla cosplay, juegos y humor. También estoy desarrollando mi propia línea de productos y colaborando con otros diseñadores en proyectos interesantes.",
+    "funFacts": "¿Sabías?",
+    "fact1": "Soy un gran fanático de los videojuegos desde mi infancia.",
+    "fact2": "Empecé a hacer cosplay recreando trajes de mis personajes favoritos.",
+    "fact3": "Paso horas creando y perfeccionando cada detalle de mis disfraces.",
+    "fact4": "Me encanta compartir consejos y trucos con mi comunidad.",
+    "cosplayJourney": "Mi viaje de cosplay",
+    "cosplayJourneyDesc": "Desde mi primer disfraz hasta el cosplay profesional, siempre me ha fascinado el arte de dar vida a los personajes mediante una artesanía detallada.",
+    "contentCreation": "Creación de contenido",
+    "contentCreationDesc": "A medida que me adentré en el contenido de juegos, los memes y las redes sociales, encontré que mi voz se conectaba con los fans de todo el mundo.",
+    "future": "Hacia el futuro",
+    "futureDesc": "Continúo superando los límites creativos y construyendo conexiones significativas con la comunidad.",
+    "milestones": {
+      "2015": {
+        "year": "2015",
+        "title": "Los inicios",
+        "description": "Comencé mi viaje como maquillador y cosplayer, compartiendo fotos creativas en Instagram. Mi estética única y mi atención al detalle atrajeron rápidamente la atención de las comunidades de anime y videojuegos de todo el mundo."
+      },
+      "2018": {
+        "year": "2018",
+        "title": "Sensación viral",
+        "description": "Salté a la fama viral con contenido de cosplay creativo y provocativo. Mi combinación única de cultura de videojuegos, estética del anime y humor de Internet ha resonado en millones de personas. Me convertí en una de las personalidades más buscadas en línea."
+      },
+      "2019": {
+        "year": "2019",
+        "title": "YouTube y juegos",
+        "description": "Lancé mi canal de YouTube con contenido de juegos, vlogs y videos creativos. Llegué a millones de suscriptores con contenido que va desde Minecraft hasta Among Us. He colaborado con otros creadores de contenido y transmisores populares."
+      },
+      "2020": {
+        "year": "2020",
+        "title": "Aventuras empresariales",
+        "description": "He lanzado varios negocios exitosos, incluida mi propia línea de merchandising y una plataforma de contenido exclusivo. Demostré mi visión para los negocios creando campañas de marketing innovadoras que generaron revuelo en Internet varias veces."
+      },
+      "2016_2017": {
+        "year": "2016-2017",
+        "title": "Construyendo la marca",
+        "description": "He ampliado mi presencia en varias plataformas, incluidas Facebook y Twitter. Desarrollé mi estética rosa característica y comencé a crear contenido de cosplay más elaborado con personajes populares de anime y videojuegos."
+      },
+      "2021_2022": {
+        "year": "2021-2022",
+        "title": "Música y proyectos creativos",
+        "description": "He lanzado videos musicales y canciones originales que han obtenido millones de visitas. Continué superando los límites creativos con elaboradas sesiones fotográficas, producción musical y colaboraciones artísticas. Me he expandido a nuevos territorios creativos más allá de la creación de contenido tradicional."
+      },
+      "2023_present": {
+        "year": "2023-presente",
+        "title": "Patrimonio e Innovación",
+        "description": "Continúo innovando en el espacio del contenido digital con producciones de cosplay de alta calidad, transmisiones de juegos y proyectos creativos. Sigo siendo una de las personalidades más influyentes de Internet, inspirando a una nueva generación de creadores de contenido con mi enfoque único del entretenimiento en línea."
+      }
+    }
   },
   "faq": {
     "title": "Preguntas",
-    "titleHighlight": "Frecuentes",
-    "subtitle": "Encuentra respuestas a tus preguntas sobre mi trabajo, colaboraciones y contenido",
-    "question1": "¿Cómo puedo colaborar contigo?",
-    "answer1": "Si tienes una propuesta de colaboración interesante, envíame un mensaje a través del formulario de contacto. ¡Me encanta descubrir nuevos proyectos creativos!",
+    "titleHighlight": "Común",
+    "subtitle": "Encuentra respuestas a tus preguntas sobre mi trabajo, mis colaboraciones y mi contenido.",
+    "question1": "¿Cómo puedo colaborar con vosotros?",
+    "answer1": "Si tienes una propuesta de colaboración interesante envíame un mensaje a través del formulario de contacto. ¡Me encanta descubrir nuevos proyectos creativos!",
     "question2": "¿Cuáles son tus videojuegos favoritos?",
-    "answer2": "Me encanta jugar a League of Legends, Overwatch y Minecraft. ¡También me gusta descubrir juegos independientes y compartir mis hallazgos contigo!",
+    "answer2": "Me encanta jugar League of Legends, Overwatch y Minecraft. ¡También me gusta descubrir juegos independientes y compartir mis descubrimientos contigo!",
     "question3": "¿Cómo creas tus disfraces de cosplay?",
-    "answer3": "Dedico mucho tiempo a buscar los materiales adecuados y a crear cada pieza a mano. ¡Es un proceso largo pero muy gratificante!",
-    "question4": "¿Qué consejos darías a alguien que empieza en el cosplay?",
-    "answer4": "Empieza con personajes que realmente te gusten, no te presiones demasiado y, sobre todo, ¡diviértete! El cosplay es ante todo disfrutar.",
-    "question5": "¿Dónde puedo comprar tus productos?",
-    "answer5": "Puedes encontrar todos mis productos en mi tienda en línea. ¡Intento ofrecer artículos únicos y de calidad que seguro que te encantarán!"
+    "answer3": "Dedico mucho tiempo a encontrar los materiales adecuados y a crear cada pieza a mano. ¡Es un proceso largo pero muy gratificante!",
+    "question4": "¿Qué consejo le darías a alguien que se inicia en el cosplay?",
+    "answer4": "Empieza con personajes que realmente te gusten, no te presiones y, sobre todo, ¡diviértete! El cosplay es, ante todo, divertido.",
+    "question5": "¿Dónde puedo comprar sus productos?",
+    "answer5": "Puedes encontrar todos mis productos en mi tienda online. ¡Intento ofrecer artículos únicos y de calidad que seguro te gustarán!",
+    "items": {
+      "gettingStarted": {
+        "question": "¿Cómo empezaste en el cosplay?",
+        "answer": "Comencé a hacer cosplay en 2015 como maquilladora y poco a poco me fui enamorando del arte de dar vida a personajes de anime y videojuegos. Lo que comenzó como un hobby rápidamente se convirtió en una pasión cuando descubrí las increíbles posibilidades creativas del diseño de vestuario, la fotografía y la interpretación de personajes."
+      },
+      "materials": {
+        "question": "¿Qué materiales utilizas para tus disfraces?",
+        "answer": "Utilizo una variedad de materiales dependiendo del personaje y el diseño. Esto incluye espuma EVA para piezas de armadura, termoplásticos como Worbla para trabajos detallados, telas que van desde spandex hasta brocado, componentes impresos en 3D y diversos materiales de artesanía. Cada disfraz está cuidadosamente planificado y elaborado a mano con atención al detalle, y siempre teniendo en cuenta la comodidad, la seguridad y la movilidad durante los eventos."
+      },
+      "creationTime": {
+        "question": "¿Cuánto tiempo te lleva crear un cosplay?",
+        "answer": "El tiempo varía mucho dependiendo de la complejidad del personaje. Los cosplays sencillos pueden tardar una o dos semanas, mientras que los disfraces elaborados con armaduras, accesorios y detalles intrincados pueden tardar varias semanas o incluso meses. También doy tiempo extra para la adaptación, la logística de transporte y los toques finales para la sesión de fotos."
+      },
+      "gaming": {
+        "question": "¿Qué juegos juegas y transmites?",
+        "answer": "¡Me gusta una amplia variedad de juegos! Mi contenido incluye títulos populares como Minecraft, Among Us, League of Legends, Valorant y varios juegos independientes. Me encanta explorar nuevos juegos y compartir estas experiencias con mi comunidad a través de transmisiones y videos."
+      },
+      "tutorials": {
+        "question": "¿Ofrecéis tutoriales o talleres de cosplay?",
+        "answer": "Sí ! Comparto regularmente contenido detrás de escena, tutoriales de maquillaje y consejos de manualidades en mi canal de YouTube y en mis redes sociales. Creo en ayudar a otros a aprender y crecer en la comunidad de cosplay, por eso trato de hacer que mis técnicas sean accesibles para los aspirantes a cosplayers."
+      },
+      "support": {
+        "question": "¿Cómo puedo apoyar tu trabajo?",
+        "answer": "¡Hay muchas maneras de apoyarme! Puedes seguirme en las redes sociales, interactuar con mi contenido (me gusta, comentarios, compartir), descubrir mi merchandising o unirte a mi Patreon para obtener contenido exclusivo y acceso detrás de escena. Además, respetar a la comunidad (por ejemplo, dando crédito a los creadores, respetando las fotos y los autógrafos) ayuda enormemente. ¡Cada pequeño apoyo me ayuda a seguir creando el contenido que amas!"
+      },
+      "inspiration": {
+        "question": "¿Qué inspira tus proyectos creativos?",
+        "answer": "Mi inspiración proviene de muchas fuentes: anime, videojuegos, cultura de Internet, arte, moda y mi increíble comunidad. Me encanta tomar personajes y conceptos que me apasionan y darles mi propio toque creativo. Los comentarios y el entusiasmo de los fans también me empujan a seguir innovando."
+      },
+      "collaboration": {
+        "question": "¿Colaboras con otros creadores?",
+        "answer": "Absolutamente ! Me encanta colaborar con fotógrafos, otros cosplayers, maquilladores y otros creadores de contenido. Las colaboraciones aportan nuevas perspectivas y nos permiten crear algo verdaderamente especial juntos. Si estás interesado en trabajar juntos, ¡no dudes en contactarme!"
+      },
+      "beginners": {
+        "question": "¿Tengo que ser un artesano \"perfecto\" para empezar a hacer cosplay?",
+        "answer": "En absoluto: el cosplay se trata de diversión, expresión y comunidad. La clave es empezar de forma sencilla, aprender sobre la marcha y centrarse en disfrutar el proceso. ¡La perfección no es necesaria! De hecho, muchas guías para principiantes enfatizan que el pasatiempo debería reducir el estrés, no aumentarlo."
+      },
+      "characterChoice": {
+        "question": "¿Cómo eliges qué personaje hacer cosplay?",
+        "answer": "Elijo personajes basándome en lo que me gusta, ya sea la historia, el diseño o simplemente el desafío creativo. A veces es por las técnicas que me gustaría probar. Es importante comprender tu motivación, porque afecta la forma en que abordas la creación y aprecias el resultado."
+      },
+      "safety": {
+        "question": "¿Qué pasa con la seguridad y la comodidad en una convención?",
+        "answer": "La seguridad y la comodidad siempre son lo primero, especialmente cuando se usan disfraces, accesorios o armaduras durante largas horas. Consulta las reglas del evento sobre accesorios/armas, asegúrate de poder moverte, respirar, sentarte si es necesario y cargar todo correctamente. Muchos cosplayers experimentados priorizan estos factores por encima de la pura \"corrección\"."
+      },
+      "buyCosplay": {
+        "question": "¿Puedo comprar un cosplay en lugar de hacerlo yo mismo?",
+        "answer": "Sí, comprar o encargar un traje es una estrategia totalmente válida, especialmente si tienes poco tiempo o recursos. Solo tenga en cuenta que los trajes prêt-à-porter pueden necesitar modificaciones, carecer de detalles y pueden no ser tan duraderos como los hechos a mano."
+      },
+      "cosplayVsCostuming": {
+        "question": "¿Cuál es la diferencia entre cosplay, vestuario y juego cruzado?",
+        "answer": "El término \"cosplay\" proviene de la combinación de \"disfraz\" y \"juego\", adaptado en Japón para describir disfrazarse de personajes de ficción. \"Disfraz\" puede ser un término más amplio (incluidos trajes históricos u otros fandoms). 'Crossplay' se refiere a disfrazarse de un personaje de un género diferente al tuyo. Es una parte vibrante de la comunidad."
+      },
+      "props": {
+        "question": "¿Cómo manejas los accesorios/armas/armadura en las convenciones?",
+        "answer": "Cada evento tiene sus propias reglas sobre accesorios/armas/armadura (límites de tamaño, materiales, no funcionalidad, etc.). Antes de ir, verifique el lugar del evento, planifique su transporte y cómo ensamblará/desarmará su equipo, y pruebe que funcione y que sea seguro usarlo en multitudes."
+      }
+    }
   },
   "news": {
-    "title": "Últimas",
+    "title": "El último",
     "titleHighlight": "Noticias",
-    "subtitle": "Mantente actualizado con mis últimos proyectos, anuncios y actualizaciones creativas",
-    "readMore": "Leer Más",
-    "viewAll": "Ver Todas las Noticias",
+    "subtitle": "Manténgase actualizado con mis últimos proyectos, anuncios y actualizaciones creativas.",
+    "readMore": "Leer más",
+    "viewAll": "Ver todas las noticias",
     "trendingLabel": "Tendencia",
-    "ctaPrompt": "¿Quieres hablar sobre Belle Delphine en tus medios?",
-    "ctaButton": "Contáctanos",
-    "articles": {}
+    "ctaPrompt": "¿Quieres hablar de Belle Delphine en tus medios?",
+    "ctaButton": "Contáctenos",
+    "articles": {
+      "legacy": {
+        "title": "El legado de Belle Delphine al mundo",
+        "source": "Tenis AM - Substack",
+        "category": "Opinión / Cultura",
+        "excerpt": "Una reflexión reflexiva sobre Belle Delphine como algo más que una simple figura controvertida de Internet, que la destaca como una fuerza empoderadora que expuso las perversiones sociales mientras demostraba un genio empresarial excepcional y seguía siendo una persona genuina y amable detrás del personaje."
+      },
+      "bathwaterInsider": {
+        "title": "Belle Delphine ganó más de 90.000 dólares vendiendo frascos de agua para su baño en 2019. PayPal solo liberó su dinero esta semana.",
+        "source": "Información privilegiada sobre negocios",
+        "category": "Negocio",
+        "excerpt": "En 2019, Belle Delphine se volvió viral vendiendo frascos de 'Gamer Girl Bath Water', supuestamente ganando más de $ 90,000, pero PayPal congeló los fondos por violar los términos de servicio, hasta 2024, cuando finalmente fueron liberados."
+      },
+      "bathwaterNypost": {
+        "title": "La estrella de Onlyfans Belle Delphine revela su batalla por los pagos después de vender 90.000 dólares en su 'agua de baño de chica gamer' a sus fans",
+        "source": "Correo de Nueva York",
+        "category": "cultura de internet",
+        "excerpt": "Después de su truco viral con el agua del baño en 2019, Belle revela que PayPal congeló su cuenta y retuvo $90,000; dice que fue necesaria su influencia en las redes sociales para recuperarlos."
+      },
+      "bathwaterVerge": {
+        "title": "'Vendió el agua de su baño y PayPal se quedó con sus ganancias'",
+        "source": "El borde",
+        "category": "Negocio",
+        "excerpt": "En un informe detallado, The Verge cubre cómo el truco de Belle en 2019 generó una ganancia de 90.000 dólares que PayPal confiscó antes de devolver los fondos cinco años después."
+      },
+      "netWorthTiktok": {
+        "title": "Valor neto de Belle Delphine 2024: $ 19,8 millones REVELADOS",
+        "source": "Valor neto de TikTok",
+        "category": "Negocios y Finanzas",
+        "excerpt": "El enfoque estratégico de Belle Delphine hacia el contenido y la monetización le ha valido un patrimonio neto estimado de 19,8 millones de dólares, con ganancias mensuales de 400.000 dólares en Onlyfans, lo que la convierte en una de las personas con mayores ingresos de la plataforma y una pionera en el emprendimiento digital."
+      },
+      "podcastTheroux": {
+        "title": "Belle Delphine habla sobre vender el agua de su baño, lidiar con acosadores y por qué la llaman \"La Reina de los Sims\".",
+        "source": "El podcast de Louis Theroux",
+        "category": "Pódcast / Entrevista",
+        "excerpt": "En este raro y profundo episodio de podcast, Belle se sincera con Louis Theroux sobre su carrera, el fenómeno del agua de baño, el estrellato en Internet, cómo ganó millones con su primer video para adultos y sus sentimientos sorprendentemente ambivalentes sobre la carrera que eligió."
+      },
+      "podcastScreenshot": {
+        "title": "Belle Delphine revela cuánto dinero gana con Onlyfans en el nuevo podcast de Louis Theroux",
+        "source": "Medios de captura de pantalla",
+        "category": "Negocios Digitales",
+        "excerpt": "La creadora de contenido reveló que su primer vídeo totalmente pornográfico le valió £5 millones, y ahora gana alrededor de £1 millón al mes a través de Onlyfans, lo que le permite comprar una finca de ocho habitaciones."
+      },
+      "netWorthPenn": {
+        "title": "Valor neto de Belle Delphine 2024: viaje financiero, ingresos, logros",
+        "source": "Centro de libros Penn",
+        "category": "Emprendimiento",
+        "excerpt": "El viaje de Belle Delphine muestra cómo la creatividad audaz y la marca estratégica pueden conducir al éxito financiero, con un patrimonio neto estimado de $10 millones construido a través de la monetización innovadora de su personalidad en línea y estrategias de marketing poco convencionales."
+      }
+    }
   },
   "achievements": {
     "title": "Logros",
     "subtitle": "Celebrando hitos y logros en mi viaje creativo",
-    "socialGrowth": "Crecimiento en Redes Sociales",
-    "socialGrowthDesc": "Construyendo una comunidad global de millones de seguidores en todas las plataformas",
-    "cosplayRecognition": "Reconocimiento en Cosplay",
-    "cosplayRecognitionDesc": "Diseños de cosplay premiados y reconocimiento de la industria",
-    "contentMilestones": "Hitos de Contenido",
-    "contentMilestonesDesc": "Millones de vistas y engagement en contenido de gaming y creativo",
-    "communityImpact": "Impacto Comunitario",
+    "socialGrowth": "Crecimiento de las redes sociales",
+    "socialGrowthDesc": "Construya una comunidad global de millones de suscriptores en todas las plataformas",
+    "cosplayRecognition": "Reconocimiento de cosplay",
+    "cosplayRecognitionDesc": "Diseños de cosplay galardonados y reconocimiento de la industria.",
+    "contentMilestones": "Hitos del contenido",
+    "contentMilestonesDesc": "Millones de visitas y participación en juegos y contenido creativo",
+    "communityImpact": "Impacto comunitario",
     "communityImpactDesc": "Inspirando a una nueva generación de cosplayers y creadores de contenido",
-    "viralMoments": "Momentos Virales",
-    "viralMomentsDesc": "Momentos que han cautivado Internet y han sido tendencia en todo el mundo",
-    "globalReach": "Alcance Global",
-    "globalReachDesc": "Una presencia que abarca convenciones, medios y comunidades a través de los continentes",
-    "cards": {}
+    "viralMoments": "Momentos virales",
+    "viralMomentsDesc": "Momentos que cautivaron a internet y recorrieron el mundo",
+    "globalReach": "Alcance global",
+    "globalReachDesc": "Una presencia que se extiende a convenciones, medios y comunidades de todos los continentes.",
+    "cards": {
+      "internetIcon": {
+        "title": "icono de internet",
+        "description": "Reconocida como una de las personalidades de Internet y cosplayers más influyentes del mundo."
+      },
+      "viralSensation": {
+        "title": "Sensación viral",
+        "description": "Creó varios momentos virales que dominaron las redes sociales y la cultura de Internet."
+      },
+      "creativePioneer": {
+        "title": "Pionero creativo",
+        "description": "Pionero en formatos de contenido únicos que combinan cosplay, juegos y cultura de Internet."
+      },
+      "communityBuilder": {
+        "title": "Constructor de comunidad",
+        "description": "Construyó una de las comunidades de fans más comprometidas y apasionadas del mundo del cosplay."
+      }
+    }
   },
   "testimonials": {
-    "title": "Voces de la",
+    "title": "voz de la",
     "titleHighlight": "Comunidad",
-    "subtitle": "Lo que la comunidad dice sobre mi trabajo y viaje creativo",
-    "entries": {}
+    "subtitle": "Lo que dice la comunidad sobre mi trabajo y mi viaje creativo",
+    "entries": {
+      "sarahChen": {
+        "name": "Sara Chen",
+        "role": "Apasionado del cosplay",
+        "quote": "¡La atención de Belle al detalle en sus cosplays es absolutamente increíble! Su trabajo me ha inspirado a llevar mis propios diseños de cosplay al siguiente nivel. La creatividad y pasión que aporta a cada personaje es incomparable."
+      },
+      "marcusJohnson": {
+        "name": "Marcos Johnson",
+        "role": "Creador de contenido de juegos",
+        "quote": "Como creador de contenido, me sorprende constantemente el enfoque innovador de Belle hacia el contenido de juegos. Sabe cómo atraer a su audiencia y crear momentos memorables que resuenan en la comunidad de jugadores."
+      },
+      "emilyRodriguez": {
+        "name": "Emily Rodríguez",
+        "role": "Fotógrafo",
+        "quote": "¡Trabajar con Belle ha sido un sueño absoluto! Su profesionalismo, creatividad y dedicación a su arte hacen de cada sesión de fotos una obra maestra. Ella realmente entiende el arte de la narración visual."
+      },
+      "alexKim": {
+        "name": "Alex Kim",
+        "role": "Fanático y miembro de la comunidad",
+        "quote": "Belle ha construido una de las comunidades más acogedoras y creativas de las que he formado parte. Su contenido trae alegría a millones e inspira a las personas a abrazar su creatividad y pasión por la cultura geek."
+      },
+      "jessicaTaylor": {
+        "name": "Jessica Taylor",
+        "role": "Maquillador",
+        "quote": "¡El arte del maquillaje y las transformaciones de personajes que logra Bella son fenomenales! Sus tutoriales han ayudado a innumerables aspirantes a cosplayers, incluido yo mismo, a aprender nuevas técnicas y superar los límites creativos."
+      },
+      "davidPark": {
+        "name": "parque david",
+        "role": "Analista de cultura de Internet",
+        "quote": "Belle es una auténtica pionera en la cultura de Internet y la creación de contenidos. Su capacidad para crear momentos virales manteniendo la autenticidad es un testimonio de su comprensión de los medios digitales y su genio creativo."
+      }
+    }
   },
   "socialHighlights": {
     "title": "Redes",
-    "titleHighlight": "Sociales",
-    "subtitle": "Descubre las últimas publicaciones y momentos virales",
-    "viewPost": "Ver Publicación",
+    "titleHighlight": "Social",
+    "subtitle": "Descubre las últimas publicaciones y momentos virales.",
+    "viewPost": "Ver la publicación",
     "followMe": "Sígueme"
   },
   "errorBoundary": {
-    "title": "¡Ups! 😅",
-    "subtitle": "Algo salió mal",
-    "description": "No te preocupes, no es tu culpa. Intenta refrescar la página o vuelve más tarde.",
-    "reloadButton": "Recargar Página"
+    "title": "Ups ! 😅",
+    "subtitle": "algo salió mal",
+    "description": "No te preocupes, no es tu culpa. Intente actualizar la página o vuelva más tarde.",
+    "reloadButton": "Recargar página"
   },
   "about": {
-    "title": "Sobre",
-    "name": "Belle Delphine",
-    "intro1": "Soy una cosplayer creativa británica nacida en Sudáfrica, gamer apasionada y personalidad de internet conocida por mis increíbles diseños de disfraces, contenido de gaming y memes virales. Doy vida a personajes de anime y videojuegos con una atención impresionante al detalle y visión artística.",
-    "intro2": "Desde elaboradas sesiones de fotos de cosplay y streams de gaming hasta contenido de memes hilarante y colaboraciones creativas, creo contenido entretenido que celebra la cultura geek y la creatividad. Mi trabajo abarca múltiples plataformas incluyendo Instagram, YouTube y TikTok, donde he acumulado millones de seguidores.",
-    "intro3": "Conocida por mi enfoque innovador de la creación de contenido, combino fotografía profesional, disfraces hechos a mano y maquillaje artístico para producir contenido único y memorable. Mi dedicación a mi oficio y disposición a empujar los límites creativos me ha convertido en una de las figuras más reconocibles de la cultura de internet.",
-    "feature1Title": "Arte Profesional del Cosplay",
-    "feature1Desc": "Disfraces hechos a mano con meticulosa atención al detalle",
-    "feature2Title": "Gaming & Streaming",
-    "feature2Desc": "Gameplay atractivo y experiencias comunitarias interactivas",
-    "feature3Title": "Producción de Contenido Creativo",
-    "feature3Desc": "Videos virales, memes y contenido innovador en redes sociales"
+    "title": "Acerca de",
+    "name": "Bella Delfina",
+    "intro1": "Soy un cosplayer creativo británico de ascendencia sudafricana, un ávido jugador y personalidad de Internet conocido por mis increíbles diseños de vestuario, contenido de juegos y memes virales. Doy vida a personajes de anime y videojuegos con una impresionante atención al detalle y una visión artística única.",
+    "intro2": "Desde elaboradas sesiones de fotos de cosplay y transmisiones de juegos hasta divertidos contenidos de memes y colaboraciones creativas, creo contenido entretenido que celebra la cultura y la creatividad geek. Mi trabajo abarca múltiples plataformas, incluidas Instagram, YouTube y TikTok, donde he acumulado millones de seguidores.",
+    "intro3": "Conocido por mi enfoque innovador en la creación de contenido, combino fotografía profesional, vestuario hecho a mano y maquillaje artístico para producir contenido único y memorable. Mi dedicación a mi arte y mi voluntad de traspasar los límites creativos me han convertido en una de las figuras más reconocibles de la cultura de Internet.",
+    "feature1Title": "El arte del cosplay profesional",
+    "feature1Desc": "Disfraces hechos a mano con meticulosa atención al detalle.",
+    "feature2Title": "Juegos y transmisión",
+    "feature2Desc": "Juego atractivo y experiencias comunitarias interactivas.",
+    "feature3Title": "Producción de contenido creativo",
+    "feature3Desc": "Vídeos virales, memes y contenidos innovadores en las redes sociales"
   },
   "stats": {
-    "followers": "Seguidores en Redes Sociales",
-    "cosplays": "Creaciones de Cosplay",
-    "videos": "Videos Creados",
-    "countries": "Países Alcanzados"
+    "followers": "Seguidores de redes sociales",
+    "cosplays": "Creaciones de cosplay",
+    "videos": "Vídeos creados",
+    "countries": "Países alcanzados"
   },
   "features": {
     "title": "Contenido",
     "titleHighlight": "Creativo",
-    "subtitle": "¡Descubre mi mundo de cosplay, gaming y contenido creativo. Desde creaciones de disfraces detalladas hasta sesiones de gaming entretenidas!",
-    "cosplayGalleryTitle": "Galería de Cosplay",
-    "cosplayGalleryDesc": "Impresionantes sesiones de fotos de cosplay con personajes de anime, juegos y cultura pop con increíble atención al detalle.",
-    "gamingContentTitle": "Contenido de Gaming",
-    "gamingContentDesc": "Streams de gaming en vivo, videos de gameplay y reseñas de juegos cubriendo los últimos y mejores juegos.",
-    "youtubeTitle": "Videos de YouTube",
-    "youtubeDesc": "Videos creativos incluyendo tutoriales, vlogs, desafíos y contenido detrás de cámaras de las sesiones de fotos.",
-    "memeCultureTitle": "Cultura de Memes",
-    "memeCultureDesc": "Memes hilarantes, contenido viral y comentarios sobre cultura de internet que mantienen entretenida a la comunidad.",
-    "merchandiseTitle": "Mercancía",
-    "merchandiseDesc": "Mercancía oficial incluyendo prints, ropa y coleccionables con diseños originales y temas de cosplay.",
-    "fanCommunityTitle": "Comunidad de Fans",
-    "fanCommunityDesc": "Comunidad activa de entusiastas del cosplay, gamers y fans compartiendo sus propias creaciones y conectando."
+    "subtitle": "Descubre mi mundo de cosplay, juegos y contenido creativo. ¡Desde creaciones de disfraces detalladas hasta entretenidas sesiones de juego!",
+    "cosplayGalleryTitle": "Galería de cosplay",
+    "cosplayGalleryDesc": "Impresionantes sesiones de fotos de cosplay con personajes del anime, videojuegos y cultura pop con una increíble atención al detalle.",
+    "gamingContentTitle": "Contenido de juegos",
+    "gamingContentDesc": "Transmisiones de juegos en vivo, videos de juegos y reseñas de juegos que cubren los mejores y más recientes juegos.",
+    "youtubeTitle": "vídeos de youtube",
+    "youtubeDesc": "Vídeos creativos que incluyen tutoriales, vlogs, desafíos y contenido detrás de escena de sesiones fotográficas.",
+    "memeCultureTitle": "Meme Cultura",
+    "memeCultureDesc": "Memes divertidos, contenido viral y comentarios sobre la cultura de Internet que entretienen a la comunidad.",
+    "merchandiseTitle": "Mercancías",
+    "merchandiseDesc": "Mercancía oficial que incluye estampados, ropa y coleccionables con diseños originales y temas de cosplay.",
+    "fanCommunityTitle": "Comunidad de fans",
+    "fanCommunityDesc": "Comunidad activa de entusiastas del cosplay, jugadores y fanáticos que comparten sus propias creaciones y se conectan."
   },
   "language": {
     "select": "Idioma",
-    "en": "English",
-    "fr": "Français",
+    "en": "Inglés",
+    "fr": "Francés",
     "es": "Español",
     "ja": "日本語"
   },
   "loading": {
-    "title": "Belle Delphine",
+    "title": "Bella Delfina",
     "message": "Cargando contenido increíble..."
   },
   "cosplay": {
     "title": "Cosplay",
-    "collection": "Colección",
-    "subtitle": "¡Descubre mis creaciones de cosplay favoritas con personajes de anime, videojuegos y cultura pop! Cada disfraz está hecho a mano con amor y atención al detalle.",
+    "collection": "Recopilación",
+    "subtitle": "Mira mis diseños de cosplay favoritos con personajes del anime, videojuegos y cultura pop. ¡Cada disfraz está hecho con amor y atención al detalle!",
     "cta": {
       "title": "¿Quieres ver más cosplays?",
-      "description": "¡Sígueme en Instagram y YouTube para ver contenido exclusivo, tutoriales y revelaciones de nuevos cosplays!"
+      "description": "¡Sígueme en Instagram y YouTube para obtener contenido exclusivo, tutoriales y nuevas revelaciones de cosplay!"
     },
     "items": {
-      "likes": "{{count}}M me gusta",
+      "likes": "{{count}}me gusta",
       "views": "{{count}}M vistas"
     },
     "characters": {
       "ahri": {
-        "title": "Ahri - League of Legends",
+        "title": "Ahri - Liga de Leyendas",
         "game": "League of Legends",
-        "tags": ["Gaming", "Fantasía", "Popular"]
+        "tags": ["Juego de azar", "Fantasía", "Popular"]
       },
       "dva": {
-        "title": "D.Va - Overwatch",
-        "game": "Overwatch",
-        "tags": ["Gaming", "Mecha", "Icónico"]
+        "title": "D.Va - Supervisión",
+        "game": "supervisión",
+        "tags": ["Juego de azar", "meca", "Culto"]
       },
       "harley": {
-        "title": "Harley Quinn - DC Comics",
-        "game": "DC Comics",
-        "tags": ["Cómics", "Villana", "Clásico"]
+        "title": "Harley Quinn - DC Cómics",
+        "game": "Cómics DC",
+        "tags": ["Historietas", "Demonio", "Clásico"]
       },
       "vanelope": {
-        "title": "Vanelope - Darling in the Franxx",
-        "game": "Anime",
-        "tags": ["Anime", "Waifu", "Tendencia"]
+        "title": "Vanélope - Querida en el Franxx",
+        "game": "animado",
+        "tags": ["animado", "waifu", "Tendencia"]
       },
       "jinx": {
-        "title": "Jinx - League of Legends",
+        "title": "Jinx - Liga de Leyendas",
         "game": "League of Legends",
-        "tags": ["Gaming", "Caos", "Favorito de los fans"]
+        "tags": ["Juego de azar", "Caos", "Favorito de los fans"]
       },
       "shiro": {
-        "title": "Shiro - Soul of War",
+        "title": "Shiro - Alma de guerra",
         "game": "SAO",
-        "tags": ["Anime", "Mecha", "Crítico"]
+        "tags": ["animado", "meca", "Crítico"]
       }
     }
   }

@@ -1,4 +1,4 @@
-import { Facebook as FacebookIcon, Instagram as InstagramIcon, Twitter as TwitterIcon, YouTube as YouTubeIcon, Forum as DiscordIcon } from '@mui/icons-material';
+import { Forum as DiscordIcon, Facebook as FacebookIcon, Instagram as InstagramIcon, Twitter as TwitterIcon, YouTube as YouTubeIcon } from '@mui/icons-material';
 import { Box, Container, Divider, IconButton, Link, Stack, Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 
@@ -160,7 +160,7 @@ const Footer = () => {
                   display: 'block',
                   py: 0.5,
                 }}>
-                {t('footer.home')}
+                {t('nav.home')}
               </Link>
               <Link
                 href='#about'
@@ -174,7 +174,7 @@ const Footer = () => {
                   display: 'block',
                   py: 0.5,
                 }}>
-                {t('footer.about')}
+                {t('nav.about')}
               </Link>
               <Link
                 href='#gallery'
@@ -188,7 +188,7 @@ const Footer = () => {
                   display: 'block',
                   py: 0.5,
                 }}>
-                {t('footer.gallery')}
+                {t('nav.gallery')}
               </Link>
               <Link
                 href='#biography'
@@ -202,7 +202,7 @@ const Footer = () => {
                   display: 'block',
                   py: 0.5,
                 }}>
-                {t('footer.career')}
+                {t('nav.career')}
               </Link>
               <Link
                 href='#contact'
@@ -216,7 +216,7 @@ const Footer = () => {
                   display: 'block',
                   py: 0.5,
                 }}>
-                {t('footer.contact')}
+                {t('nav.contact')}
               </Link>
             </Stack>
           </Box>
@@ -230,7 +230,7 @@ const Footer = () => {
                 mb: 2,
                 color: 'background.paper',
               }}>
-              {t('footer.followMe')}
+              {t('nav.followMe')}
             </Typography>
             <Stack spacing={1}>
               <Link
@@ -245,7 +245,7 @@ const Footer = () => {
                   display: 'block',
                   py: 0.5,
                 }}>
-                Cosplay
+                {t('nav.cosplay')}
               </Link>
               <Link
                 href='#news'
@@ -259,7 +259,7 @@ const Footer = () => {
                   display: 'block',
                   py: 0.5,
                 }}>
-                News
+                {t('nav.news')}
               </Link>
               <Link
                 href='#faq'
@@ -273,7 +273,7 @@ const Footer = () => {
                   display: 'block',
                   py: 0.5,
                 }}>
-                FAQ
+                {t('nav.faq')}
               </Link>
               <Link
                 component='a'
@@ -290,7 +290,7 @@ const Footer = () => {
                   display: 'block',
                   py: 0.5,
                 }}>
-                YouTube
+                {t('nav.youtube')}
               </Link>
               <Link
                 component='a'
@@ -307,7 +307,7 @@ const Footer = () => {
                   display: 'block',
                   py: 0.5,
                 }}>
-                Merch
+                {t('nav.merch')}
               </Link>
             </Stack>
           </Box>
@@ -328,7 +328,7 @@ const Footer = () => {
               color: 'background.default',
               textAlign: { xs: 'center', md: 'left' },
             }}>
-            © 2024 Belle Delphine - Cosplay & Gaming Content Creator. All rights reserved.
+            {t('footer.copyright')}
           </Typography>
           <Stack direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 1, sm: 3 }} alignItems='center'>
             {['Privacy Policy', 'Terms of Service', 'Community Guidelines'].map(item => (
