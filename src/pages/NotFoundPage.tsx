@@ -59,8 +59,7 @@ const NotFoundPage = () => {
               lineHeight: 1.6,
               fontSize: { xs: '1rem', md: '1.25rem' },
             }}>
-            The page you're looking for seems to have disappeared into the void. Don't worry, even the best
-            cosplayers lose their props sometimes! 🎭
+            The page you're looking for seems to have disappeared into the void. Don't worry, even the best cosplayers lose their props sometimes! 🎭
           </Typography>
 
           <Box
@@ -141,7 +140,7 @@ const NotFoundPage = () => {
                 { name: 'Gaming', path: '/#gaming' },
                 { name: 'About', path: '/#about' },
                 { name: 'Contact', path: '/#contact' },
-              ].map((link) => (
+              ].map(link => (
                 <Button
                   key={link.name}
                   variant='text'

@@ -125,14 +125,16 @@ const Features = () => {
                             animation: 'none',
                           },
                         }}>
-                        <IconComponent sx={{ 
-                          fontSize: '2rem', 
-                          color: 'white',
-                          transition: 'transform 0.3s ease-in-out',
-                          '.MuiCard-root:hover &': {
-                            transform: 'scale(1.2) rotate(-10deg)',
-                          },
-                        }} />
+                        <IconComponent
+                          sx={{
+                            fontSize: '2rem',
+                            color: 'white',
+                            transition: 'transform 0.3s ease-in-out',
+                            '.MuiCard-root:hover &': {
+                              transform: 'scale(1.2) rotate(-10deg)',
+                            },
+                          }}
+                        />
                       </Box>
 
                       <Typography

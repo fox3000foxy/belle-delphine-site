@@ -69,7 +69,6 @@ const Cosplay = () => {
   ];
 
   return (
-
     <Container maxWidth='lg'>
       <Box sx={{ textAlign: 'center', mb: { xs: 6, md: 10 } }}>
         <Typography
@@ -106,10 +105,7 @@ const Cosplay = () => {
           gap: 4,
         }}>
         {cosplays.map((cosplay, index) => (
-          <Box
-            key={index}
-            onMouseEnter={() => setHoveredCard(index)}
-            onMouseLeave={() => setHoveredCard(null)}>
+          <Box key={index} onMouseEnter={() => setHoveredCard(index)} onMouseLeave={() => setHoveredCard(null)}>
             <Card
               sx={{
                 height: '100%',

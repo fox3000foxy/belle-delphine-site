@@ -161,15 +161,17 @@ const Achievements = () => {
                           '100%': { transform: 'rotate(360deg)' },
                         },
                       }}>
-                      <IconComponent sx={{ 
-                        fontSize: { xs: '1.5rem', md: '2rem' }, 
-                        color: 'white',
-                        animation: 'counterSpin 3s linear infinite',
-                        '@keyframes counterSpin': {
-                          '0%': { transform: 'rotate(0deg)' },
-                          '100%': { transform: 'rotate(-360deg)' },
-                        },
-                      }} />
+                      <IconComponent
+                        sx={{
+                          fontSize: { xs: '1.5rem', md: '2rem' },
+                          color: 'white',
+                          animation: 'counterSpin 3s linear infinite',
+                          '@keyframes counterSpin': {
+                            '0%': { transform: 'rotate(0deg)' },
+                            '100%': { transform: 'rotate(-360deg)' },
+                          },
+                        }}
+                      />
                     </Box>
                     <Typography
                       variant='h3'
@@ -220,7 +222,6 @@ const Achievements = () => {
                     boxShadow: '0 20px 40px rgba(239, 68, 68, 0.3)',
                   },
                 }}>
-
                 <CardContent sx={{ p: 3, background: 'linear-gradient(135deg, #ffffff 0%, #f8fafc 100%)' }}>
                   <Typography
                     variant='h5'
@@ -253,8 +254,7 @@ const Achievements = () => {
             display: 'grid',
             gridTemplateColumns: { xs: '1fr', sm: 'repeat(3, 1fr)' },
             gap: 2,
-          }}>
-        </Box>
+          }}></Box>
       </Container>
     </Box>
   );

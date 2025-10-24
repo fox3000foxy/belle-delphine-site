@@ -23,7 +23,7 @@ const Navigation = () => {
     { name: 'News', path: '#news' },
     { name: 'FAQ', path: '#faq' },
     { name: 'Contact', path: '#contact' },
-    { name: 'Merch', path: 'https://belledelphinemerch.com/fr' }
+    { name: 'Merch', path: 'https://belledelphinemerch.com/fr' },
   ];
 
   const isExternalLink = (path: string) => {
@@ -99,17 +99,12 @@ const Navigation = () => {
               {navItems.map(item => {
                 const isExternal = isExternalLink(item.path);
                 const isAnchor = isAnchorLink(item.path);
-                
+
                 return (
                   <Button
                     key={item.name}
                     component={isExternal || isAnchor ? 'a' : RouterLink}
-                    {...(isExternal 
-                      ? { href: item.path, target: '_blank', rel: 'noopener noreferrer' } 
-                      : isAnchor || isIndexLink(item.path)
-                        ? { href: item.path, onClick: (e: React.MouseEvent<HTMLAnchorElement>) => handleAnchorClick(e, item.path) }
-                        : { to: item.path }
-                    )}
+                    {...(isExternal ? { href: item.path, target: '_blank', rel: 'noopener noreferrer' } : isAnchor || isIndexLink(item.path) ? { href: item.path, onClick: (e: React.MouseEvent<HTMLAnchorElement>) => handleAnchorClick(e, item.path) } : { to: item.path })}
                     sx={{
                       color: trigger ? 'text.primary' : 'white',
                       fontWeight: 500,
@@ -135,7 +130,7 @@ const Navigation = () => {
                       '&:hover::after': {
                         width: '80%',
                       },
-                      }}>
+                    }}>
                     {item.name}
                   </Button>
                 );
@@ -204,17 +199,22 @@ const Navigation = () => {
             {navItems.map(item => {
               const isExternal = isExternalLink(item.path);
               const isAnchor = isAnchorLink(item.path);
-              
+
               return (
                 <ListItem key={item.name} disablePadding>
                   <ListItemButton
                     component={isExternal || isAnchor ? 'a' : RouterLink}
-                    {...(isExternal 
-                      ? { href: item.path, target: '_blank', rel: 'noopener noreferrer' } 
-                      : isAnchor 
-                        ? { href: item.path, onClick: (e: React.MouseEvent<HTMLAnchorElement>) => { handleAnchorClick(e, item.path); setIsMenuOpen(false); } }
-                        : { to: item.path }
-                    )}
+                    {...(isExternal
+                      ? { href: item.path, target: '_blank', rel: 'noopener noreferrer' }
+                      : isAnchor
+                        ? {
+                            href: item.path,
+                            onClick: (e: React.MouseEvent<HTMLAnchorElement>) => {
+                              handleAnchorClick(e, item.path);
+                              setIsMenuOpen(false);
+                            },
+                          }
+                        : { to: item.path })}
                     onClick={() => !isAnchor && setIsMenuOpen(false)}
                     sx={{
                       borderRadius: 2,

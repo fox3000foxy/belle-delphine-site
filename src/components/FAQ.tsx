@@ -12,32 +12,32 @@ const FAQ = () => {
   const faqs = [
     {
       question: 'How did you get started with cosplay?',
-      answer: "I started cosplaying in 2015 as a makeup artist and gradually fell in love with bringing anime and gaming characters to life. What began as a hobby quickly turned into a passion as I discovered the incredible creative possibilities of costume design, photography, and character interpretation.",
+      answer: 'I started cosplaying in 2015 as a makeup artist and gradually fell in love with bringing anime and gaming characters to life. What began as a hobby quickly turned into a passion as I discovered the incredible creative possibilities of costume design, photography, and character interpretation.',
       color: '#ef4444',
     },
     {
       question: 'What materials do you use for your costumes?',
-      answer: "I use a variety of materials depending on the character and design. This includes EVA foam for armor pieces, thermoplastics like Worbla for detailed work, fabric ranging from spandex to brocade, 3D printed components, and various crafting materials. Each costume is carefully planned and handcrafted with attention to detail — and always with comfort, safety and event mobility in mind.",
+      answer: 'I use a variety of materials depending on the character and design. This includes EVA foam for armor pieces, thermoplastics like Worbla for detailed work, fabric ranging from spandex to brocade, 3D printed components, and various crafting materials. Each costume is carefully planned and handcrafted with attention to detail — and always with comfort, safety and event mobility in mind.',
       color: '#f59e0b',
     },
     {
       question: 'How long does it take to create a cosplay?',
-      answer: "The time varies greatly depending on the complexity of the character. Simple cosplays might take a week or two, while elaborate costumes with armor, props, and intricate details can take several weeks to months. I also allocate additional time for fitting, transport logistics, and final photo-shoot touches.",
+      answer: 'The time varies greatly depending on the complexity of the character. Simple cosplays might take a week or two, while elaborate costumes with armor, props, and intricate details can take several weeks to months. I also allocate additional time for fitting, transport logistics, and final photo-shoot touches.',
       color: '#ec4899',
     },
     {
       question: 'What games do you play and stream?',
-      answer: "I enjoy a wide variety of games! My content includes popular titles like Minecraft, Among Us, League of Legends, Valorant, and various indie games. I love exploring new games and sharing those experiences with my community through streams and videos.",
+      answer: 'I enjoy a wide variety of games! My content includes popular titles like Minecraft, Among Us, League of Legends, Valorant, and various indie games. I love exploring new games and sharing those experiences with my community through streams and videos.',
       color: '#8b5cf6',
     },
     {
       question: 'Do you offer cosplay tutorials or workshops?',
-      answer: "Yes! I regularly share behind-the-scenes content, makeup tutorials, and crafting tips on my YouTube channel and social media. I believe in helping others learn and grow in the cosplay community, so I try to make my techniques accessible to aspiring cosplayers.",
+      answer: 'Yes! I regularly share behind-the-scenes content, makeup tutorials, and crafting tips on my YouTube channel and social media. I believe in helping others learn and grow in the cosplay community, so I try to make my techniques accessible to aspiring cosplayers.',
       color: '#06b6d4',
     },
     {
       question: 'How can I support your work?',
-      answer: "There are many ways to support! You can follow me on social media, engage with my content (likes, comments, shares), check out my merchandise, or join my Patreon for exclusive content and behind-the-scenes access. Also, respecting the community (for example by crediting creators, respecting photos and autographs) goes a long way. Every bit of support helps me continue creating the content you love!",
+      answer: 'There are many ways to support! You can follow me on social media, engage with my content (likes, comments, shares), check out my merchandise, or join my Patreon for exclusive content and behind-the-scenes access. Also, respecting the community (for example by crediting creators, respecting photos and autographs) goes a long way. Every bit of support helps me continue creating the content you love!',
       color: '#f97316',
     },
     {
@@ -52,36 +52,35 @@ const FAQ = () => {
     },
     {
       question: 'Do I have to be a “perfect” crafter to start cosplaying?',
-      answer: "Not at all — cosplay is about fun, expression and community. Starting simple, learning as you go, and focusing on enjoying the process are key. Perfection isn’t required! In fact, many guides for beginners emphasise that the hobby should reduce stress, not add it. ",
+      answer: 'Not at all — cosplay is about fun, expression and community. Starting simple, learning as you go, and focusing on enjoying the process are key. Perfection isn’t required! In fact, many guides for beginners emphasise that the hobby should reduce stress, not add it. ',
       color: '#22c55e',
     },
     {
       question: 'How do you choose which character to cosplay?',
-      answer: "I select characters based on what I love — whether it’s the story, the design, or simply the creative challenge. Sometimes it’s about what techniques I’d like to try next. It’s important to understand your motivation, because it impacts how you approach the build and enjoy the result.",
+      answer: 'I select characters based on what I love — whether it’s the story, the design, or simply the creative challenge. Sometimes it’s about what techniques I’d like to try next. It’s important to understand your motivation, because it impacts how you approach the build and enjoy the result.',
       color: '#3b82f6',
     },
     {
       question: 'What about safety and comfort during a convention?',
-      answer: "Safety and comfort always come first — especially when wearing costumes, props or armour for long hours. Check the event’s rules on props/weapons, ensure you can move, breathe, sit if needed, and transport everything properly. Many experienced cosplayers prioritise these factors above pure ‘accuracy’. ",
+      answer: 'Safety and comfort always come first — especially when wearing costumes, props or armour for long hours. Check the event’s rules on props/weapons, ensure you can move, breathe, sit if needed, and transport everything properly. Many experienced cosplayers prioritise these factors above pure ‘accuracy’. ',
       color: '#10b981',
     },
     {
       question: 'Can I buy a cosplay instead of making it myself?',
-      answer: "Yes — buying or commissioning a costume is a totally valid approach, especially if you’re pressed for time or resources. Just bear in mind that off-the-shelf costumes may require alterations, may lack some details, and might not be as durable as handcrafted ones. ",
+      answer: 'Yes — buying or commissioning a costume is a totally valid approach, especially if you’re pressed for time or resources. Just bear in mind that off-the-shelf costumes may require alterations, may lack some details, and might not be as durable as handcrafted ones. ',
       color: '#6366f1',
     },
     {
       question: 'What’s the difference between cosplay, costuming and crossplay?',
-      answer: "The term ‘cosplay’ comes from combining ‘costume’ and ‘play’, adapted in Japan to describe dressing as fictional characters. ‘Costuming’ may be a broader term (including historical dress or other fandoms). ‘Crossplay’ refers to dressing as a character of a different gender than your own. It’s a vibrant part of the community. ",
+      answer: 'The term ‘cosplay’ comes from combining ‘costume’ and ‘play’, adapted in Japan to describe dressing as fictional characters. ‘Costuming’ may be a broader term (including historical dress or other fandoms). ‘Crossplay’ refers to dressing as a character of a different gender than your own. It’s a vibrant part of the community. ',
       color: '#fbbf24',
     },
     {
       question: 'How do you handle props/weapons/armour in conventions?',
-      answer: "Every event has its own prop/weapon/armour rules (size limits, materials, non-functionality, etc). Before you go, check the event website, plan your transport and how you’ll assemble/disassemble your gear, and test that it works and is safe to wear around crowds. ",
+      answer: 'Every event has its own prop/weapon/armour rules (size limits, materials, non-functionality, etc). Before you go, check the event website, plan your transport and how you’ll assemble/disassemble your gear, and test that it works and is safe to wear around crowds. ',
       color: '#8b5cf6',
     },
   ];
-
 
   return (
     <Box
@@ -151,9 +150,7 @@ const FAQ = () => {
                   />
                 }
                 sx={{
-                  background: expanded === `panel${index + 1}`
-                    ? `linear-gradient(135deg, ${faq.color}15 0%, ${faq.color}05 100%)`
-                    : 'white',
+                  background: expanded === `panel${index + 1}` ? `linear-gradient(135deg, ${faq.color}15 0%, ${faq.color}05 100%)` : 'white',
                   minHeight: 70,
                   '& .MuiAccordionSummary-content': {
                     my: 2,

@@ -119,114 +119,116 @@ const Biography = () => {
             const IconComponent = milestone.icon;
             return (
               <Fade in={isVisible} timeout={1000 + index * 300} key={index}>
-              <Box
-                sx={{
-                  display: 'flex',
-                  flexDirection: { xs: 'row', md: index % 2 === 0 ? 'row' : 'row-reverse' },
-                  gap: { xs: 2, md: 4 },
-                  alignItems: 'center',
-                  position: 'relative',
-                }}>
                 <Box
                   sx={{
-                    flex: { xs: '0 0 auto', md: '1 1 0' },
-                    textAlign: { xs: 'left', md: index % 2 === 0 ? 'right' : 'left' },
-                    display: { xs: 'none', md: 'block' },
-                  }}>
-                  <Typography
-                    variant='h4'
-                    sx={{
-                      fontWeight: 700,
-                      color: milestone.color,
-                      fontSize: { xs: '1.5rem', md: '2rem' },
-                    }}>
-                    {milestone.year}
-                  </Typography>
-                </Box>
-
-                <Box
-                  sx={{
-                    position: 'relative',
-                    zIndex: 2,
                     display: 'flex',
+                    flexDirection: { xs: 'row', md: index % 2 === 0 ? 'row' : 'row-reverse' },
+                    gap: { xs: 2, md: 4 },
                     alignItems: 'center',
-                    justifyContent: 'center',
-                    width: { xs: 40, md: 80 },
-                    height: { xs: 40, md: 80 },
-                    borderRadius: '50%',
-                    bgcolor: milestone.color,
-                    boxShadow: `0 0 20px ${milestone.color}80`,
-                    flexShrink: 0,
-                    animation: 'bounce 2s ease-in-out infinite',
-                    animationDelay: `${index * 0.2}s`,
-                    '@keyframes bounce': {
-                      '0%, 100%': { transform: 'translateY(0)' },
-                      '50%': { transform: 'translateY(-10px)' },
-                    },
+                    position: 'relative',
                   }}>
-                  <IconComponent sx={{ 
-                    fontSize: { xs: '1.5rem', md: '2rem' }, 
-                    color: 'white',
-                    animation: 'rotate 4s linear infinite',
-                    '@keyframes rotate': {
-                      '0%': { transform: 'rotate(0deg)' },
-                      '100%': { transform: 'rotate(360deg)' },
-                    },
-                  }} />
-                </Box>
-
-                <Box sx={{ flex: { xs: '1 1 0', md: '1 1 0' } }}>
-                  <Card
+                  <Box
                     sx={{
-                      p: 2,
-                      background: 'linear-gradient(135deg, #ffffff 0%, #fafafa 100%)',
-                      border: '2px solid',
-                      borderColor: milestone.color,
-                      borderRadius: 3,
-                      transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
-                      '&:hover': {
-                        transform: 'translateY(-8px) scale(1.02)',
-                        boxShadow: `0 20px 40px ${milestone.color}50`,
-                        borderColor: milestone.color,
-                        background: 'linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%)',
+                      flex: { xs: '0 0 auto', md: '1 1 0' },
+                      textAlign: { xs: 'left', md: index % 2 === 0 ? 'right' : 'left' },
+                      display: { xs: 'none', md: 'block' },
+                    }}>
+                    <Typography
+                      variant='h4'
+                      sx={{
+                        fontWeight: 700,
+                        color: milestone.color,
+                        fontSize: { xs: '1.5rem', md: '2rem' },
+                      }}>
+                      {milestone.year}
+                    </Typography>
+                  </Box>
+
+                  <Box
+                    sx={{
+                      position: 'relative',
+                      zIndex: 2,
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      width: { xs: 40, md: 80 },
+                      height: { xs: 40, md: 80 },
+                      borderRadius: '50%',
+                      bgcolor: milestone.color,
+                      boxShadow: `0 0 20px ${milestone.color}80`,
+                      flexShrink: 0,
+                      animation: 'bounce 2s ease-in-out infinite',
+                      animationDelay: `${index * 0.2}s`,
+                      '@keyframes bounce': {
+                        '0%, 100%': { transform: 'translateY(0)' },
+                        '50%': { transform: 'translateY(-10px)' },
                       },
                     }}>
-                    <CardContent>
-                      <Typography
-                        variant='h4'
-                        sx={{
-                          fontWeight: 700,
-                          color: milestone.color,
-                          mb: 1,
-                          fontSize: { xs: '1.5rem', md: '2rem' },
-                          display: { xs: 'block', md: 'none' },
-                        }}>
-                        {milestone.year}
-                      </Typography>
-                      <Typography
-                        variant='h5'
-                        component='h3'
-                        sx={{
-                          fontWeight: 600,
-                          color: 'text.primary',
-                          mb: 1,
-                          fontSize: { xs: '1.25rem', md: '1.5rem' },
-                        }}>
-                        {milestone.title}
-                      </Typography>
-                      <Typography
-                        variant='body1'
-                        sx={{
-                          color: 'text.secondary',
-                          lineHeight: 1.6,
-                          fontSize: { xs: '0.95rem', md: '1rem' },
-                        }}>
-                        {milestone.description}
-                      </Typography>
-                    </CardContent>
-                  </Card>
+                    <IconComponent
+                      sx={{
+                        fontSize: { xs: '1.5rem', md: '2rem' },
+                        color: 'white',
+                        animation: 'rotate 4s linear infinite',
+                        '@keyframes rotate': {
+                          '0%': { transform: 'rotate(0deg)' },
+                          '100%': { transform: 'rotate(360deg)' },
+                        },
+                      }}
+                    />
+                  </Box>
+
+                  <Box sx={{ flex: { xs: '1 1 0', md: '1 1 0' } }}>
+                    <Card
+                      sx={{
+                        p: 2,
+                        background: 'linear-gradient(135deg, #ffffff 0%, #fafafa 100%)',
+                        border: '2px solid',
+                        borderColor: milestone.color,
+                        borderRadius: 3,
+                        transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
+                        '&:hover': {
+                          transform: 'translateY(-8px) scale(1.02)',
+                          boxShadow: `0 20px 40px ${milestone.color}50`,
+                          borderColor: milestone.color,
+                          background: 'linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%)',
+                        },
+                      }}>
+                      <CardContent>
+                        <Typography
+                          variant='h4'
+                          sx={{
+                            fontWeight: 700,
+                            color: milestone.color,
+                            mb: 1,
+                            fontSize: { xs: '1.5rem', md: '2rem' },
+                            display: { xs: 'block', md: 'none' },
+                          }}>
+                          {milestone.year}
+                        </Typography>
+                        <Typography
+                          variant='h5'
+                          component='h3'
+                          sx={{
+                            fontWeight: 600,
+                            color: 'text.primary',
+                            mb: 1,
+                            fontSize: { xs: '1.25rem', md: '1.5rem' },
+                          }}>
+                          {milestone.title}
+                        </Typography>
+                        <Typography
+                          variant='body1'
+                          sx={{
+                            color: 'text.secondary',
+                            lineHeight: 1.6,
+                            fontSize: { xs: '0.95rem', md: '1rem' },
+                          }}>
+                          {milestone.description}
+                        </Typography>
+                      </CardContent>
+                    </Card>
+                  </Box>
                 </Box>
-              </Box>
               </Fade>
             );
           })}

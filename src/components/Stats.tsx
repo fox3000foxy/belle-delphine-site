@@ -25,7 +25,7 @@ const Stats = () => {
 
     if (isVisible && !hasAnimated.current) {
       hasAnimated.current = true;
-      
+
       const duration = 2000; // 2 seconds
       const steps = 60;
       const interval = duration / steps;
@@ -35,7 +35,7 @@ const Stats = () => {
       const timer = setInterval(() => {
         currentStep++;
         const progress = currentStep / steps;
-        
+
         setCounts({
           followers: Math.floor(finalValues.followers * progress),
           cosplays: Math.floor(finalValues.cosplays * progress),

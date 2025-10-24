@@ -132,7 +132,7 @@ const GamingPage = () => {
             gap: 3,
             mb: 8,
           }}>
-          {[1, 2, 3, 4].map((num) => (
+          {[1, 2, 3, 4].map(num => (
             <Card
               key={num}
               sx={{

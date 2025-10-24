@@ -1,0 +1,23 @@
+{
+  // Configuration Cloudflare Pages
+  // Build local uniquement - pas de build sur Cloudflare
+  "name": "belle-delphine",
+  "pages_build_output_dir": "./dist",
+  "compatibility_date": "2024-10-24",
+  
+  // Désactive le build automatique de Cloudflare
+  // On build localement et on envoie directement le dist
+  "build": {
+    "command": "",
+    "cwd": "",
+    "watch_paths": []
+  },
+  
+  // Configuration des routes
+  "routes": [
+    {
+      "pattern": "/*",
+      "custom_domain": true
+    }
+  ]
+}

@@ -31,7 +31,7 @@ const Testimonials = () => {
       role: 'Photographer',
       avatar: '/assets/testimonial-3.jpg',
       rating: 5,
-      quote: "Working with Belle has been an absolute dream! Her professionalism, creativity, and dedication to her craft make every photoshoot a masterpiece. She truly understands the art of visual storytelling.",
+      quote: 'Working with Belle has been an absolute dream! Her professionalism, creativity, and dedication to her craft make every photoshoot a masterpiece. She truly understands the art of visual storytelling.',
       color: '#ec4899',
     },
     {
@@ -47,7 +47,7 @@ const Testimonials = () => {
       role: 'Makeup Artist',
       avatar: '/assets/testimonial-5.jpg',
       rating: 5,
-      quote: "The makeup artistry and character transformations Belle achieves are phenomenal! Her tutorials have helped countless aspiring cosplayers, including myself, learn new techniques and push creative boundaries.",
+      quote: 'The makeup artistry and character transformations Belle achieves are phenomenal! Her tutorials have helped countless aspiring cosplayers, including myself, learn new techniques and push creative boundaries.',
       color: '#06b6d4',
     },
     {
@@ -55,7 +55,7 @@ const Testimonials = () => {
       role: 'Internet Culture Analyst',
       avatar: '/assets/testimonial-6.jpg',
       rating: 5,
-      quote: "Belle is a true pioneer in internet culture and content creation. Her ability to create viral moments while maintaining authenticity is a testament to her understanding of digital media and her creative genius.",
+      quote: 'Belle is a true pioneer in internet culture and content creation. Her ability to create viral moments while maintaining authenticity is a testament to her understanding of digital media and her creative genius.',
       color: '#f97316',
     },
   ];

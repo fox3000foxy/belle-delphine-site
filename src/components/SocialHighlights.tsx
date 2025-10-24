@@ -45,7 +45,7 @@ const SocialHighlights = () => {
       icon: TwitterIcon,
       color: '#1DA1F2',
       image: '/assets/cosplay-3.jpg',
-      caption: 'Gaming stream tonight at 8PM! Who\'s ready? 🎮',
+      caption: "Gaming stream tonight at 8PM! Who's ready? 🎮",
       likes: '890K',
       comments: '12K',
       gradient: 'linear-gradient(135deg, #1DA1F2 0%, #0d8bd9 100%)',
@@ -164,15 +164,11 @@ const SocialHighlights = () => {
                         <Box sx={{ display: 'flex', gap: 3 }}>
                           <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                             <FavoriteIcon sx={{ color: 'white', fontSize: '1.5rem' }} />
-                            <Typography sx={{ color: 'white', fontWeight: 600, fontSize: '1.1rem' }}>
-                              {post.likes}
-                            </Typography>
+                            <Typography sx={{ color: 'white', fontWeight: 600, fontSize: '1.1rem' }}>{post.likes}</Typography>
                           </Box>
                           <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                             <CommentIcon sx={{ color: 'white', fontSize: '1.5rem' }} />
-                            <Typography sx={{ color: 'white', fontWeight: 600, fontSize: '1.1rem' }}>
-                              {post.comments}
-                            </Typography>
+                            <Typography sx={{ color: 'white', fontWeight: 600, fontSize: '1.1rem' }}>{post.comments}</Typography>
                           </Box>
                         </Box>
                       </Box>

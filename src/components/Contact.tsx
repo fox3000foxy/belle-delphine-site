@@ -19,39 +19,41 @@ const Contact = () => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           content: null,
-          embeds: [{
-            title: `Contact Request from ${formData.name}`,
-            description: formData.message,
-            color: 5814783,
-            fields: [
-              {
-                name: "Name",
-                value: formData.name,
-                inline: true
+          embeds: [
+            {
+              title: `Contact Request from ${formData.name}`,
+              description: formData.message,
+              color: 5814783,
+              fields: [
+                {
+                  name: 'Name',
+                  value: formData.name,
+                  inline: true,
+                },
+                {
+                  name: 'Email',
+                  value: formData.email,
+                  inline: true,
+                },
+                {
+                  name: 'Message',
+                  value: formData.message,
+                  inline: false,
+                },
+                {
+                  name: 'Sent on',
+                  value: new Date().toLocaleString(),
+                  inline: true,
+                },
+              ],
+              footer: {
+                text: 'New contact form submission from belle-delphine.com',
+                icon_url: 'https://belle-delphine.com/favicon-96x96.png',
               },
-              {
-                name: "Email",
-                value: formData.email,
-                inline: true
-              },
-              {
-                name: "Message",
-                value: formData.message,
-                inline: false
-              },
-              {
-                name: "Sent on",
-                value: new Date().toLocaleString(),
-                inline: true
-              }
-            ],
-            footer: {
-              text: "New contact form submission from belle-delphine.com",
-              icon_url: "https://belle-delphine.com/favicon-96x96.png"
-            }
-          }],
-          username: "Contact Form",
-          attachments: []
+            },
+          ],
+          username: 'Contact Form',
+          attachments: [],
         }),
       });
 
@@ -222,7 +224,7 @@ const Contact = () => {
                   backgroundColor: 'primary.main',
                   color: 'background.paper',
                   transition: 'all 0.3s ease-in-out',
-                  '&:hover': { 
+                  '&:hover': {
                     backgroundColor: 'primary.dark',
                     transform: 'translateY(-5px) rotate(10deg) scale(1.1)',
                     boxShadow: '0 10px 20px rgba(239, 68, 68, 0.4)',
@@ -239,7 +241,7 @@ const Contact = () => {
                   backgroundColor: 'secondary.main',
                   color: 'background.paper',
                   transition: 'all 0.3s ease-in-out',
-                  '&:hover': { 
+                  '&:hover': {
                     backgroundColor: 'secondary.dark',
                     transform: 'translateY(-5px) rotate(-10deg) scale(1.1)',
                     boxShadow: '0 10px 20px rgba(249, 115, 22, 0.4)',
@@ -256,7 +258,7 @@ const Contact = () => {
                   backgroundColor: 'secondary.main',
                   color: 'background.paper',
                   transition: 'all 0.3s ease-in-out',
-                  '&:hover': { 
+                  '&:hover': {
                     backgroundColor: 'secondary.dark',
                     transform: 'translateY(-5px) rotate(10deg) scale(1.1)',
                     boxShadow: '0 10px 20px rgba(249, 115, 22, 0.4)',
@@ -273,7 +275,7 @@ const Contact = () => {
                   backgroundColor: 'secondary.main',
                   color: 'background.paper',
                   transition: 'all 0.3s ease-in-out',
-                  '&:hover': { 
+                  '&:hover': {
                     backgroundColor: 'secondary.dark',
                     transform: 'translateY(-5px) rotate(-10deg) scale(1.1)',
                     boxShadow: '0 10px 20px rgba(249, 115, 22, 0.4)',
@@ -290,7 +292,7 @@ const Contact = () => {
                   backgroundColor: '#5865F2',
                   color: 'background.paper',
                   transition: 'all 0.3s ease-in-out',
-                  '&:hover': { 
+                  '&:hover': {
                     backgroundColor: '#4752C4',
                     transform: 'translateY(-5px) rotate(10deg) scale(1.1)',
                     boxShadow: '0 10px 20px rgba(88, 101, 242, 0.4)',
