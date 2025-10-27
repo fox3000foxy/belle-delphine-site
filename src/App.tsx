@@ -11,11 +11,6 @@ import muiTheme from './theme/muiTheme';
 
 // Lazy load pages for better performance
 const HomePage = lazy(() => import('./pages/HomePage'));
-const AboutPage = lazy(() => import('./pages/AboutPage'));
-const ContactPage = lazy(() => import('./pages/ContactPage'));
-const CosplayPage = lazy(() => import('./pages/CosplayPage'));
-const GamingPage = lazy(() => import('./pages/GamingPage'));
-const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 
 function App() {
   // Monitor Web Vitals for performance tracking
@@ -37,11 +32,6 @@ function App() {
             {/* <Suspense fallback={<Loading />}> */}
               <Routes>
                 <Route path='/' element={<HomePage />} />
-                <Route path='/#cosplay' element={<CosplayPage />} />
-                <Route path='/#gaming' element={<GamingPage />} />
-                <Route path='/#about' element={<AboutPage />} />
-                <Route path='/#contact' element={<ContactPage />} />
-                <Route path='*' element={<NotFoundPage />} />
               </Routes>
             {/* </Suspense> */}
             <Footer />

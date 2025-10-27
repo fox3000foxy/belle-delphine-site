@@ -84,7 +84,24 @@ const Navigation = () => {
                 },
               }}
             />
-            <Typography
+            <Box
+              component='img'
+              src={"/text.png"}
+              alt='Belle Delphine Logo'
+              sx={{
+                height: 28,
+                position: 'relative',
+                top: 2,
+                mr: 1,
+                transition: 'all 0.3s ease-in-out',
+                filter: trigger ? 'none' : 'brightness(0) invert(1)',
+                '&:hover': {
+                  transform: 'scale(1.2)',
+                  animation: 'none',
+                },
+              }}
+            />
+            {/* <Typography
               variant='h5'
               component='div'
               sx={{
@@ -94,7 +111,7 @@ const Navigation = () => {
                 fontFamily: '"Inter", sans-serif',
               }}>
               Belle Delphine
-            </Typography>
+            </Typography> */}
           </Box>
 
           {!isMobile && (
@@ -163,14 +180,14 @@ const Navigation = () => {
             <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
               <LanguageSelector color={trigger ? 'text.primary' : 'white'} />
               <IconButton
-              onClick={() => setIsMenuOpen(true)}
-              aria-label="Open navigation menu"
-              sx={{
-                color: trigger ? 'text.primary' : 'white',
-                transition: 'color 0.3s ease-in-out',
-              }}>
-              <MenuIcon />
-            </IconButton>
+                onClick={() => setIsMenuOpen(true)}
+                aria-label="Open navigation menu"
+                sx={{
+                  color: trigger ? 'text.primary' : 'white',
+                  transition: 'color 0.3s ease-in-out',
+                }}>
+                <MenuIcon />
+              </IconButton>
             </Box>
           )}
         </Toolbar>
@@ -216,12 +233,12 @@ const Navigation = () => {
                       ? { href: item.path, target: '_blank', rel: 'noopener noreferrer' }
                       : isAnchor
                         ? {
-                            href: item.path,
-                            onClick: (e: React.MouseEvent<HTMLAnchorElement>) => {
-                              handleAnchorClick(e, item.path);
-                              setIsMenuOpen(false);
-                            },
-                          }
+                          href: item.path,
+                          onClick: (e: React.MouseEvent<HTMLAnchorElement>) => {
+                            handleAnchorClick(e, item.path);
+                            setIsMenuOpen(false);
+                          },
+                        }
                         : { to: item.path })}
                     onClick={() => !isAnchor && setIsMenuOpen(false)}
                     sx={{
