@@ -461,5 +461,63 @@
   "loading": {
     "title": "Belle Delphine",
     "message": "Loading amazing content..."
+  },
+  "minecraft": {
+    "title": "Belle Delphine Minecraft Server",
+    "subtitle": "Join our exclusive Minecraft community and play with fellow fans in a creative and fun environment!",
+    "serverAddress": "Server Address",
+    "online": "Online",
+    "offline": "Offline",
+    "copy": "Copy to clipboard",
+    "copied": "Copied!",
+    "players": "Players Online",
+    "version": "Version",
+    "uptime": "Uptime",
+    "mode": "Game Mode",
+    "joinNow": "Join the Server Now",
+    "featuresTitle": "Server Features",
+    "feature1": {
+      "title": "Custom Mini-Games",
+      "desc": "Exclusive mini-games and challenges created specifically for our community"
+    },
+    "feature2": {
+      "title": "Special Rewards",
+      "desc": "Earn unique items and cosmetics by participating in events and quests"
+    },
+    "feature3": {
+      "title": "Community Events",
+      "desc": "Regular tournaments, building competitions, and themed events"
+    },
+    "feature4": {
+      "title": "VIP Perks",
+      "desc": "Exclusive benefits for supporters including custom kits and access to special areas"
+    },
+    "feature5": {
+      "title": "Creative Plots",
+      "desc": "Get your own plot to build amazing creations and showcase your creativity"
+    },
+    "feature6": {
+      "title": "Protected Gameplay",
+      "desc": "Safe and moderated environment with grief protection and active staff"
+    },
+    "howToJoin": "How to Join",
+    "step1": {
+      "title": "Launch Minecraft",
+      "desc": "Open Minecraft Java Edition version 1.12.2"
+    },
+    "step2": {
+      "title": "Add Server",
+      "desc": "Click 'Multiplayer' and then 'Add Server'"
+    },
+    "step3": {
+      "title": "Enter Address",
+      "desc": "Copy and paste: play.belle-delphine.com"
+    },
+    "step4": {
+      "title": "Start Playing",
+      "desc": "Join the server and have fun with the community!"
+    },
+    "community": "Join Our Community",
+    "communityDesc": "Connect with other fans, participate in events, and be part of an amazing Minecraft community. Whether you're a builder, explorer, or PvP enthusiast, there's something for everyone!"
   }
 }

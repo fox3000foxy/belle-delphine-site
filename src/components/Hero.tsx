@@ -22,6 +22,8 @@ const Hero = () => {
         justifyContent: 'center',
         position: 'relative',
         overflow: 'hidden',
+        // zoom: 0.8,
+        paddingTop: 12,
         background: `linear-gradient(135deg, ${theme.palette.primary.main} 0%, ${theme.palette.primary.dark} 50%, ${theme.palette.secondary.main} 100%)`,
       }}>
       <Box

@@ -25,6 +25,7 @@ const Navigation = () => {
     { name: t('nav.career'), path: '#biography' },
     { name: t('nav.news'), path: '#news' },
     { name: t('nav.faq'), path: '#faq' },
+    { name: 'Minecraft', path: '#minecraft' },
     { name: t('nav.contact'), path: '#contact' },
     { name: t('nav.merch'), path: 'https://belledelphinemerch.com/fr' },
   ];

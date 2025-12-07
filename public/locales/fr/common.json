@@ -439,6 +439,64 @@
     "title": "Belle Delphine",
     "message": "Chargement du contenu incroyable..."
   },
+  "minecraft": {
+    "title": "Serveur Minecraft Belle Delphine",
+    "subtitle": "Rejoignez notre communauté Minecraft exclusive et jouez avec d'autres fans dans un environnement créatif et amusant !",
+    "serverAddress": "Adresse du serveur",
+    "online": "En ligne",
+    "offline": "Hors ligne",
+    "copy": "Copier dans le presse-papiers",
+    "copied": "Copié !",
+    "players": "Joueurs en ligne",
+    "version": "Version",
+    "uptime": "Disponibilité",
+    "mode": "Mode de jeu",
+    "joinNow": "Rejoindre le serveur maintenant",
+    "featuresTitle": "Fonctionnalités du serveur",
+    "feature1": {
+      "title": "Mini-jeux personnalisés",
+      "desc": "Mini-jeux et défis exclusifs créés spécialement pour notre communauté"
+    },
+    "feature2": {
+      "title": "Récompenses spéciales",
+      "desc": "Gagnez des objets et cosmétiques uniques en participant aux événements et quêtes"
+    },
+    "feature3": {
+      "title": "Événements communautaires",
+      "desc": "Tournois réguliers, concours de construction et événements thématiques"
+    },
+    "feature4": {
+      "title": "Avantages VIP",
+      "desc": "Avantages exclusifs pour les supporters incluant des kits personnalisés et l'accès à des zones spéciales"
+    },
+    "feature5": {
+      "title": "Parcelles créatives",
+      "desc": "Obtenez votre propre parcelle pour construire des créations incroyables et montrer votre créativité"
+    },
+    "feature6": {
+      "title": "Gameplay protégé",
+      "desc": "Environnement sûr et modéré avec protection contre le grief et staff actif"
+    },
+    "howToJoin": "Comment rejoindre",
+    "step1": {
+      "title": "Lancer Minecraft",
+      "desc": "Ouvrez Minecraft Java Edition version 1.12.2"
+    },
+    "step2": {
+      "title": "Ajouter un serveur",
+      "desc": "Cliquez sur 'Multijoueur' puis sur 'Ajouter un serveur'"
+    },
+    "step3": {
+      "title": "Entrer l'adresse",
+      "desc": "Copiez et collez : play.belle-delphine.com"
+    },
+    "step4": {
+      "title": "Commencer à jouer",
+      "desc": "Rejoignez le serveur et amusez-vous avec la communauté !"
+    },
+    "community": "Rejoignez notre communauté",
+    "communityDesc": "Connectez-vous avec d'autres fans, participez aux événements et faites partie d'une communauté Minecraft incroyable. Que vous soyez constructeur, explorateur ou amateur de PvP, il y en a pour tous les goûts !"
+  },
   "cosplay": {
     "title": "Cosplay",
     "collection": "Collection",
