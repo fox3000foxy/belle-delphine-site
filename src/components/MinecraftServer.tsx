@@ -19,7 +19,7 @@ const MinecraftServer = () => {
 
     const serverStats = [
         { label: t('minecraft.players'), value: '?/100' },
-        { label: t('minecraft.version'), value: '1.12.2' },
+        { label: t('minecraft.version'), value: '1.21.10' },
         { label: t('minecraft.uptime'), value: '99.9%' },
         { label: t('minecraft.mode'), value: 'Survival' },
     ];
