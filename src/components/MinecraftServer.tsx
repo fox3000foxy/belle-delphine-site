@@ -25,7 +25,7 @@ const MinecraftServer = () => {
         }
 
         try {
-            const response = await fetch(`https://api.mcstatus.io/v2/status/java/${serverAddress}`);
+            const response = await fetch(`https://api.mcstatus.io/v2/status/java/two-tale.gl.joinmc.link`);
             if (!response.ok) {
                 throw new Error('Failed to fetch status');
             }
