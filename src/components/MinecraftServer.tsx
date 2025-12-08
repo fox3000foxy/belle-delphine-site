@@ -43,7 +43,7 @@ const MinecraftServer = () => {
             const uptime =
                 typeof uptimeRaw === 'number'
                     ? `${Math.min(100, Math.max(0, Math.round(uptimeRaw)))}%`
-                    : uptimeRaw || (isOnline ? 'Live' : '--');
+                    : uptimeRaw || (isOnline ? '🟢' : '🔴');
 
             setStatsData({
                 players: playersMax ? `${playersOnline}/${playersMax}` : `${playersOnline}`,
@@ -75,8 +75,8 @@ const MinecraftServer = () => {
     const serverStats = [
         { label: t('minecraft.players'), value: statsData.players },
         { label: t('minecraft.version'), value: statsData.version },
-        { label: t('minecraft.uptime'), value: statsData.uptime },
-        { label: t('minecraft.mode'), value: statsData.mode },
+        // { label: t('minecraft.uptime'), value: statsData.uptime },
+        // { label: t('minecraft.mode'), value: statsData.mode },
     ];
 
     //   const features = [
