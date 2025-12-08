@@ -1,15 +1,70 @@
 import { ContentCopy as CopyIcon, FiberManualRecord as DotIcon } from '@mui/icons-material';
 import { Box, Button, Card, CardContent, Chip, Container, IconButton, Stack, Tooltip, Typography, useTheme } from '@mui/material';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 const MinecraftServer = () => {
     const { t } = useTranslation();
     const theme = useTheme();
     const [copied, setCopied] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
+    const [serverStatus, setServerStatus] = useState<'online' | 'offline'>('offline');
+    const [statsData, setStatsData] = useState({
+        players: '--',
+        version: '--',
+        uptime: '--',
+        mode: '--',
+    });
+    const isServerOnline = serverStatus === 'online';
 
     const serverAddress = 'play.belle-delphine.com';
-    const serverStatus = 'online'; // This would typically come from an API
+
+    const fetchServerData = async (withSpinner = false) => {
+        if (withSpinner) {
+            setIsLoading(true);
+        }
+
+        try {
+            const response = await fetch(`https://api.mcstatus.io/v2/status/java/${serverAddress}`);
+            if (!response.ok) {
+                throw new Error('Failed to fetch status');
+            }
+
+            const data = await response.json();
+            const isOnline = Boolean(data?.online);
+
+            setServerStatus(isOnline ? 'online' : 'offline');
+
+            const playersOnline = data?.players?.online ?? 0;
+            const playersMax = data?.players?.max ?? 0;
+            const version = data?.version?.name_clean ?? data?.version?.name_raw ?? '--';
+            const mode = data?.gamemode ?? data?.map ?? data?.motd?.clean?.[0] ?? '--';
+            const uptimeRaw = data?.uptime ?? data?.duration;
+            const uptime =
+                typeof uptimeRaw === 'number'
+                    ? `${Math.min(100, Math.max(0, Math.round(uptimeRaw)))}%`
+                    : uptimeRaw || (isOnline ? 'Live' : '--');
+
+            setStatsData({
+                players: playersMax ? `${playersOnline}/${playersMax}` : `${playersOnline}`,
+                version,
+                uptime,
+                mode,
+            });
+        } catch (_e) {
+            console.log(_e);
+            setServerStatus('offline');
+            setStatsData((prev) => ({ ...prev, players: '--', uptime: '--' }));
+        } finally {
+            setIsLoading(false);
+        }
+    };
+
+    useEffect(() => {
+        fetchServerData(true);
+        const interval = setInterval(() => fetchServerData(), 30000);
+        return () => clearInterval(interval);
+    }, [serverAddress]);
 
     const handleCopyAddress = () => {
         navigator.clipboard.writeText(serverAddress);
@@ -18,10 +73,10 @@ const MinecraftServer = () => {
     };
 
     const serverStats = [
-        { label: t('minecraft.players'), value: '?/100' },
-        { label: t('minecraft.version'), value: '1.21.10' },
-        { label: t('minecraft.uptime'), value: '99.9%' },
-        { label: t('minecraft.mode'), value: 'Survival' },
+        { label: t('minecraft.players'), value: statsData.players },
+        { label: t('minecraft.version'), value: statsData.version },
+        { label: t('minecraft.uptime'), value: statsData.uptime },
+        { label: t('minecraft.mode'), value: statsData.mode },
     ];
 
     //   const features = [
@@ -94,9 +149,9 @@ const MinecraftServer = () => {
                                             {t('minecraft.serverAddress')}
                                         </Typography>
                                         <Chip
-                                            icon={<DotIcon sx={{ fontSize: 12, color: serverStatus === 'online' ? '#00ff00' : '#ff0000' }} />}
+                                            icon={<DotIcon sx={{ fontSize: 12, color: isServerOnline ? '#00ff00' : '#ff0000' }} />}
                                             label={t(`minecraft.${serverStatus}`)}
-                                            color={serverStatus === 'online' ? 'success' : 'error'}
+                                            color={isServerOnline ? 'success' : 'error'}
                                             size='small'
                                         />
                                     </Box>
@@ -135,7 +190,7 @@ const MinecraftServer = () => {
                                         <Box key={index} sx={{ flex: { xs: '1 1 calc(50% - 8px)', sm: '1 1 calc(25% - 12px)' }, minWidth: 0 }}>
                                             <Box textAlign='center' sx={{ p: 2 }}>
                                                 <Typography variant='h4' color='primary' fontWeight='bold'>
-                                                    {stat.value}
+                                                    {isLoading ? '...' : stat.value}
                                                 </Typography>
                                                 <Typography variant='body2' color='text.secondary'>
                                                     {stat.label}
@@ -149,6 +204,7 @@ const MinecraftServer = () => {
                                     variant='contained'
                                     size='large'
                                     fullWidth
+                                    disabled={!isLoading && !isServerOnline}
                                     sx={{
                                         py: 2,
                                         fontSize: '1.1rem',
