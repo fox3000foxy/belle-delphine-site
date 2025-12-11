@@ -17,7 +17,7 @@ const MinecraftServer = () => {
     });
     const isServerOnline = serverStatus === 'online';
 
-    const serverAddress = 'play.belle-delphine.com';
+    const serverAddress = 'play.bellesmp.com';
 
     const fetchServerData = async (withSpinner = false) => {
         if (withSpinner) {
