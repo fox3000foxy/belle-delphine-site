@@ -328,8 +328,7 @@ const Footer = () => {
               color: 'background.default',
               textAlign: { xs: 'center', md: 'left' },
             }}>
-            {t('footer.copyright')}
-          </Typography>
+            </Typography>
           <Stack direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 1, sm: 3 }} alignItems='center'>
             {['Privacy Policy', 'Terms of Service', 'Community Guidelines'].map(item => (
               <Link
