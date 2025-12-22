@@ -18,6 +18,9 @@ const HomePage = () => {
       <section id='hero'>
         <Hero />
       </section>
+      <section id='minecraft'>
+        <MinecraftServer />
+      </section>
       <section id='stats'>
         <Stats />
       </section>
@@ -50,9 +53,6 @@ const HomePage = () => {
       </section>
       <section id='faq'>
         <FAQ />
-      </section>
-      <section id='minecraft'>
-        <MinecraftServer />
       </section>
       <section id='contact'>
         <Contact />
