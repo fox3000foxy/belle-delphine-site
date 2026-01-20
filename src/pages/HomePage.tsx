@@ -18,9 +18,9 @@ const HomePage = () => {
       <section id='hero'>
         <Hero />
       </section>
-      <section id='minecraft'>
+      {/* <section id='minecraft'>
         <MinecraftServer />
-      </section>
+      </section> */}
       <section id='stats'>
         <Stats />
       </section>
