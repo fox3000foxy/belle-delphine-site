@@ -7,7 +7,7 @@ import FAQ from '../components/FAQ';
 import Features from '../components/Features';
 import Gallery from '../components/Gallery';
 import Hero from '../components/Hero';
-import MinecraftServer from '../components/MinecraftServer';
+// import MinecraftServer from '../components/MinecraftServer';
 import News from '../components/News';
 import Stats from '../components/Stats';
 import Testimonials from '../components/Testimonials';
