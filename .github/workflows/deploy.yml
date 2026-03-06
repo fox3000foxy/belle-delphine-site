@@ -64,6 +64,6 @@ jobs:
         uses: fox3000foxy/deploy-from-private-to-github-pages@v1
         with:
           artifact: ${{ needs.build.outputs.artifact_id }}
-          repo: fox3000foxy/timeless-esports
+          repo: fox3000foxy/belle-delphine-site
           token: ${{ secrets.DEPLOY_TOKEN }}
         # the action will auto-detect the target pages repo and use a deploy branch by default
