@@ -1,4 +1,6 @@
-import { People as PeopleIcon, Public as PublicIcon, TrendingUp as TrendingUpIcon } from '@mui/icons-material';
+import PeopleIcon from '@mui/icons-material/People';
+import PublicIcon from '@mui/icons-material/Public';
+import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import { Box, Button, Card, CardContent, Container, Grow, List, ListItem, ListItemIcon, ListItemText, Slide, Typography } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';

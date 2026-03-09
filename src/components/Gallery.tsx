@@ -1,4 +1,5 @@
-import { ArrowForward as ArrowIcon, Favorite as FavoriteIcon } from '@mui/icons-material';
+import ArrowIcon from '@mui/icons-material/ArrowForward';
+import FavoriteIcon from '@mui/icons-material/Favorite';
 import { Box, Button, Card, CardContent, Chip, Container, Fade, Typography } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';

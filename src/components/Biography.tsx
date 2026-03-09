@@ -1,6 +1,9 @@
-import { Box, Card, CardContent, Container, Typography, Fade } from '@mui/material';
-import { Star as StarIcon, TrendingUp as TrendingIcon, VideoLibrary as VideoIcon, Celebration as CelebrationIcon } from '@mui/icons-material';
-import { useState, useEffect } from 'react';
+import CelebrationIcon from '@mui/icons-material/Celebration';
+import StarIcon from '@mui/icons-material/Star';
+import TrendingIcon from '@mui/icons-material/TrendingUp';
+import VideoIcon from '@mui/icons-material/VideoLibrary';
+import { Box, Card, CardContent, Container, Fade, Typography } from '@mui/material';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 const Biography = () => {

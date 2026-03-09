@@ -1,4 +1,10 @@
-import { Email as EmailIcon, Facebook as FacebookIcon, Instagram as InstagramIcon, Send as SendIcon, Twitter as TwitterIcon, YouTube as YouTubeIcon, Forum as DiscordIcon } from '@mui/icons-material';
+import EmailIcon from '@mui/icons-material/Email';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import DiscordIcon from '@mui/icons-material/Forum';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import SendIcon from '@mui/icons-material/Send';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 import { Alert, Box, Button, Card, CardContent, Container, IconButton, List, ListItem, ListItemIcon, ListItemText, Stack, TextField, Typography } from '@mui/material';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';

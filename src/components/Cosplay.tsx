@@ -1,4 +1,6 @@
-import { Favorite as FavoriteIcon, Star as StarIcon, Visibility as VisibilityIcon } from '@mui/icons-material';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import StarIcon from '@mui/icons-material/Star';
+import VisibilityIcon from '@mui/icons-material/Visibility';
 import { Box, Card, CardContent, Chip, Container, Stack, Typography } from '@mui/material';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';

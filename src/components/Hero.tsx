@@ -1,4 +1,6 @@
-import { KeyboardArrowDown as ArrowDownIcon, ArrowForward as ArrowIcon, PlayArrow as PlayIcon } from '@mui/icons-material';
+import ArrowIcon from '@mui/icons-material/ArrowForward';
+import ArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import PlayIcon from '@mui/icons-material/PlayArrow';
 import { Box, Button, Container, Fade, Stack, Typography, useTheme } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';

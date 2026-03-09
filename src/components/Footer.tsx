@@ -1,4 +1,8 @@
-import { Forum as DiscordIcon, Facebook as FacebookIcon, Instagram as InstagramIcon, Twitter as TwitterIcon, YouTube as YouTubeIcon } from '@mui/icons-material';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import DiscordIcon from '@mui/icons-material/Forum';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 import { Box, Container, Divider, IconButton, Link, Stack, Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 

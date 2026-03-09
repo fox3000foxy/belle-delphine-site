@@ -1,4 +1,9 @@
-import { Public as GlobalIcon, Favorite as HeartIcon, People as PeopleIcon, TrendingUp as TrendingIcon, EmojiEvents as TrophyIcon, VideoLibrary as VideoIcon } from '@mui/icons-material';
+import TrophyIcon from '@mui/icons-material/EmojiEvents';
+import HeartIcon from '@mui/icons-material/Favorite';
+import PeopleIcon from '@mui/icons-material/People';
+import GlobalIcon from '@mui/icons-material/Public';
+import TrendingIcon from '@mui/icons-material/TrendingUp';
+import VideoIcon from '@mui/icons-material/VideoLibrary';
 import { Box, Card, CardContent, Container, Typography } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';

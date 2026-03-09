@@ -1,4 +1,7 @@
-import { Article as ArticleIcon, CalendarToday as CalendarIcon, OpenInNew as ExternalIcon, TrendingUp as TrendingIcon } from '@mui/icons-material';
+import ArticleIcon from '@mui/icons-material/Article';
+import CalendarIcon from '@mui/icons-material/CalendarToday';
+import ExternalIcon from '@mui/icons-material/OpenInNew';
+import TrendingIcon from '@mui/icons-material/TrendingUp';
 import { Box, Button, Card, CardContent, Chip, Container, Fade, Typography } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';

@@ -1,4 +1,5 @@
-import { ContentCopy as CopyIcon, FiberManualRecord as DotIcon } from '@mui/icons-material';
+import CopyIcon from '@mui/icons-material/ContentCopy';
+import DotIcon from '@mui/icons-material/FiberManualRecord';
 import { Box, Button, Card, CardContent, Chip, Container, IconButton, Stack, Tooltip, Typography, useTheme } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';

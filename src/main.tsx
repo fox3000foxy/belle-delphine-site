@@ -5,7 +5,6 @@ import App from './App.tsx';
 import Loading from './components/Loading';
 import './i18n/config';
 import './index.css';
-import './lib/fontawesome';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

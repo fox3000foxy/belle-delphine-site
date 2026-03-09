@@ -1,9 +1,9 @@
-import { Close as CloseIcon, Menu as MenuIcon } from '@mui/icons-material';
+import CloseIcon from '@mui/icons-material/Close';
+import MenuIcon from '@mui/icons-material/Menu';
 import { AppBar, Box, Button, Drawer, IconButton, List, ListItem, ListItemButton, ListItemText, Toolbar, Typography, useMediaQuery, useScrollTrigger, useTheme } from '@mui/material';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link as RouterLink } from 'react-router-dom';
-import logo from '../assets/logo.svg';
 import LanguageSelector from './LanguageSelector';
 
 const Navigation = () => {
@@ -71,7 +71,7 @@ const Navigation = () => {
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
             <Box
               component='img'
-              src={logo}
+              src="/assets/logo.svg"
               alt='Belle Delphine Logo'
               sx={{
                 height: 32,

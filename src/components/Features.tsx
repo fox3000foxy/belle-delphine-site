@@ -1,4 +1,9 @@
-import { Camera as CameraIcon, SportsEsports as GamingIcon, EmojiEmotions as MemeIcon, People as PeopleIcon, Shop as ShopIcon, VideoLibrary as VideoIcon } from '@mui/icons-material';
+import CameraIcon from '@mui/icons-material/Camera';
+import MemeIcon from '@mui/icons-material/EmojiEmotions';
+import PeopleIcon from '@mui/icons-material/People';
+import ShopIcon from '@mui/icons-material/Shop';
+import GamingIcon from '@mui/icons-material/SportsEsports';
+import VideoIcon from '@mui/icons-material/VideoLibrary';
 import { Box, Card, CardContent, Container, Typography, Zoom } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 

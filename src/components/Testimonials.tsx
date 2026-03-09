@@ -1,4 +1,4 @@
-import { FormatQuote as QuoteIcon } from '@mui/icons-material';
+import QuoteIcon from '@mui/icons-material/FormatQuote';
 import { Avatar, Box, Card, CardContent, Container, Fade, Rating, Typography } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';

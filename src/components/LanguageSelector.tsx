@@ -1,4 +1,4 @@
-import { Language as LanguageIcon } from '@mui/icons-material';
+import LanguageIcon from '@mui/icons-material/Language';
 import { Box, IconButton, Menu, MenuItem, Typography } from '@mui/material';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';

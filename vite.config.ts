@@ -1,5 +1,5 @@
+import react from '@vitejs/plugin-react-swc'
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vite.dev/config/
@@ -98,7 +98,7 @@ export default defineConfig({
       output: {
         manualChunks: {
           'react-vendor': ['react', 'react-dom', 'react-router-dom'],
-          'ui-vendor': ['@mui/material', '@mui/icons-material', 'lucide-react'],
+          'ui-vendor': ['@mui/material'],
         }
       }
     },
