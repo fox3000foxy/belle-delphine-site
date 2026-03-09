@@ -12,7 +12,8 @@ const Hero = () => {
   const theme = useTheme();
 
   useEffect(() => {
-    setIsVisible(true);
+    const id = requestAnimationFrame(() => setIsVisible(true));
+    return () => cancelAnimationFrame(id);
   }, []);
 
   return (
