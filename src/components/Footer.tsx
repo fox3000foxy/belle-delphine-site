@@ -88,7 +88,7 @@ const Footer = () => {
               </IconButton>
               <IconButton
                 component='a'
-                href='https://www.instagram.com/belle.delphine'
+                href='https://www.instagram.com/missingmiley'
                 target='_blank'
                 rel='noopener noreferrer'
                 aria-label='Visit Belle Delphine on Instagram'

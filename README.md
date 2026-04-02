@@ -46,7 +46,7 @@ npm run build
 ## Contact
 
 - **Business Email**: business@belledelphine.com
-- **Instagram**: @belle.delphine
+- **Instagram**: @missingmiley
 - **Twitter/X**: @bunnydelphine
 
 ---

@@ -259,7 +259,7 @@ const Contact = () => {
               </IconButton>
               <IconButton
                 component='a'
-                href='https://www.instagram.com/belle.delphine'
+                href='https://www.instagram.com/missingmiley'
                 target='_blank'
                 rel='noopener noreferrer'
                 sx={{

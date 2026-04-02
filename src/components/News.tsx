@@ -20,7 +20,7 @@ const News = () => {
     {
       key: 'legacy',
       image: 'https://substackcdn.com/image/fetch/$s_!duAg!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa76d6feb-ab3c-49f5-85e7-3d6ae193c510_624x340.jpeg',
-      url: 'https://amtenison.substack.com/p/belle-delphines-legacy-to-the-world',
+      url: 'https://open.substack.com/pub/charnightstar/p/belle-delphines-legacy-to-the-world?r=1vgxym&utm_campaign=post&utm_medium=web',
       color: '#ffabab',
       trending: false,
       date: '2025-10-15'
