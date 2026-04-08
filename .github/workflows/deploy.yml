@@ -24,25 +24,30 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
         with:
-          version: 'latest'
+          bun-version: 'latest'
+      
+      - name: Cache Bun dependencies
+        uses: actions/cache@v3
+        with:
+          path: .bun/install/cache
+          key: ${{ runner.os }}-bun-${{ hashFiles('bun.lockfile') }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: pnpm
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: bun install --frozen-lockfile
 
       - name: Lint with ESLint
-        run: pnpm run lint
+        run: bun run lint
 
       - name: Build project
-        run: pnpm run build
+        run: bun run build
 
       - name: Upload build output
         id: upload
@@ -64,6 +69,6 @@ jobs:
         uses: fox3000foxy/deploy-from-private-to-github-pages@v1
         with:
           artifact: ${{ needs.build.outputs.artifact_id }}
-          repo: fox3000foxy/belle-delphine-site
+          repo: itsrealfortune/itsrealfortune.github.io
           token: ${{ secrets.DEPLOY_TOKEN }}
         # the action will auto-detect the target pages repo and use a deploy branch by default
