@@ -96,9 +96,16 @@ export default defineConfig({
     // Réduit le nombre de chunks pour accélérer le build
     rollupOptions: {
       output: {
-        manualChunks: {
-          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
-          'ui-vendor': ['@mui/material'],
+        manualChunks(id) {
+          if (id.includes('node_modules/react/') || id.includes('node_modules/react-dom/') || id.includes('node_modules/react-router-dom/')) {
+            return 'react-vendor'
+          }
+
+          if (id.includes('node_modules/@mui/material/')) {
+            return 'ui-vendor'
+          }
+
+          return undefined
         }
       }
     },
