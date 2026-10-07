@@ -1,6 +1,6 @@
-import react from '@vitejs/plugin-react-swc'
-import { defineConfig } from 'vite'
-import { VitePWA } from 'vite-plugin-pwa'
+import react from '@vitejs/plugin-react-swc';
+import { defineConfig } from 'vite';
+import { VitePWA } from 'vite-plugin-pwa';
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -20,20 +20,20 @@ export default defineConfig({
           {
             src: '/android-icon-192x192.png',
             sizes: '192x192',
-            type: 'image/png'
-          },
-          {
-            src: '/android-icon-512x512.png',
-            sizes: '512x512',
-            type: 'image/png'
+            type: 'image/png',
           },
           {
             src: '/android-icon-512x512.png',
             sizes: '512x512',
             type: 'image/png',
-            purpose: 'any maskable'
-          }
-        ]
+          },
+          {
+            src: '/android-icon-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'any maskable',
+          },
+        ],
       },
       workbox: {
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024, // 5 MB
@@ -47,12 +47,12 @@ export default defineConfig({
               cacheName: 'google-fonts-cache',
               expiration: {
                 maxEntries: 10,
-                maxAgeSeconds: 60 * 60 * 24 * 365 // 1 year
+                maxAgeSeconds: 60 * 60 * 24 * 365, // 1 year
               },
               cacheableResponse: {
-                statuses: [0, 200]
-              }
-            }
+                statuses: [0, 200],
+              },
+            },
           },
           {
             urlPattern: /^https:\/\/fonts\.gstatic\.com\/.*/i,
@@ -61,12 +61,12 @@ export default defineConfig({
               cacheName: 'gstatic-fonts-cache',
               expiration: {
                 maxEntries: 10,
-                maxAgeSeconds: 60 * 60 * 24 * 365 // 1 year
+                maxAgeSeconds: 60 * 60 * 24 * 365, // 1 year
               },
               cacheableResponse: {
-                statuses: [0, 200]
-              }
-            }
+                statuses: [0, 200],
+              },
+            },
           },
           {
             urlPattern: /\.(?:png|jpg|jpeg|svg|gif|webp)$/,
@@ -75,50 +75,50 @@ export default defineConfig({
               cacheName: 'images-cache',
               expiration: {
                 maxEntries: 50,
-                maxAgeSeconds: 60 * 60 * 24 * 30 // 30 days
-              }
-            }
-          }
-        ]
-      }
-    })
+                maxAgeSeconds: 60 * 60 * 24 * 30, // 30 days
+              },
+            },
+          },
+        ],
+      },
+    }),
   ],
   build: {
     // Désactive la génération de source maps en production (gain de temps significatif)
     sourcemap: false,
-    
+
     // Augmente la limite de chunk warning (évite les warnings inutiles)
     chunkSizeWarningLimit: 1000,
-    
+
     // Optimise le minification
     minify: 'esbuild', // Plus rapide que terser
-    
+
     // Réduit le nombre de chunks pour accélérer le build
     rollupOptions: {
       output: {
         manualChunks(id) {
           if (id.includes('node_modules/react/') || id.includes('node_modules/react-dom/') || id.includes('node_modules/react-router-dom/')) {
-            return 'react-vendor'
+            return 'react-vendor';
           }
 
           if (id.includes('node_modules/@mui/material/')) {
-            return 'ui-vendor'
+            return 'ui-vendor';
           }
 
-          return undefined
-        }
-      }
+          return undefined;
+        },
+      },
     },
-    
+
     // Optimise les dépendances
     commonjsOptions: {
       include: [/node_modules/],
-      transformMixedEsModules: true
-    }
+      transformMixedEsModules: true,
+    },
   },
-  
+
   // Optimise les dépendances pré-bundlées
   optimizeDeps: {
-    include: ['react', 'react-dom', 'react-router-dom']
-  }
-})
+    include: ['react', 'react-dom', 'react-router-dom'],
+  },
+});

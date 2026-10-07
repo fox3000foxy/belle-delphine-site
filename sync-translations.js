@@ -1,5 +1,5 @@
-import { readFileSync, writeFileSync, existsSync } from 'fs';
-import { join, dirname } from 'path';
+import { existsSync, readFileSync, writeFileSync } from 'fs';
+import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -39,7 +39,7 @@ function syncKeys(reference, target) {
   }
 
   const result = Array.isArray(reference) ? [] : {};
-  
+
   // Copier toutes les clés existantes du target
   if (target) {
     Object.keys(target).forEach(key => {
@@ -73,7 +73,7 @@ function syncTranslations() {
     // Lire le fichier de référence (anglais)
     const referencePath = join(localesPath, referenceLang, 'common.json');
     const referenceData = readJsonFile(referencePath);
-    
+
     if (!referenceData) {
       console.error('Failed to load reference translation file');
       return;
@@ -82,7 +82,7 @@ function syncTranslations() {
     // Pour chaque langue cible
     targetLangs.forEach(lang => {
       const targetPath = join(localesPath, lang, 'common.json');
-      
+
       // Vérifier si le fichier existe
       if (!existsSync(targetPath)) {
         console.warn(`File not found: ${targetPath}`);
@@ -98,7 +98,7 @@ function syncTranslations() {
 
       // Synchroniser les clés
       const syncedData = syncKeys(referenceData, targetData);
-      
+
       // Écrire le fichier mis à jour
       writeJsonFile(targetPath, syncedData);
     });

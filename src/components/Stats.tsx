@@ -1,5 +1,5 @@
-import { Box, Container, Typography, Fade } from '@mui/material';
-import { useEffect, useState, useRef } from 'react';
+import { Box, Container, Fade, Typography } from '@mui/material';
+import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 const Stats = () => {

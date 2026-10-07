@@ -43,7 +43,7 @@ jobs:
       - name: Install dependencies
         run: bun install --frozen-lockfile
 
-      - name: Lint with ESLint
+      - name: Lint with Biome
         run: bun run lint
 
       - name: Build project

@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
   const { t } = useTranslation();
-  
+
   return (
     <Box
       component='footer'
@@ -331,8 +331,7 @@ const Footer = () => {
             sx={{
               color: 'background.default',
               textAlign: { xs: 'center', md: 'left' },
-            }}>
-            </Typography>
+            }}></Typography>
           <Stack direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 1, sm: 3 }} alignItems='center'>
             {['Privacy Policy', 'Terms of Service', 'Community Guidelines'].map(item => (
               <Link

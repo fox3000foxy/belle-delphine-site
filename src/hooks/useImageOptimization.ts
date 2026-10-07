@@ -13,10 +13,10 @@ export const useImageOptimization = ({ src, lowQualitySrc, threshold = 0.1 }: Im
   useEffect(() => {
     // Use Intersection Observer for lazy loading
     const img = new Image();
-    
+
     const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
+      entries => {
+        entries.forEach(entry => {
           if (entry.isIntersecting) {
             img.src = src;
             img.onload = () => {

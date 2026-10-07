@@ -11,24 +11,24 @@ i18n
     fallbackLng: 'en',
     supportedLngs: ['en', 'fr', 'es', 'ja'],
     debug: import.meta.env.DEV,
-    
+
     interpolation: {
       escapeValue: false,
     },
-    
+
     backend: {
       loadPath: '/locales/{{lng}}/{{ns}}.json',
     },
-    
+
     detection: {
       order: ['localStorage', 'navigator', 'htmlTag'],
       caches: ['localStorage'],
     },
-    
+
     react: {
       useSuspense: false, // Disable suspense to avoid loading issues
     },
-    
+
     // Add default namespace
     defaultNS: 'common',
     ns: ['common'],

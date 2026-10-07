@@ -1,5 +1,5 @@
-import { Component, type ErrorInfo, type ReactNode } from 'react';
 import { Box, Button, Container, Typography } from '@mui/material';
+import { Component, type ErrorInfo, type ReactNode } from 'react';
 
 interface Props {
   children: ReactNode;
@@ -31,7 +31,7 @@ class ErrorBoundary extends Component<Props, State> {
   render() {
     if (this.state.hasError) {
       return (
-        <Container maxWidth="md">
+        <Container maxWidth='md'>
           <Box
             sx={{
               minHeight: '100vh',
@@ -42,13 +42,13 @@ class ErrorBoundary extends Component<Props, State> {
               textAlign: 'center',
               gap: 3,
             }}>
-            <Typography variant="h1" sx={{ fontSize: { xs: '3rem', md: '4rem' }, fontWeight: 700 }}>
+            <Typography variant='h1' sx={{ fontSize: { xs: '3rem', md: '4rem' }, fontWeight: 700 }}>
               Oops! 😅
             </Typography>
-            <Typography variant="h5" color="text.secondary">
+            <Typography variant='h5' color='text.secondary'>
               Something went wrong
             </Typography>
-            <Typography variant="body1" color="text.secondary" sx={{ maxWidth: 500 }}>
+            <Typography variant='body1' color='text.secondary' sx={{ maxWidth: 500 }}>
               Don't worry, it's not your fault. Try refreshing the page or come back later.
             </Typography>
             {this.state.error && (
@@ -60,12 +60,12 @@ class ErrorBoundary extends Component<Props, State> {
                   maxWidth: 600,
                   overflow: 'auto',
                 }}>
-                <Typography variant="body2" sx={{ fontFamily: 'monospace', textAlign: 'left' }}>
+                <Typography variant='body2' sx={{ fontFamily: 'monospace', textAlign: 'left' }}>
                   {this.state.error.toString()}
                 </Typography>
               </Box>
             )}
-            <Button variant="contained" size="large" onClick={this.handleReload}>
+            <Button variant='contained' size='large' onClick={this.handleReload}>
               Reload Page
             </Button>
           </Box>

@@ -15,7 +15,7 @@ const HomePage = lazy(() => import('./pages/HomePage'));
 function App() {
   // Monitor Web Vitals for performance tracking
   useWebVitals();
-  
+
   // Preload all images on app mount
   useEffect(() => {
     preloadAllImages();
@@ -30,9 +30,9 @@ function App() {
           <div style={{ minHeight: '100vh' }}>
             <Navigation />
             {/* <Suspense fallback={<Loading />}> */}
-              <Routes>
-                <Route path='/' element={<HomePage />} />
-              </Routes>
+            <Routes>
+              <Route path='/' element={<HomePage />} />
+            </Routes>
             {/* </Suspense> */}
             <Footer />
           </div>

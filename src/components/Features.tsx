@@ -9,7 +9,7 @@ import { useTranslation } from 'react-i18next';
 
 const Features = () => {
   const { t } = useTranslation();
-  
+
   const features = [
     {
       icon: CameraIcon,

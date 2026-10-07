@@ -1,9 +1,5 @@
-
 export default {
-  content: [
-    "./index.html",
-    "./src*.{js,ts,jsx,tsx}",
-  ],
+  content: ['./index.html', './src*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       colors: {
@@ -42,11 +38,11 @@ export default {
           700: '#334155',
           800: '#1e293b',
           900: '#0f172a',
-        }
+        },
       },
       fontFamily: {
-        'sans': ['Inter', 'ui-sans-serif', 'system-ui'],
-        'display': ['Playfair Display', 'serif'],
+        sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+        display: ['Playfair Display', 'serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in',
@@ -61,10 +57,9 @@ export default {
         slideUp: {
           '0%': { transform: 'translateY(30px)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
-        }
-      }
+        },
+      },
     },
   },
   plugins: [],
-}
-
+};

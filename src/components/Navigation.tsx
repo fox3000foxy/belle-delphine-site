@@ -71,7 +71,7 @@ const Navigation = () => {
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
             <Box
               component='img'
-              src="/assets/logo.svg"
+              src='/assets/logo.svg'
               alt='Belle Delphine Logo'
               sx={{
                 height: 32,
@@ -87,7 +87,7 @@ const Navigation = () => {
             />
             <Box
               component='img'
-              src={"/text.png"}
+              src={'/text.png'}
               alt='Belle Delphine Logo'
               sx={{
                 height: 28,
@@ -182,7 +182,7 @@ const Navigation = () => {
               <LanguageSelector color={trigger ? 'text.primary' : 'white'} />
               <IconButton
                 onClick={() => setIsMenuOpen(true)}
-                aria-label="Open navigation menu"
+                aria-label='Open navigation menu'
                 sx={{
                   color: trigger ? 'text.primary' : 'white',
                   transition: 'color 0.3s ease-in-out',
@@ -216,7 +216,7 @@ const Navigation = () => {
             <Typography variant='h6' component='div' sx={{ fontWeight: 700 }}>
               Belle Delphine
             </Typography>
-            <IconButton onClick={() => setIsMenuOpen(false)} aria-label="Close navigation menu">
+            <IconButton onClick={() => setIsMenuOpen(false)} aria-label='Close navigation menu'>
               <CloseIcon />
             </IconButton>
           </Box>
@@ -234,12 +234,12 @@ const Navigation = () => {
                       ? { href: item.path, target: '_blank', rel: 'noopener noreferrer' }
                       : isAnchor
                         ? {
-                          href: item.path,
-                          onClick: (e: React.MouseEvent<HTMLAnchorElement>) => {
-                            handleAnchorClick(e, item.path);
-                            setIsMenuOpen(false);
-                          },
-                        }
+                            href: item.path,
+                            onClick: (e: React.MouseEvent<HTMLAnchorElement>) => {
+                              handleAnchorClick(e, item.path);
+                              setIsMenuOpen(false);
+                            },
+                          }
                         : { to: item.path })}
                     onClick={() => !isAnchor && setIsMenuOpen(false)}
                     sx={{

@@ -72,7 +72,7 @@ const LanguageSelector = ({ color = 'inherit' }: LanguageSelectorProps) => {
               minWidth: 150,
               gap: 1,
             }}>
-            <Box component="span" sx={{ fontSize: '1.2rem' }}>
+            <Box component='span' sx={{ fontSize: '1.2rem' }}>
               {language.flag}
             </Box>
             <Typography>{language.name}</Typography>

@@ -23,7 +23,7 @@ const News = () => {
       url: 'https://open.substack.com/pub/charnightstar/p/belle-delphines-legacy-to-the-world?r=1vgxym&utm_campaign=post&utm_medium=web',
       color: '#ffabab',
       trending: false,
-      date: '2025-10-15'
+      date: '2025-10-15',
     },
     {
       key: 'bathwaterInsider',
@@ -31,7 +31,7 @@ const News = () => {
       url: 'https://www.businessinsider.com/belle-delphine-jars-bathwater-sold-paypal-payment-2024-5',
       color: '#ef4444',
       trending: false,
-      date: '2024-05-20'
+      date: '2024-05-20',
     },
     {
       key: 'bathwaterNypost',
@@ -39,7 +39,7 @@ const News = () => {
       url: 'https://nypost.com/2024/05/22/belle-delphine-reveals-payday-battle-with-her-gamer-girl-bathwater/',
       color: '#f59e0b',
       trending: false,
-      date: '2024-05-22'
+      date: '2024-05-22',
     },
     {
       key: 'bathwaterVerge',
@@ -47,7 +47,7 @@ const News = () => {
       url: 'https://www.theverge.com/2024/5/20/24161207/belle-delphine-bathwater-paypal-adult-content',
       color: '#ec4899',
       trending: false,
-      date: '2024-05-20'
+      date: '2024-05-20',
     },
     {
       key: 'netWorthTiktok',
@@ -55,7 +55,7 @@ const News = () => {
       url: 'https://www.tiktoknetworth.com/post/belle-delphine-net-worth-2024-19-8-million-revealed',
       color: '#10b981',
       trending: true,
-      date: '2024-03-18'
+      date: '2024-03-18',
     },
     {
       key: 'podcastTheroux',
@@ -63,7 +63,7 @@ const News = () => {
       url: 'https://podcasts.apple.com/ae/podcast/s2-ep5-belle-delphine-discusses-selling-her-bathwater/id1725833532?i=1000645931383',
       color: '#8b5cf6',
       trending: false,
-      date: '2024-02-20'
+      date: '2024-02-20',
     },
     {
       key: 'podcastScreenshot',
@@ -71,7 +71,7 @@ const News = () => {
       url: 'https://screenshot-media.com/culture/internet-culture/belle-delphine-only-fans-earnings-louis-theroux/',
       color: '#3b82f6',
       trending: false,
-      date: '2024-02-21'
+      date: '2024-02-21',
     },
     {
       key: 'netWorthPenn',
@@ -79,7 +79,7 @@ const News = () => {
       url: 'https://pennbookcenter.com/belle-delphine-net-worth/',
       color: '#f59e0b',
       trending: false,
-      date: '2024-12-20'
+      date: '2024-12-20',
     },
   ];
 

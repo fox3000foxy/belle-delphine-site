@@ -15,7 +15,7 @@ export const useWebVitals = () => {
     // Log Web Vitals for monitoring
     const logMetric = (metric: WebVitalsMetric) => {
       console.log(`[Web Vitals] ${metric.name}:`, metric.value, `(${metric.rating})`);
-      
+
       // You can send to analytics here
       // Example: gtag('event', metric.name, { value: metric.value });
     };
