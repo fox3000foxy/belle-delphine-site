@@ -1,0 +1,523 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "gallery": "Gallery",
+    "cosplay": "Cosplay",
+    "career": "Career",
+    "news": "News",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "merch": "Merch",
+    "subscribe": "Subscribe",
+    "followMe": "Follow Me",
+    "youtube": "YouTube"
+  },
+  "hero": {
+    "title": "Belle Delphine",
+    "subtitle": "Cosplayer • Gamer • Creator",
+    "description": "Welcome to my creative world! Explore my cosplay adventures, gaming content, memes, and artistic creations in this safe and fun space.",
+    "exploreCosplays": "Explore Cosplays",
+    "gamingVideos": "Gaming Videos"
+  },
+  "footer": {
+    "official": "Official",
+    "tagline": "Creative cosplayer, passionate gamer, and content creator. Join the fun with cosplay tutorials, gaming streams, and meme culture!",
+    "quickLinks": "Quick Links",
+    "followMe": "Follow Me",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "copyright": "© 2024 Belle Delphine. All rights reserved.",
+    "madeWith": "Made with",
+    "by": "by"
+  },
+  "contact": {
+    "title": "Connect with",
+    "me": "Me",
+    "subtitle": "Connect with me for cosplay collaborations, gaming content, and creative projects. Join the community of fellow creators and fans!",
+    "connectWith": "Connect with",
+    "contactInfo": "Contact Information",
+    "collaborations": "Collaborations",
+    "collaborationsEmail": "collabs@belle-delphine.com",
+    "youtube": "YouTube",
+    "youtubeChannel": "Belle Delphine",
+    "getInTouch": "Get in Touch",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "your.email@example.com",
+    "message": "Message",
+    "messagePlaceholder": "Tell me about your project or inquiry...",
+    "send": "Send Message",
+    "successMessage": "Message sent successfully! I'll get back to you soon.",
+    "socialMedia": "Social Media",
+    "instagram": "Instagram",
+    "instagramDesc": "Daily updates & behind-the-scenes",
+    "twitter": "Twitter/X",
+    "twitterDesc": "Thoughts, memes & announcements",
+    "youtubeDesc": "Gaming videos & vlogs",
+    "discord": "Discord",
+    "discordDesc": "Join our community",
+    "businessEmail": "Business Email",
+    "businessEmailDesc": "For professional inquiries",
+    "formTitle": "Send us a message",
+    "errorMessage": "Error sending message. Please try again."
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "Explore my creative cosplay journey and artistic expressions",
+    "filterAll": "All",
+    "filterCosplay": "Cosplay",
+    "filterGaming": "Gaming",
+    "filterArt": "Art",
+    "filterMemes": "Memes",
+    "viewMore": "View More",
+    "loadMore": "Load More",
+    "cta": "View Full Portfolio",
+    "items": {
+      "animeCosplay": {
+        "title": "Anime Cosplay Collection",
+        "category": "Cosplay",
+        "description": "Detailed recreations of beloved anime characters with handcrafted costumes and props.",
+        "likes": "2.5M"
+      },
+      "gamingSeries": {
+        "title": "Gaming Character Series",
+        "category": "Gaming",
+        "description": "Bringing iconic video game characters to life with stunning accuracy and creativity.",
+        "likes": "1.8M"
+      },
+      "fantasyMyth": {
+        "title": "Fantasy & Mythology",
+        "category": "Fantasy",
+        "description": "Original interpretations of mythological creatures and fantasy characters.",
+        "likes": "2.1M"
+      },
+      "creativeShoots": {
+        "title": "Creative Photoshoots",
+        "category": "Photography",
+        "description": "Artistic photo series featuring unique concepts, lighting, and post-production.",
+        "likes": "3.2M"
+      },
+      "behindScenes": {
+        "title": "Behind the Scenes",
+        "category": "BTS",
+        "description": "Exclusive look at the creative process, makeup tutorials, and costume crafting.",
+        "likes": "1.5M"
+      },
+      "collaborationProjects": {
+        "title": "Collaboration Projects",
+        "category": "Collabs",
+        "description": "Special projects with other creators, photographers, and brands.",
+        "likes": "1.9M"
+      }
+    }
+  },
+  "biography": {
+    "title": "Biography",
+    "titleHighlight": "Journey",
+    "subtitle": "My journey as a creative cosplayer and content creator",
+    "earlyLife": "Early Life",
+    "earlyLifeDesc": "Born and raised in South Africa, I moved to the UK where I discovered my passion for cosplay and creative expression.",
+    "cosplayJourney": "Cosplay Journey",
+    "cosplayJourneyDesc": "From my first costume to professional cosplay, I've always been fascinated by bringing characters to life through detailed craftsmanship.",
+    "contentCreation": "Content Creation",
+    "contentCreationDesc": "Expanding into gaming content, memes, and social media, I found my voice in connecting with fans worldwide.",
+    "future": "Looking Forward",
+    "futureDesc": "Continuing to push creative boundaries and build meaningful connections with the community.",
+    "milestones": {
+      "2015": {
+        "year": "2015",
+        "title": "The Beginning",
+        "description": "Started my journey as a makeup artist and cosplayer, sharing creative photos on Instagram. My unique aesthetic and attention to detail quickly caught the attention of anime and gaming communities worldwide."
+      },
+      "2016_2017": {
+        "year": "2016-2017",
+        "title": "Building the Brand",
+        "description": "Expanded my presence across multiple platforms including Facebook and Twitter. Developed my signature pink aesthetic and began creating more elaborate cosplay content featuring characters from popular anime and video games."
+      },
+      "2018": {
+        "year": "2018",
+        "title": "Viral Sensation",
+        "description": "Achieved viral fame with creative and provocative cosplay content. My unique blend of gaming culture, anime aesthetics, and internet humor resonated with millions. Became one of the most searched personalities online."
+      },
+      "2019": {
+        "year": "2019",
+        "title": "YouTube & Gaming",
+        "description": "Launched my YouTube channel featuring gaming content, vlogs, and creative videos. Reached millions of subscribers with content ranging from Minecraft to Among Us. Collaborated with other popular content creators and streamers."
+      },
+      "2020": {
+        "year": "2020",
+        "title": "Entrepreneurial Ventures",
+        "description": "Launched multiple successful business ventures including my own merchandise line and exclusive content platform. Demonstrated business acumen by creating innovative marketing campaigns that broke the internet multiple times."
+      },
+      "2021_2022": {
+        "year": "2021-2022",
+        "title": "Music & Creative Projects",
+        "description": "Released original music videos and songs that garnered millions of views. Continued to push creative boundaries with elaborate photoshoots, music production, and artistic collaborations. Expanded into new creative territories beyond traditional content creation."
+      },
+      "2023_present": {
+        "year": "2023-Present",
+        "title": "Legacy & Innovation",
+        "description": "Continues to innovate in the digital content space with high-quality cosplay productions, gaming streams, and creative projects. Remains one of the most influential internet personalities, inspiring a new generation of content creators with her unique approach to online entertainment."
+      }
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked",
+    "titleHighlight": "Questions",
+    "subtitle": "Find answers to common questions about my work, collaborations, and content",
+    "items": {
+      "gettingStarted": {
+        "question": "How did you get started with cosplay?",
+        "answer": "I started cosplaying in 2015 as a makeup artist and gradually fell in love with bringing anime and gaming characters to life. What began as a hobby quickly turned into a passion as I discovered the incredible creative possibilities of costume design, photography, and character interpretation."
+      },
+      "materials": {
+        "question": "What materials do you use for your costumes?",
+        "answer": "I use a variety of materials depending on the character and design. This includes EVA foam for armor pieces, thermoplastics like Worbla for detailed work, fabric ranging from spandex to brocade, 3D printed components, and various crafting materials. Each costume is carefully planned and handcrafted with attention to detail — and always with comfort, safety and event mobility in mind."
+      },
+      "creationTime": {
+        "question": "How long does it take to create a cosplay?",
+        "answer": "The time varies greatly depending on the complexity of the character. Simple cosplays might take a week or two, while elaborate costumes with armor, props, and intricate details can take several weeks to months. I also allocate additional time for fitting, transport logistics, and final photo-shoot touches."
+      },
+      "gaming": {
+        "question": "What games do you play and stream?",
+        "answer": "I enjoy a wide variety of games! My content includes popular titles like Minecraft, Among Us, League of Legends, Valorant, and various indie games. I love exploring new games and sharing those experiences with my community through streams and videos."
+      },
+      "tutorials": {
+        "question": "Do you offer cosplay tutorials or workshops?",
+        "answer": "Yes! I regularly share behind-the-scenes content, makeup tutorials, and crafting tips on my YouTube channel and social media. I believe in helping others learn and grow in the cosplay community, so I try to make my techniques accessible to aspiring cosplayers."
+      },
+      "support": {
+        "question": "How can I support your work?",
+        "answer": "There are many ways to support! You can follow me on social media, engage with my content (likes, comments, shares), check out my merchandise, or join my Patreon for exclusive content and behind-the-scenes access. Also, respecting the community (for example by crediting creators, respecting photos and autographs) goes a long way. Every bit of support helps me continue creating the content you love!"
+      },
+      "inspiration": {
+        "question": "What inspires your creative projects?",
+        "answer": "My inspiration comes from many sources — anime, video games, internet culture, art, fashion, and my amazing community! I love taking characters and concepts I'm passionate about and putting my own creative spin on them. The feedback and enthusiasm from fans also drives me to keep innovating."
+      },
+      "collaboration": {
+        "question": "Do you collaborate with other creators?",
+        "answer": "Absolutely! I love collaborating with photographers, fellow cosplayers, makeup artists, and other content creators. Collaborations bring fresh perspectives and allow us to create something truly special together. If you're interested in working together, feel free to reach out!"
+      },
+      "beginners": {
+        "question": "Do I have to be a “perfect” crafter to start cosplaying?",
+        "answer": "Not at all — cosplay is about fun, expression and community. Starting simple, learning as you go, and focusing on enjoying the process are key. Perfection isn’t required! In fact, many guides for beginners emphasise that the hobby should reduce stress, not add it."
+      },
+      "characterChoice": {
+        "question": "How do you choose which character to cosplay?",
+        "answer": "I select characters based on what I love — whether it’s the story, the design, or simply the creative challenge. Sometimes it’s about what techniques I’d like to try next. It’s important to understand your motivation, because it impacts how you approach the build and enjoy the result."
+      },
+      "safety": {
+        "question": "What about safety and comfort during a convention?",
+        "answer": "Safety and comfort always come first — especially when wearing costumes, props or armour for long hours. Check the event’s rules on props/weapons, ensure you can move, breathe, sit if needed, and transport everything properly. Many experienced cosplayers prioritise these factors above pure ‘accuracy’."
+      },
+      "buyCosplay": {
+        "question": "Can I buy a cosplay instead of making it myself?",
+        "answer": "Yes — buying or commissioning a costume is a totally valid approach, especially if you’re pressed for time or resources. Just bear in mind that off-the-shelf costumes may require alterations, may lack some details, and might not be as durable as handcrafted ones."
+      },
+      "cosplayVsCostuming": {
+        "question": "What’s the difference between cosplay, costuming and crossplay?",
+        "answer": "The term ‘cosplay’ comes from combining ‘costume’ and ‘play’, adapted in Japan to describe dressing as fictional characters. ‘Costuming’ may be a broader term (including historical dress or other fandoms). ‘Crossplay’ refers to dressing as a character of a different gender than your own. It’s a vibrant part of the community."
+      },
+      "props": {
+        "question": "How do you handle props/weapons/armour in conventions?",
+        "answer": "Every event has its own prop/weapon/armour rules (size limits, materials, non-functionality, etc). Before you go, check the event website, plan your transport and how you’ll assemble/disassemble your gear, and test that it works and is safe to wear around crowds."
+      }
+    }
+  },
+  "news": {
+    "title": "Latest",
+    "titleHighlight": "News",
+    "subtitle": "Stay updated with my latest projects, announcements, and creative updates",
+    "trendingLabel": "Trending",
+    "readMore": "Read More",
+    "ctaPrompt": "Want to cover Belle Delphine in your media?",
+    "ctaButton": "Contact Us",
+    "articles": {
+      "legacy": {
+        "title": "Belle Delphine's Legacy to the World",
+        "source": "AM Tenison - Substack",
+        "category": "Opinion / Culture",
+        "excerpt": "A thoughtful reflection on Belle Delphine as more than just a controversial internet figure, highlighting her as an empowering force who exposed societal perversions while demonstrating exceptional entrepreneurial genius and remaining a genuine, kind person behind the persona."
+      },
+      "bathwaterInsider": {
+        "title": "Belle Delphine earned over $90K selling jars of her bathwater in 2019. PayPal only released her money this week.",
+        "source": "Business Insider",
+        "category": "Business",
+        "excerpt": "In 2019 Belle Delphine went viral for selling 'Gamer Girl Bath Water' jars, allegedly earning over $90,000 — yet the funds were frozen by PayPal due to terms-of-service violations, until 2024 when they were finally released."
+      },
+      "bathwaterNypost": {
+        "title": "OnlyFans star Belle Delphine reveals payday battle after selling $90K of her 'gamer girl bathwater' to fans",
+        "source": "New York Post",
+        "category": "Internet Culture",
+        "excerpt": "After her viral bathwater stunt in 2019, Belle reveals that PayPal froze her account and withheld $90K — she says it took her social media influence to get it back."
+      },
+      "bathwaterVerge": {
+        "title": "'She sold her bathwater — PayPal took her profits'",
+        "source": "The Verge",
+        "category": "Business",
+        "excerpt": "In a detailed report, The Verge covers how Belle's 2019 stunt led to $90K in profit which PayPal confiscated before returning the funds five years later."
+      },
+      "netWorthTiktok": {
+        "title": "Belle Delphine Net Worth 2024: $19.8 Million REVEALED",
+        "source": "TikTok Net Worth",
+        "category": "Business & Finance",
+        "excerpt": "Belle Delphine's strategic approach to content and monetization has earned her an estimated net worth of $19.8 million, with monthly OnlyFans earnings of $400,000, making her one of the platform's top earners and a trailblazer in digital entrepreneurship."
+      },
+      "podcastTheroux": {
+        "title": "Belle Delphine discusses selling her bathwater, dealing with stalkers and why she's called 'The Queen of the Simps'",
+        "source": "The Louis Theroux Podcast",
+        "category": "Podcast / Interview",
+        "excerpt": "In this rare in-depth podcast episode, Belle opens up to Louis Theroux about her career, the bathwater phenomenon, internet fame, making millions from her first adult video, and her surprisingly ambivalent feelings about her chosen career path."
+      },
+      "podcastScreenshot": {
+        "title": "Belle Delphine reveals how much money she makes on OnlyFans in new Louis Theroux podcast",
+        "source": "Screenshot Media",
+        "category": "Digital Business",
+        "excerpt": "The content creator revealed her first fully pornographic video alone made her £5 million, and she now earns around £1 million per month through OnlyFans, enabling her to purchase an eight-bedroom countryside estate."
+      },
+      "netWorthPenn": {
+        "title": "Belle Delphine Net Worth 2024: Financial Journey, Income, Achievements",
+        "source": "Penn Book Center",
+        "category": "Entrepreneurship",
+        "excerpt": "Belle Delphine's journey showcases how bold creativity and strategic branding can lead to financial success, with an estimated $10 million net worth built through innovative monetization of her online persona and unconventional marketing strategies."
+      }
+    }
+  },
+  "achievements": {
+    "title": "Achievements & Impact",
+    "subtitle": "Celebrating milestones and accomplishments in my creative journey",
+    "socialGrowth": "Social Media Growth",
+    "socialGrowthDesc": "Building a global community of millions of followers across platforms",
+    "cosplayRecognition": "Cosplay Recognition",
+    "cosplayRecognitionDesc": "Award-winning cosplay designs and industry recognition",
+    "contentMilestones": "Content Milestones",
+    "contentMilestonesDesc": "Millions of views and engagement across gaming and creative content",
+    "communityImpact": "Community Impact",
+    "communityImpactDesc": "Inspiring a new generation of cosplayers and content creators",
+    "viralMoments": "Viral Moments",
+    "viralMomentsDesc": "Moments that captivated the internet and trended worldwide",
+    "globalReach": "Global Reach",
+    "globalReachDesc": "A presence that spans conventions, media, and communities across continents",
+    "cards": {
+      "internetIcon": {
+        "title": "Internet Icon",
+        "description": "Recognized as one of the most influential internet personalities and cosplayers globally."
+      },
+      "viralSensation": {
+        "title": "Viral Sensation",
+        "description": "Created multiple viral moments that dominated social media and internet culture."
+      },
+      "creativePioneer": {
+        "title": "Creative Pioneer",
+        "description": "Pioneered unique content formats blending cosplay, gaming, and internet culture."
+      },
+      "communityBuilder": {
+        "title": "Community Builder",
+        "description": "Built one of the most engaged and passionate fan communities in the cosplay world."
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Community",
+    "titleHighlight": "Voices",
+    "subtitle": "What the community says about my work and creative journey",
+    "entries": {
+      "sarahChen": {
+        "name": "Sarah Chen",
+        "role": "Cosplay Enthusiast",
+        "quote": "Belle's attention to detail in her cosplays is absolutely incredible! Her work has inspired me to take my own cosplay creations to the next level. The creativity and passion she brings to every character is unmatched."
+      },
+      "marcusJohnson": {
+        "name": "Marcus Johnson",
+        "role": "Gaming Content Creator",
+        "quote": "As a fellow content creator, I'm constantly amazed by Belle's innovative approach to gaming content. She knows how to engage her audience and create memorable moments that resonate with the gaming community."
+      },
+      "emilyRodriguez": {
+        "name": "Emily Rodriguez",
+        "role": "Photographer",
+        "quote": "Working with Belle has been an absolute dream! Her professionalism, creativity, and dedication to her craft make every photoshoot a masterpiece. She truly understands the art of visual storytelling."
+      },
+      "alexKim": {
+        "name": "Alex Kim",
+        "role": "Fan & Community Member",
+        "quote": "Belle has built one of the most welcoming and creative communities I've ever been part of. Her content brings joy to millions and inspires people to embrace their creativity and passion for geek culture."
+      },
+      "jessicaTaylor": {
+        "name": "Jessica Taylor",
+        "role": "Makeup Artist",
+        "quote": "The makeup artistry and character transformations Belle achieves are phenomenal! Her tutorials have helped countless aspiring cosplayers, including myself, learn new techniques and push creative boundaries."
+      },
+      "davidPark": {
+        "name": "David Park",
+        "role": "Internet Culture Analyst",
+        "quote": "Belle is a true pioneer in internet culture and content creation. Her ability to create viral moments while maintaining authenticity is a testament to her understanding of digital media and her creative genius."
+      }
+    }
+  },
+  "socialHighlights": {
+    "title": "Social Media",
+    "titleHighlight": "Highlights",
+    "subtitle": "Catch up on the latest posts and viral moments",
+    "viewPost": "View Post",
+    "followMe": "Follow Me"
+  },
+  "errorBoundary": {
+    "title": "Oops! 😅",
+    "subtitle": "Something went wrong",
+    "description": "Don't worry, it's not your fault. Try refreshing the page or come back later.",
+    "reloadButton": "Reload Page"
+  },
+  "cosplay": {
+    "title": "Cosplay",
+    "collection": "Collection",
+    "subtitle": "Explore my favorite cosplay creations featuring characters from anime, games, and pop culture. Each costume is handcrafted with love and attention to detail!",
+    "cta": {
+      "title": "Want to see more cosplays?",
+      "description": "Follow me on Instagram and YouTube for behind-the-scenes content, tutorials, and new cosplay reveals!"
+    },
+    "items": {
+      "likes": "{{count}}M likes",
+      "views": "{{count}}M views"
+    },
+    "characters": {
+      "ahri": {
+        "title": "Ahri - League of Legends",
+        "game": "League of Legends",
+        "tags": ["Gaming", "Fantasy", "Popular"]
+      },
+      "dva": {
+        "title": "D.Va - Overwatch",
+        "game": "Overwatch",
+        "tags": ["Gaming", "Mecha", "Iconic"]
+      },
+      "harley": {
+        "title": "Harley Quinn - DC Comics",
+        "game": "DC Comics",
+        "tags": ["Comics", "Villain", "Classic"]
+      },
+      "vanelope": {
+        "title": "Vanelope - Darling in the Franxx",
+        "game": "Anime",
+        "tags": ["Anime", "Waifu", "Trending"]
+      },
+      "jinx": {
+        "title": "Jinx - League of Legends",
+        "game": "League of Legends",
+        "tags": ["Gaming", "Chaos", "Fan Favorite"]
+      },
+      "shiro": {
+        "title": "Shiro - Soul of War",
+        "game": "SAO",
+        "tags": ["Anime", "Mecha", "Critical"]
+      }
+    }
+  },
+  "about": {
+    "title": "About",
+    "name": "Belle Delphine",
+    "intro1": "I'm a South African-born British creative cosplayer, passionate gamer, and internet personality known for my incredible costume designs, gaming content, and viral memes. I bring anime and gaming characters to life with stunning attention to detail and artistic vision.",
+    "intro2": "From elaborate cosplay photoshoots and gaming streams to hilarious meme content and creative collaborations, I create entertaining content that celebrates geek culture and creativity. My work spans multiple platforms including Instagram, YouTube, and TikTok, where I have amassed millions of followers.",
+    "intro3": "Known for my innovative approach to content creation, I combine professional photography, handcrafted costumes, and creative makeup artistry to produce unique and memorable content. My dedication to my craft and willingness to push creative boundaries has made me one of the most recognizable figures in internet culture.",
+    "feature1Title": "Professional Cosplay Artistry",
+    "feature1Desc": "Handcrafted costumes with meticulous attention to detail",
+    "feature2Title": "Gaming & Streaming",
+    "feature2Desc": "Engaging gameplay and interactive community experiences",
+    "feature3Title": "Creative Content Production",
+    "feature3Desc": "Viral videos, memes, and innovative social media content"
+  },
+  "stats": {
+    "followers": "Social Media Followers",
+    "cosplays": "Cosplay Creations",
+    "videos": "Videos Created",
+    "countries": "Countries Reached"
+  },
+  "features": {
+    "title": "Creative",
+    "titleHighlight": "Content",
+    "subtitle": "Discover my world of cosplay, gaming, and creative content. From detailed costume creations to entertaining gaming sessions!",
+    "cosplayGalleryTitle": "Cosplay Gallery",
+    "cosplayGalleryDesc": "Stunning cosplay photoshoots featuring characters from anime, games, and pop culture with incredible attention to detail.",
+    "gamingContentTitle": "Gaming Content",
+    "gamingContentDesc": "Live gaming streams, gameplay videos, and gaming reviews covering the latest and greatest games.",
+    "youtubeTitle": "YouTube Videos",
+    "youtubeDesc": "Creative videos including tutorials, vlogs, challenges, and behind-the-scenes content from photoshoots.",
+    "memeCultureTitle": "Meme Culture",
+    "memeCultureDesc": "Hilarious memes, viral content, and internet culture commentary that keeps the community entertained.",
+    "merchandiseTitle": "Merchandise",
+    "merchandiseDesc": "Official merchandise including prints, clothing, and collectibles featuring original designs and cosplay themes.",
+    "fanCommunityTitle": "Fan Community",
+    "fanCommunityDesc": "Active community of cosplay enthusiasts, gamers, and fans sharing their own creations and connecting."
+  },
+  "language": {
+    "select": "Language",
+    "en": "English",
+    "fr": "Français",
+    "es": "Español",
+    "ja": "日本語"
+  },
+  "loading": {
+    "title": "Belle Delphine",
+    "message": "Loading amazing content..."
+  },
+  "minecraft": {
+    "title": "Belle Delphine Minecraft Server",
+    "subtitle": "Join our exclusive Minecraft community and play with fellow fans in a creative and fun environment!",
+    "serverAddress": "Server Address",
+    "online": "Online",
+    "offline": "Offline",
+    "copy": "Copy to clipboard",
+    "copied": "Copied!",
+    "players": "Players Online",
+    "version": "Version",
+    "uptime": "Uptime",
+    "mode": "Game Mode",
+    "joinNow": "Join the Server Now",
+    "featuresTitle": "Server Features",
+    "feature1": {
+      "title": "Custom Mini-Games",
+      "desc": "Exclusive mini-games and challenges created specifically for our community"
+    },
+    "feature2": {
+      "title": "Special Rewards",
+      "desc": "Earn unique items and cosmetics by participating in events and quests"
+    },
+    "feature3": {
+      "title": "Community Events",
+      "desc": "Regular tournaments, building competitions, and themed events"
+    },
+    "feature4": {
+      "title": "VIP Perks",
+      "desc": "Exclusive benefits for supporters including custom kits and access to special areas"
+    },
+    "feature5": {
+      "title": "Creative Plots",
+      "desc": "Get your own plot to build amazing creations and showcase your creativity"
+    },
+    "feature6": {
+      "title": "Protected Gameplay",
+      "desc": "Safe and moderated environment with grief protection and active staff"
+    },
+    "howToJoin": "How to Join",
+    "step1": {
+      "title": "Launch Minecraft",
+      "desc": "Open Minecraft Java Edition version 1.21.10"
+    },
+    "step2": {
+      "title": "Add Server",
+      "desc": "Click 'Multiplayer' and then 'Add Server'"
+    },
+    "step3": {
+      "title": "Enter Address",
+      "desc": "Copy and paste: play.belle-delphine.com"
+    },
+    "step4": {
+      "title": "Start Playing",
+      "desc": "Join the server and have fun with the community!"
+    },
+    "community": "Join Our Community",
+    "communityDesc": "Connect with other fans, participate in events, and be part of an amazing Minecraft community. Whether you're a builder, explorer, or PvP enthusiast, there's something for everyone!"
+  }
+}
