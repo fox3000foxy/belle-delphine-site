@@ -1,6 +1,6 @@
-import { existsSync, readFileSync, writeFileSync } from 'fs';
-import { dirname, join } from 'path';
-import { fileURLToPath } from 'url';
+import { existsSync, readFileSync, writeFileSync } from 'node:fs';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -25,7 +25,7 @@ function readJsonFile(filePath) {
 function writeJsonFile(filePath, data) {
   try {
     const content = JSON.stringify(data, null, 2);
-    writeFileSync(filePath, content + '\n', 'utf8');
+    writeFileSync(filePath, `${content}\n`, 'utf8');
     console.log(`Updated: ${filePath}`);
   } catch (error) {
     console.error(`Error writing file ${filePath}:`, error);

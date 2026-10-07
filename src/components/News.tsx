@@ -175,7 +175,7 @@ const News = () => {
                       position: 'relative',
                       paddingTop: '60%',
                       overflow: 'hidden',
-                      backgroundColor: article.color + '20',
+                      backgroundColor: `${article.color}20`,
                     }}>
                     <Box
                       component='img'
